@@ -2,7 +2,7 @@ core_options_path = /recalbox/share/system/configs/retroarch/cores/retroarch-cor
 
 system_directory = /recalbox/share/bios/
 
-config_save_on_exit = true
+config_save_on_exit = false
 
 video_threaded = true
 
