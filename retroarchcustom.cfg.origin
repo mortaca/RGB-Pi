@@ -7,7 +7,7 @@ config_save_on_exit = true
 video_threaded = true
 
 aspect_ratio_index = "20"
-video_aspect_ratio_auto = true
+video_aspect_ratio_auto = "false"
 video_crop_overscan = "false"
 video_scale_integer = "false"
 video_font_size = "10"
