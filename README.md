@@ -6,7 +6,7 @@ Download at rgb-pi.com
 
 To use the cable in Retropie, Raspbian or any other system you can insert this lines in config.txt
 
-Warning, this mode only support single resolution, We only support multiple resolutions in RGB-Pi
+Warning, this mode only support single resolution, We only support multiple resolutions in RGB-Pi OS
 
     dtparam=audio=on
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
