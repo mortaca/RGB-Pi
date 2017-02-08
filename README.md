@@ -5,6 +5,7 @@ Download at rgb-pi.com
 ------------------------------------------------------------------------------
 
 To use the cable in Retropie, Raspbian or any other system you can insert this lines in config.txt
+
 Warning, this mode only support single resolution, We only support multiple resolutions in RGB-Pi
 
     dtparam=audio=on
