@@ -1,7 +1,7 @@
 HDMI Timings
 
 Usable Pixel clock are :
-4800000 - 6400000 - 9600000 - 19200000 - 38500000 - 77000000 (perhaps for interlaced)
+4800000 - 6400000 - 9600000 - 19200000 - 38400000 - 76800000 (perhaps for interlaced)
 
 
 ** 60Hz Timings **
