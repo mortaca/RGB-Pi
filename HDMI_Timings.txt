@@ -50,6 +50,7 @@ pcengine="hdmi_timings 1920 1 152 250 280 240 1 3 3 16 0 0 0 59.94 0 40870000 1"
 
 # MEGADRIVE
 megadrive60="hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 59.92 0 37680000 1"
+megadrive60="hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 60 0 37730000 1"
 megadrive50="hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 49.70 0 37340000 1"
 megadrive50="hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 50 0 37560000 1"
 
