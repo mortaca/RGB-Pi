@@ -3,7 +3,7 @@ HDMI Timings
 hdmi_timings=<h_active_pixels> <h_sync_polarity <h_front_porch> <h_sync_pulse> <h_back_porch> <v_active_lines> <v_sync_polarity> <v_front_porch> <v_sync_pulse> <v_back_porch> <v_sync_offset_a> <v_sync_offset_b> <pixel_rep> <frame_rate> <interlaced> <pixel_freq> <aspect_ratio>
 
 Usable Pixel clock are :
-4800000 - 6400000 - 9600000 - 19200000 ....
+4800000 - 6400000 - 9600000 - 19200000 and anything over 38400000
 
 ** EmulationStation ** 60Hz
 hdmi_timings 480 1 14 45 56 300 1 10 5 5 0 0 0 60 0 9600000 1
@@ -14,6 +14,40 @@ hdmi_timings 470 1 40 30 80 288 1 6 1 23 0 0 0 60 0 9600000 1         (Candidate
 hdmi_timings 450 1 50 30 85 288 1 10 1 25 0 0 0 60 0 9600000 1        (perfect H centering)
 hdmi_timings 450 1 50 30 85 280 1 1 1 20 0 0 0 60 0 9600000 1         (perfect H centering)
 hdmi_timings 400 1 60 60 88 250 1 3 6 4 0 0 0 60 0 9600000 1
+
+
+# PCENGINE
+hdmi_timings 1920 1 152 250 280 240 1 3 3 16 0 0 0 59.94 0 40870000 1
+hdmi_timings 1920 1 130 192 246 240 1 1 10 11 0 0 0 60 0 39120000 1
+
+# MEGADRIVE/MASTER SYSTEM 50Hz/60Hz
+hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 59.92 0 37680000 1
+hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 60 0 37730000 1
+hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 49.70 0 37340000 1
+hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 50 0 37560000 1
+
+# NES 50Hz/60Hz
+hdmi_timings 1920 1 158 200 286 240 1 1 8 13 0 0 0 60.10 0 40380000 1
+hdmi_timings 1920 1 158 200 314 240 1 23 6 43 0 0 0 50.01 0 40450000 1
+
+# SNES 50Hz/60Hz
+hdmi_timings 1920 1 160 200 286 224 1 9 8 21 0 0 0 60.10 0 40410000 1
+hdmi_timings 1920 1 158 200 314 239 1 25 6 42 0 0 0 50.01 0 40450000 1
+
+# NEOGEO
+hdmi_timings 1920 1 152 250 280 224 1 13 8 19 0 0 0 59.185 0 40660000 1
+
+# AMIGA
+hdmi_timings 1920 1 180 192 334 262 1 14 15 22 0 0 0 50 0 41200000 1
+hdmi_timings 1920 1 140 200 260 270 1 12 10 12 0 0 0 50 0 38310000 1
+
+# ATARI 800 (atari800 emulator standalone)
+hdmi_timings 336 1 14 24 36 240 1 26 12 34 0 0 0 50 0 6400000 1
+hdmi_timings 336 1 20 10 36 240 1 26 12 34 0 0 0 50 0 6400000 1
+hdmi_timings 336 1 18 16 40 240 1 28 14 30 0 0 0 50 0 6400000 1
+
+# MSX
+hdmi_timings 1920 1 140 200 260 240 1 28 10 34 0 0 0 50 0 39320000 1
 
 ** 60Hz Timings ** 240px60Hz
 hdmi_timings 1920 1 48 192 240 248 1 3 10 6 0 0 0 60 0 38400000 1
@@ -39,25 +73,8 @@ hdmi_timings 1920 1 41 202 243 260 1 4 5 9 0 0 0 57.41 0 38400000 1
 hdmi_timings 1920 1 50 192 242 250 1 4 5 9 0 0 0 59.59 0 38400000 1
 hdmi_timings 1920 1 50 250 250 250 1 8 10 8 0 0 0 58.97 0 38750000 1
 
-
 ** 320x224x60 **
 hdmi_timings=320 1 15 29 40 224 1 10 14 16 0 0 0 60 0 6400000 1
 
 ** 256x240x60 **
 hdmi_timings=256 1 48 32 80 240 1 4 8 4 0 0 0 60 0 6400000 1
-
-
-# PCENGINE
-pcengine="hdmi_timings 1920 1 152 250 280 240 1 3 3 16 0 0 0 59.94 0 40870000 1"
-
-# MEGADRIVE
-megadrive60="hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 59.92 0 37680000 1"
-megadrive60="hdmi_timings 1920 1 48 192 240 240 1 3 3 16 0 0 0 60 0 37730000 1"
-megadrive50="hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 49.70 0 37340000 1"
-megadrive50="hdmi_timings 1920 1 48 192 240 288 1 6 3 16 0 0 0 50 0 37560000 1"
-
-# NEOGEO
-neogeo="hdmi_timings 1920 1 152 250 280 224 1 13 8 19 0 0 0 59.185 0 40660000 1"
-
-# AMIGA
-amiga="hdmi_timings 1920 1 180 192 334 262 1 14 15 22 0 0 0 50 0 41200000 1"
