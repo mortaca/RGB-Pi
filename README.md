@@ -18,4 +18,4 @@ Warning, this mode only support single resolution, We only support multiple reso
     dpi_mode=87
     hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1
 
-And add the file /overlays/rgb-pi.dtbo from the repo .dtbo for SO version 4.1 or .dtb bor 4.0
+And add the file /overlays/rgb-pi.dtbo from the repo .dtbo if your OS is 4.1 or .dtb for 4.0
