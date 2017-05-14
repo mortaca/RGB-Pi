@@ -1,3 +1,13 @@
+RGB-Pi 4.1 Alpha Rpi3 - 14/05/2017 :
+
+    - Image compiled only for RaspberryPi3 and 4GB SD expandible.
+    - Build based on Recalbox 4.1.
+    - Resolution database to select the correct refresh rate and H, V lines for each rom.
+    - Script autogenerating hdmi_timings on the fly.
+    - Segregated consoles by 50 or 60 Hz.
+    - Segregated arcade games by horizontal (yoko) or vertical (tate) orientation.
+    - Theme modified to view big pictures in scraping mode, new icons and new black theme.
+    
 RGB-Pi 4.0 Beta 3 - 22/01/2017 :
 
     - Fixed bugs in GameList, Ugly fonts and more space to the name of the game.
