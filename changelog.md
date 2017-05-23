@@ -1,4 +1,10 @@
-RGB-Pi 4.1 Alpha Rpi3 - 14/05/2017 :
+RGB-Pi 4.1 Alpha for Rpi3 - 23/05/2017 :
+
+    - New systems added; segacd, sega32x, atari2600, gba, gbc, gb, gamegear, ngp, pcenginecd.
+    - Solved issue with USB storage mount.
+    - JoyPad remaping with; select=hotkey, exit=select+start, retroarch menu=select+L
+
+RGB-Pi 4.1 Alpha for Rpi3 - 14/05/2017 :
 
     - Image compiled only for RaspberryPi3 and 4GB SD expandible.
     - Build based on Recalbox 4.1.
