@@ -1,4 +1,4 @@
-RGB-Pi 4.1 Alpha for Rpi3 - 23/05/2017 :
+RGB-Pi 4.1 Alpha 2 for Rpi3 - 23/05/2017 :
 
     - New systems added; segacd, sega32x, atari2600, gba, gbc, gb, gamegear, ngp, pcenginecd.
     - Solved issue with USB storage mount.
