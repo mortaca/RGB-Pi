@@ -65,8 +65,8 @@ Do not worry about expanding the image horizontally, this does not affect the pe
 
 15. It is not possible to connect a switch to power the RPi or any joystick to the GPIO port while the RGB-Pi is connected since almost all the pins are used to take out the necessary 18 Bits of video and sound.
 
-16. In order for the TV to be automatically set to RGB mode, it is necessary to supply + 12V to the scart and the RPi can only supply + 5v which would activate the 16/9 mode and it is necessary to use the remote control to switch to 4/3.
-There are those who have made modifications in their cable to introduce + 12v in pin 8 of the scart, this is possible to do it through an external power supply or with the use of a step up that takes + 5v of the flat cable and make it + 12v, **these modifications can be made at your own risk.**
+16. In order for the TV to be automatically set to RGB mode, it is necessary to supply +12V to the scart and the RPi can only supply +5v which would activate the 16/9 mode and it is necessary to use the remote control to switch to 4/3.
+There are those who have made modifications in their cable to introduce +12v in pin 8 of the scart, this is possible to do it through an external power supply or with the use of a step up that takes +5v of the flat cable and make it +12v, **these modifications can be made at your own risk.**
 In case of wanting to do it it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
 
 17. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
