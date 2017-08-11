@@ -45,10 +45,7 @@ We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/m
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
 To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
 In these files we will find a long string separated by spaces similar to this:
-
->megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734
-
-7. The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
+**megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
 The number 3 belongs to the horizontal centering, number 5 is horizontal zoom to expand or collapse the image and the number 7 corresponds to the vertical position.
 Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
 
