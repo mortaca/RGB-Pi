@@ -21,7 +21,7 @@ Questions:
 17. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
-1. The flat cable can not exceed 23cm to avoid getting interference when it is a non-insulated cable.
+1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
 If you need a longuer distance you can use a scart male-female extension, we can not ensure that the quality becomes as         high as connecting the RGB-Pi directly to the TV.
 
 2. The use of a scart female implies the need for an additional scart cable, I liked the idea that only RGB-Pi is necessary and nothing more to work, besides I can not control what type of extensor cable each person could use and may have interference and a bad experience.
