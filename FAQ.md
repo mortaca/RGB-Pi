@@ -48,7 +48,7 @@ In these files we will find a long string separated by spaces similar to this:
 
 >megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734
 
-The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
+7. The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
 The number 3 belongs to the horizontal centering, number 5 is horizontal zoom to expand or collapse the image and the number 7 corresponds to the vertical position.
 Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
 
