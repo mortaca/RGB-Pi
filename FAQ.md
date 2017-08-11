@@ -30,4 +30,30 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this will not be necessary.
 There are two options to solve this:
     1. Expand the partition / sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
-You will find many tutorials on how to expand a partition in google, here I leave one example but there are many more.
+You will find many tutorials on how to expand a partition in google, [here](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
+    2. Install an external USB storage, this allows you to do Recalbox from the menu, you can follow the instructions from your own [repo](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
+
+6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
+To solve it, just edit the file /boot/config.txt of your SD and change the first line starting with hdmi_timings.
+Attention! It is important that hdmi_timings is on the first line and not another.
+We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present.
+
+7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
+To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or / share / RGB-Pi / resolutions / (for arcade)
+In these files we will find a long string separated by spaces similar to this:
+
+megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734
+
+The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
+The number 3 belongs to the horizontal centering, number 5 is horizontal zoom to expand or collapse the image and the number 7 corresponds to the vertical position.
+Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
+
+8. This is caused by a problem with the game launcher, it is solved by putting the games inside a .zip Until the problem is corrected.
+
+9. Our system uses custom files to retroarch so any changes will be discarded, if you want to introduce a change in retroarch you can find the files we use segregated by consoles in the folder / share / RGB-Pi / Retroarch
+
+10. 
+
+
+    
+
