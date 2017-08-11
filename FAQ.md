@@ -29,5 +29,5 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 
 5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this will not be necessary.
 There are two options to solve this:
-    51. Expand the partition / sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
+    1. Expand the partition / sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
 You will find many tutorials on how to expand a partition in google, here I leave one example but there are many more.
