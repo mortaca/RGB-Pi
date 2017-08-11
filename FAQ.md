@@ -4,7 +4,7 @@
 Questions:
 1. Why is the cable so short?
 2. Why doesn't it have a female scart?
-3. Can I use the cable with Retropie or other than its mmodified version of Recalbox?
+3. Can I use the cable with Retropie or other than its modified version of Recalbox?
 4. Why are there so many alpha versions of the software?
 5. I have a SD of 16GB or 32GB but when installing the image it only recognizes 8GB or less.
 6. The menu image looks distorted or black and white but the games look good.
