@@ -1,4 +1,4 @@
-Available in English and Spanish /*Disponible en Ingles y Español*
+Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
 ## This FAQ is oriented to the latest available version of the system pre-alpha3, the answers here may not be useful for previous versions.
 
@@ -32,16 +32,16 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 
 4. We are limited by the pace of development of the Recalbox team, they have not yet released version 4.1 and are in Alpha phase, so we have to be Alpha phase also until they release the Beta version.
 
-5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this will not be necessary.
+5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this problem desapear.
 There are two options to solve this:
-    1. Expand the partition / sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
-You will find many tutorials on how to expand a partition in google, [here](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
+    1. Expand the partition /sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
+If only you have Windows you can find programs like [that](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
     2. Install an external USB storage, this allows you to do Recalbox from the menu, you can follow the instructions from your own [repo](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
 
 6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
 To solve it, just edit the file /boot/config.txt of your SD and change the first line starting with hdmi_timings.
 Attention! It is important that hdmi_timings is on the first line and not another.
-We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present.
+We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present like this, hdmi_timings=450...
 
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
 To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
@@ -97,27 +97,29 @@ Preguntas:
 17. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
-1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
-If you need a longuer distance you can use a scart male-female extension, we can not ensure that the quality becomes as         high as connecting the RGB-Pi directly to the TV.
+1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
+Si necesitas una distancia mayor puedes utilizar un alargador scart hembra macho, pero no puedo asegurar que la calidad sea tan alta como conectando el RGB-Pi directo a la tele.
 
-2. The use of a scart female implies the need for an additional scart cable, I liked the idea that only RGB-Pi is necessary and nothing more to work, besides I can not control what type of extensor cable each person could use and may have interference and a bad experience.
+2. El uso de un scart hembra implicaria la necesidad de un cable scart adicional, me gusta la idea de no necesitar nada mas que un RGB-Pi para funcionar, tampoco seria posible controlar que tipo de extensor utilizaria cada persona y posiblemente mucha gente sufriria interferencias que provocaran una mala experiencia.
 
-3. Yes, it is possible to use it on any system supported by RPI, but attention! You will not have the original resolutions provided by our software for each game, you will see everything through a fixed resolution.
-If you want to do it anyway you have the instructions [here](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
+3. Si, es posible utilizar el cable en cualquier sistema soportado por la RPi, pero atención! No vais a tener las resoluciones originales de cada juego proporcionadas por nuestro software, vais a ver todo a través de una unica resolución fija.
+Si de todos modos quereis probar otros sistemas teneis las instrucciones [aquí](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
 
-4. We are limited by the pace of development of the Recalbox team, they have not yet released version 4.1 and are in Alpha phase, so we have to be Alpha phase also until they release the Beta version.
+4. Estamos limitado por los tiempos de desarrollo del equipo de Recalbox, ellos no han lanzado todabia la versión 4.1 y están en fase alfa, nosotros tenemos que trabajar sobre esa alfa hasta que lancen su version beta.
 
-5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this will not be necessary.
-There are two options to solve this:
-    1. Expand the partition / sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
-You will find many tutorials on how to expand a partition in google, [here](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
-    2. Install an external USB storage, this allows you to do Recalbox from the menu, you can follow the instructions from your own [repo](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
+5. Por el mismo hecho que el punto anterior, la versión alfa de Recalbox 4.1 no tiene el sistema llamado NOOBS de auto instalacion del sistema operativo y biene en formato de imagen de 8GB, nosotros tenemos que utilizar de momento el mismo sistema hasta que lancen su beta entonces este problema desaparecera.
+Tenemos dos opciones para resolver esto:
+    1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GPartes, tambié
+    n hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
+Si solo tenemos windows podemos encontrar algun programa como [este](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) Es solo un ejemplo pero hay muchos mas.
+    2. Instalar una memoria USB externa, esto se puede hacer desde el propio menu, solo tienes que seguir las instrucciones de Recalbox en su [repositorio](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
 
-6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
-To solve it, just edit the file /boot/config.txt of your SD and change the first line starting with hdmi_timings.
-Attention! It is important that hdmi_timings is on the first line and not another.
-We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present.
+6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
+Para solucionarlo solo hay que editar el archivo /boot/config.txt de la SD y cambiar la primera linea que empieza con hdmi_timings.
+Atencion! Es muy importante que el hdmi_timing que queremos utilizar se encuentre en la primera linea y no en otra.
+Teneis [una lista de otros hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt) en el repositorio con la que podeis ir probando uno por uno hasta encontrar el que mejor os funcione. Estar seguros de poner el simbolo = de modo que quede así hdmi_timings=450...
 
+7. 
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
 To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
 In these files we will find a long string separated by spaces like this: 
