@@ -43,7 +43,7 @@ To solve it, just edit the file /boot/config.txt of your SD and change the first
 Attention! It is important that hdmi_timings is on the first line and not another.
 We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present like this, hdmi_timings=450...
 
-7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
+7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
 To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
 In these files we will find a long string separated by spaces like this: 
 **megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
@@ -119,10 +119,9 @@ Para solucionarlo solo hay que editar el archivo /boot/config.txt de la SD y cam
 Atencion! Es muy importante que el hdmi_timing que queremos utilizar se encuentre en la primera linea y no en otra.
 Teneis [una lista de otros hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt) en el repositorio con la que podeis ir probando uno por uno hasta encontrar el que mejor os funcione. Estar seguros de poner el simbolo = de modo que quede así hdmi_timings=450...
 
-7. 
-7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, we We offer a centering solution so "NO ACCESS TO RETROARCH" is required to adjust the image.
-To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
-In these files we will find a long string separated by spaces like this: 
+7. Las teles de tubo son muy distintas de las LCD y cada televisor tiene unos parametros de centrado distintos, de modo que no hay una configuración que se vea bien en todos los televisores y es posible que sea necesario centrar la imagen en tu TV, para ello ofrecemos una solucion propia y **no es necesario el uso de Retroarch**.
+Para ajustar la imagen tienes las aplicaciones en el menu principal seccion Python desde donde podrás editar los archivos de configuracion de la imagen, si prefieres hacerlo desde el PC por SSH puedes encontrar los archivos en la carpeta /share/RGB-Pi/Timings.cfg (para consolas) o /share/RGB-Pi/resolutions/ (para arcade)
+En estos archivos encontraras una serie de numeros separados por espacion como estos:
 **megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
 The number 3 belongs to the horizontal centering, number 5 is horizontal zoom to expand or collapse the image and the number 7 corresponds to the vertical position.
 Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
