@@ -46,8 +46,8 @@ We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/m
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
 To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
 In these files we will find a long string separated by spaces like this: 
-**megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 5 and 7, which may be other values or negative values.
-The number 3 belongs to the horizontal centering, number 5 is horizontal zoom to expand or collapse the image and the number 7 corresponds to the vertical position.
+**megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 4 and 5, which may be other values or negative values.
+The number 3 belongs to the horizontal centering, number 4 is horizontal zoom to expand or collapse the image and the number 5 corresponds to the vertical position.
 Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
 
 8. This is caused by a problem with the game launcher, it is solved by putting the games inside a .zip Until the problem is corrected.
