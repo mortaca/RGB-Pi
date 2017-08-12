@@ -15,8 +15,8 @@ Questions:
 11. Why is not Kodi available or does it look really bad?
 12. How can I add new games to the system?
 13. Why does Recalbox give me this problem?
-14. I can connect a fan to the GPIO?
-15. I can connect a power switch or the joysticks through the GPIO?
+14. Can I connect a fan to the GPIO?
+15. Can I connect a power switch or the joysticks through the GPIO?
 16. Why the TV channel is no selected automatically?
 17. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
