@@ -20,7 +20,8 @@ Questions:
 15. Can I connect a power switch or the joysticks through the GPIO?
 16. Why the TV channel is no selected automatically?
 17. Vertical games are seen on the side, how can I change them?
-18. I have a question that is not on the list
+18. Can I upgrade the system from within Recalbox?
+19. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
@@ -74,7 +75,9 @@ In case of wanting to do it it is not necessary to lift pin 8 of the PCB since i
 17. Trying to always respect the original resolutions of each game, the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do so by editing the arcade resolutions files through the editors in the Python section or with the PC in the folder / Share / RGB-Pi / resolutions / the last letter of each row indicates H for hourly display or V for vertical.
 You have to change game by game, later we are going to introduce a field in which they rotate all at the same time, anyway it is not a good idea since to not have resolutions interlaced by the moment many vertical lines are lost, a game Which normally has 320 scanlines in a resolution that only shows 240, assuming that interlaced resolutions are available in the future, these 320 lines could be encabeled with an interlaced resolution of 480i but you do not get a result as good as the original.
 
-18. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
+
+19. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -99,7 +102,8 @@ Preguntas:
 15. ¿Puedo conectar un interruptor de encendido o los joystick al GPIO?
 16. ¿Porque el canal AV de la tele no se selecciona automaticamente?
 17. Los juegos verticales se ven tumbados, ¿como puedo cambiarlos?
-18. Tengo una duda que no se encuentra en ésta lista
+18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
+19. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
 1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
@@ -154,7 +158,9 @@ En el caso de querer hacerlo no es necesario levantar el pin 8 del PCB ya que é
 17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo editando los archivos de resoluciones arcade a través de los editores en la sección Python o con el PC en la carpeta /share/RGB-Pi/resolutions/ la ultima letra de cada fila indica H para visualización horiozntal o V para vertical.
 Se debe cambiar juego por juego, mas adelante vamos a introducir un campo en el que roten todos a la vez, de todos modos no es una buena idea puesto que al no disponer de resoluciones entrelazadas por el momento se pierden muchas lineas verticales, un juego que normalmente tiene 320 scanlines en una resolución que solo muestra 240, en el supuesto de que en un futuro se disponga de resoluciones entrelazadas se podria encaber esas 320 lineas con una resolución entrelazada de 480i pero no se obtiene un resultado tan bueno como el original.
 
-18. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
+
+19. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
