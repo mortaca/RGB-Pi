@@ -38,7 +38,7 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 There are two options to solve this:
     1. Expand the partition /sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
 If only you have Windows you can find programs like [that](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
-    2. Install an external USB storage, this allows you to do Recalbox from the menu, you can follow the instructions from your own [repo](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
+    2. To install an external USB memory, to activate this option you have to download a script that will later be included and put it in the folder / roms / python, then open it as if it were a game and mount the folder / roms of the USB storage. https://raw.githubusercontent.com/mortaca/RGB-Pi/master/python/mount_USB.py
 
 6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
 To solve it, just edit the file /boot/config.txt of your SD and change the first line starting with hdmi_timings.
@@ -121,7 +121,7 @@ Tenemos dos opciones para resolver esto:
     1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GPartes, tambié
     n hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
 Si solo tenemos windows podemos encontrar algun programa como [este](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) Es solo un ejemplo pero hay muchos mas.
-    2. Instalar una memoria USB externa, esto se puede hacer desde el propio menu, solo tienes que seguir las instrucciones de Recalbox en su [repositorio](https://github.com/recalbox/recalbox-os/wiki/Use-an-external-usb-storage-device-on-recalbox-%28EN%29)
+    2. Instalar una memoria USB externa, para activar ésta opción hay que bajar un script que mas adelante vendrá incluido y ponerlo en la carpeta /roms/python, después abrirlo como si se tratase de un juego y montará la la carpeta /roms del almacenamiento USB. https://raw.githubusercontent.com/mortaca/RGB-Pi/master/python/mount_USB.py
 
 6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
 Para solucionarlo solo hay que editar el archivo /boot/config.txt de la SD y cambiar la primera linea que empieza con hdmi_timings.
