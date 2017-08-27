@@ -1,6 +1,6 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
-## This FAQ is oriented to the latest available version of the system pre-alpha3, the answers here may not be useful for previous versions.
+## This FAQ is oriented to the latest available version of the system 4.1 Alpha3, the answers here may not be useful for previous versions.
 
 Questions:
 1. Why is the cable so short?
@@ -21,7 +21,8 @@ Questions:
 16. Why the TV channel is no selected automatically?
 17. Vertical games are seen on the side, how can I change them?
 18. Can I upgrade the system from within Recalbox?
-19. I have a question that is not on the list
+19. I have problems with the ScreenUtility or the menu of selection of frequencies.
+20. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
@@ -38,25 +39,19 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 There are two options to solve this:
     1. Expand the partition /sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
 If only you have Windows you can find programs like [that](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
-    2. To install an external USB memory, to activate this option you have to download a script that will later be included and put it in the folder / roms / python, then open it as if it were a game and mount the folder / roms of the USB storage. https://raw.githubusercontent.com/mortaca/RGB-Pi/master/python/mount_USB.py
+    2. To install an external USB memory, to activate this option you have to create the / roms folder in the USB that we want to use and the same folder structure that uses recalbox, then we will go to Python in the OS menu and we will boot USB Mount.
 
 6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
-To solve it, just edit the file /boot/config.txt of your SD and change the first line starting with hdmi_timings.
-Attention! It is important that hdmi_timings is on the first line and not another.
-We have a [list of others hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt)  in the repository with which you can try until you find the right one. Make sure the symbol = is present like this, hdmi_timings=450...
+To solve it just open the ScreenUtility in the Python section and change the SystemResolution field from 450 to 320.
 
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
-To adjust the centering we have some applications from the section Python where we can access the configuration files or if we want to do from the PC by SSH will be in the folder /share/RGB-Pi/Timings.cfg (for consoles) or /share/RGB-Pi/resolutions/ (for arcade)
-In these files we will find a long string separated by spaces like this: 
-**megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** The fields we are interested in changing are numbers 3, 4 and 5, which may be other values or negative values.
-The number 3 belongs to the horizontal centering, number 4 is horizontal zoom to expand or collapse the image and the number 5 corresponds to the vertical position.
-Do not worry about expanding the image horizontally, this does not affect the perfect pixel, the important thing is not to compress or expand the vertical scanlines.
+To adjust the image you have the ScreenUtility application in the Python section from where you can adjust the horizontal and vertical position, you can also expand or collapse the image horizontally without losing the PixelPerfect, after adjusting the values you can launch a grid-centered option CenteringTest (This test function may be fail sometime for reasons related to Recalbox)
 
-8. This is caused by a problem with the game launcher, it is solved by putting the games inside a .zip Until the problem is corrected.
+8. This can be due to the need to use .cue files to load the .bin files or because they must be compressed in a .zip
 
 9. Our system uses custom files to retroarch so any changes will be discarded, if you want to introduce a change in retroarch you can find the files we use segregated by consoles in the folder /share/RGB-Pi/Retroarch
 
-10. Currently the news are only available for the RPi3, if you have a previous model you must use version 4.0 Beta3 that you can download on the web, but it is a very primitive version, in a short time we will launch all the news for all the models as soon as we have list A stable version of 4.1
+10. The latest improvements are only available for the RPi3, if you have a previous version contact me to elaborate a specific distribution for the system that you use, once the Beta version is released it will be available for all systems.
 
 11. Still we can not get an interlaced mode and to display Kodi in necessary 640x480i resolution, a lower resolution makes it totally unusable, at the time that it is possible to use it with an acceptable quality we will support it.
 
@@ -72,17 +67,22 @@ Do not worry about expanding the image horizontally, this does not affect the pe
 There are those who have made modifications in their cable to introduce +12v in pin 8 of the scart, this is possible to do it through an external power supply or with the use of a step up that takes +5v of the flat cable and make it +12v, **these modifications can be made at your own risk.**
 In case of wanting to do it it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
 
-17. Trying to always respect the original resolutions of each game, the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do so by editing the arcade resolutions files through the editors in the Python section or with the PC in the folder / Share / RGB-Pi / resolutions / the last letter of each row indicates H for hourly display or V for vertical.
-You have to change game by game, later we are going to introduce a field in which they rotate all at the same time, anyway it is not a good idea since to not have resolutions interlaced by the moment many vertical lines are lost, a game Which normally has 320 scanlines in a resolution that only shows 240, assuming that interlaced resolutions are available in the future, these 320 lines could be encabeled with an interlaced resolution of 480i but you do not get a result as good as the original.
+17. Trying to always respect the original resolutions of each game the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do it through ScreenUtility in the section Python with the option Rotate Vertical Games -90.
+Not a good option for lovers of PixelPerfect since not having resolutions interlaced for the time lost many vertical lines, a game that normally has 320 lines in a resolution that only shows 240 does not look good, in the assumption That interlaced resolutions may be available in the future, these 320 lines could be encabeled with an interlaced resolution of 480i but a result as good as the original is not obtained.
 
 18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
 
-19. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+19. It is possible that your joystick is not compatible with this first version of the ScreenUtility, make sure you are controlling the Player1, if it is not possible to move around the screen you use a keyboard to connect it before opening the application with which you should have no problem. The same applies to the frequency selection screen, after a few seconds will be selected automatically start the emulator at 60Hz. Another possible problem is that the system hangs on entering or exiting the CenteringTest, this is a problem apparently related to Recalbox when entering and exiting repeatedly an emulator in a short period of time, are working to solve it.
+
+20. The resolution of the original portables was very low, respecting the PixelPerfect should be seen, if you want to expand it to full screen anyway you can do it from the ScreenUtility by activating the HandheldsStretched 1 option.
+Thus, in addition to seeing the huge pixels, the aspect ratio of the image changes from the original.
+
+21. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
 ---------------------------------------------------------------------------------------------------------
 
 # Preguntas frecuentes
-## Este FAQ está orientado a la ultima verson del sistema pre-alpha3, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
+## Este FAQ está orientado a la ultima verson del sistema 4.1 Alpha3, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
 
 Preguntas:
 1. ¿Por que el cable es tan corto?
@@ -103,7 +103,9 @@ Preguntas:
 16. ¿Porque el canal AV de la tele no se selecciona automaticamente?
 17. Los juegos verticales se ven tumbados, ¿como puedo cambiarlos?
 18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
-19. Tengo una duda que no se encuentra en ésta lista
+19. Tengo problemas con la ScreenUtility o el menu de selección de frecuencias.
+20. Los juegos de portatiles se ven muy pequeños, ¿como los puedo ampliar? 
+21. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
 1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
@@ -118,28 +120,21 @@ Si de todos modos quereis probar otros sistemas teneis las instrucciones [aquí]
 
 5. Por el mismo hecho que el punto anterior, la versión alfa de Recalbox 4.1 no tiene el sistema llamado NOOBS de auto instalacion del sistema operativo y biene en formato de imagen de 8GB, nosotros tenemos que utilizar de momento el mismo sistema hasta que lancen su beta entonces este problema desaparecera.
 Tenemos dos opciones para resolver esto:
-    1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GPartes, tambié
-    n hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
+    1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GParted, también hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
 Si solo tenemos windows podemos encontrar algun programa como [este](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) Es solo un ejemplo pero hay muchos mas.
-    2. Instalar una memoria USB externa, para activar ésta opción hay que bajar un script que mas adelante vendrá incluido y ponerlo en la carpeta /roms/python, después abrirlo como si se tratase de un juego y montará la la carpeta /roms del almacenamiento USB. https://raw.githubusercontent.com/mortaca/RGB-Pi/master/python/mount_USB.py
-
+    2. Instalar una memoria USB externa, para activar ésta opción hay que crear la carpeta /roms en el USB que queramos utilizar y la misma estructura de carpetas que utiliza recalbox dentro de ésta, después iremos a Python en el menu del SO y arrancaremos USB Mount.
+    
 6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
-Para solucionarlo solo hay que editar el archivo /boot/config.txt de la SD y cambiar la primera linea que empieza con hdmi_timings.
-Atencion! Es muy importante que el hdmi_timing que queremos utilizar se encuentre en la primera linea y no en otra.
-Teneis [una lista de otros hdmi_timings](https://github.com/mortaca/RGB-Pi/blob/master/HDMI_Timings.txt) en el repositorio con la que podeis ir probando uno por uno hasta encontrar el que mejor os funcione. Estar seguros de poner el simbolo = de modo que quede así hdmi_timings=450...
+Para solucionarlo solo hay que abrir la ScreenUtility en la seccion Python y cambiar el campo SystemResolution de 450 a 320.
 
 7. Las teles de tubo son muy distintas de las LCD y cada televisor tiene unos parametros de centrado distintos, de modo que no hay una configuración que se vea bien en todos los televisores y es posible que sea necesario centrar la imagen en tu TV, para ello ofrecemos una solucion propia y **no es necesario el uso de Retroarch**.
-Para ajustar la imagen tienes las aplicaciones en el menu principal seccion Python desde donde podrás editar los archivos de configuracion de la imagen, si prefieres hacerlo desde el PC por SSH puedes encontrar los archivos en la carpeta /share/RGB-Pi/Timings.cfg (para consolas) o /share/RGB-Pi/resolutions/ (para arcade)
-En estos archivos encontraras una serie de numeros separados por espacion como estos:
-**megadrive 1920 240 59.92 3 4 5 48 192 240 6 15734** Los campos que nos interesan son lo que en éste caso valen 3, 4 y 5, pueden ser distintos o negativos lo qu enos interesa es la posición.
-El numero 3 es la posicion horizontal, numero 4 el zoom horizontal para expandir o contraer la imagen y el numero 5 corresponde a la posicion vertical.
-No hay que preocuparse por expandir o contraer la imagen horizontalmente, ésto no afecta al pixel perfect, lo que no hay que respetar son las scanlines o lineas verticales.
+Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion Python desde donde podrás ajustar la posicion horizontal y vertical, también puedes expandir o contraer la imagen horizontalmente sin perder el PixelPerfect, después de ajustar los valores se puede lanzar una rejilla de centrado en la opción CenteringTest (Es posible que esta funcion de test falle de vez en cuando por motivos relacionados con Recalbox)
 
-8. Esto se produce por un bug en el lanzador del juego, se soluciona provisionalmente poniendo el archivo dentro de un .zip
+8. Esto se puede deber a que sea necesario el uso de archivos .cue para cargar los archivos .bin o porque deban estar comprimidos en un .zip
 
 9. Nuestro sistema utiliza archivos personalizados para Retroarch y cualquier cambio que se haga desde el menu sera descartado, si quieres introducir algun cambio en los archivos personalizados de retroarch los puedes encontrar en la carpeta /share/RGB-Pi/Retroarch/ cada uno con el nombre de la consola a la que afecta.
 
-10. Actualmente las ultimas mejoras solo están disponibles para la RPi3, si tienes una versión anterior debes descargar el sistema operativo 4.0 Beta3 desde la pagina web, pero ésta versión es muy primitiva, en poco tiempo vamos a lanzar todas las nuevas mejoras para todos los modelos cuando la versión estable de Recalbox 4.1 sea lanzada.
+10. Las ultimas mejoras solo están disponibles para la RPi3, si tienes una versión anterior ponte en contacto conmigo para elaborar una distribución especifica para el sistema que utilices, una vez se lance la versión Beta ésta estara disponible para todos los sistemas.
 
 11. De momento no podemos tener resoluciones entrelazadas y para Kodi es necesario 640x480i, una resolucion inferior provoca que sea totalmente inutilizable, en el momento que sea posible manejar Kodi con una calidad aceptable le daremos soporte.
 
@@ -155,12 +150,17 @@ No hay que preocuparse por expandir o contraer la imagen horizontalmente, ésto 
 Hay quien ha modificado su cable para introducir +12v en el pin 8 del scart, se puede utilizar una fuente de alimentación o un stepu que cogeria los +5v del cable plano y los convertiria en +12v, **Estas modificaciones deben ser hechas bajo su propio riesgo**
 En el caso de querer hacerlo no es necesario levantar el pin 8 del PCB ya que éste no está conectado a tierra, ya se diseño así especificamente para facilitar una posible modificacion.
 
-17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo editando los archivos de resoluciones arcade a través de los editores en la sección Python o con el PC en la carpeta /share/RGB-Pi/resolutions/ la ultima letra de cada fila indica H para visualización horiozntal o V para vertical.
-Se debe cambiar juego por juego, mas adelante vamos a introducir un campo en el que roten todos a la vez, de todos modos no es una buena idea puesto que al no disponer de resoluciones entrelazadas por el momento se pierden muchas lineas verticales, un juego que normalmente tiene 320 scanlines en una resolución que solo muestra 240, en el supuesto de que en un futuro se disponga de resoluciones entrelazadas se podria encaber esas 320 lineas con una resolución entrelazada de 480i pero no se obtiene un resultado tan bueno como el original.
+17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo mediante la ScreenUtility en la seccion Python con la opcion Rotate Vertical Games -90.
+No es una buena opcion para los amantes del PixelPerfect puesto que al no disponer de resoluciones entrelazadas por el momento se pierden muchas lineas verticales, un juego que normalmente tiene 320 lineas en una resolución que solo muestra 240 no se ve nada bien, en el supuesto de que en un futuro se disponga de resoluciones entrelazadas se podria encaber esas 320 lineas con una resolución entrelazada de 480i pero no se obtiene un resultado tan bueno como el original.
 
 18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
 
-19. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+19. Es posible que tu joystick no sea compatible con ésta primera versión de la ScreenUtility, Asegurate de estár controlando el Player1, si no te es posible moverte por la pantalla utiliza un teclado conectandolo antes de abrir la aplicación con el que no deberias tener ningún problema. Esto mismo se aplica a la pantalla de selección de frecuencias, pasados unos segundos se seleccionara automaticamente arrancar el emulador a 60Hz. Otro posible problema es que el sistema se quede colgado al entrar o salir del CenteringTest, ésto es un problema al parecer relacionado con Recalbox al entrar y salir repetidamente de un emulador en un corto periodo de tiempo, estmaos trabajando en solucionarlo.
+
+20. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si de todos modos quieres expandirla a pantalla completa puede hacerlo desde la ScreenUtility activando la opción HandheldsStretched 1.
+De éste modo además de ver los pixeles enormes la proporción de aspecto de la imagen cambia respecto a la original.
+
+21. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
