@@ -1,3 +1,10 @@
+RGB-Pi 4.1 Alpha 3 for Rpi3 - 27/08/2017 :
+    - Total Recalbox systems added, minus WonderSwan, Game&Watch and FDS
+    - New aplication ScreenUtility to manage screen options from TV
+    - Script to mount USB storages
+    - New frequency selector
+    - New theme and custom intro
+    
 RGB-Pi 4.1 Alpha 2 for Rpi3 - 23/05/2017 :
 
     - New systems added; segacd, sega32x, atari2600, gba, gbc, gb, gamegear, ngp, pcenginecd.
