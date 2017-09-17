@@ -2,7 +2,7 @@ RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
 
     - Added FDS,WS,WSC & NGP
     - Compatibility for all joysticks in SU & FF Selector
-    - Fixed bug in test mode of SU
+    - Fixed bugs in SU with test, rotating system & resolution change.
     - Fixed bug exiting from MD
     - Added script IndividualEditor to edit Timings.cfg
     - Added /bios folder to USBMount script
