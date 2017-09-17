@@ -1,3 +1,12 @@
+RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
+
+    - Added FDS,WS,WSC & NGP
+    - Compatibility for all joysticks in SU & FF Selector
+    - Fixed bug in test mode of SU
+    - Fixed bug exiting from MD
+    - Added script IndividualEditor to edit Timings.cfg
+    - Added /bios folder to USBMount script
+
 RGB-Pi 4.1 Alpha 3 for Rpi3 - 27/08/2017 :
 
     - Total Recalbox systems added, minus WonderSwan, Game&Watch and FDS
