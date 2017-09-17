@@ -7,6 +7,7 @@ RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
     - Added script IndividualEditor to edit Timings.cfg
     - Added /bios folder to USBMount script
     - Changed folder /python by /config inside /roms
+    - Changed logos of PCE & CD-ROM2
 
 RGB-Pi 4.1 Alpha 3 for Rpi3 - 27/08/2017 :
 
