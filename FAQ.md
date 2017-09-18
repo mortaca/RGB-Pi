@@ -37,8 +37,8 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 
 5. By the same fact of the previous point, being an Alpha of Recalbox 4.1 does not have the system called NOOBS of self-installation of the operating system so that it is in 8GB image format and we have to use the same system until the launch of the Beta where all this problem desapear.
 There are two options to solve this:
-    1. Expand the partition /sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
-If only you have Windows you can find programs like [that](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
+    1. Expand the partition /sahare of the SD, this is easier to do a Linux with the program Gparted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
+If only you have Windows or mac you can donload a self bootable image with Gparted [here](https://gparted.org/download.php)
     2. To install an external USB memory, to activate this option you have to create the / roms folder in the USB that we want to use and the same folder structure that uses recalbox, then we will go to RGB-Pi Config in the OS menu and we will boot USB Mount.
 
 6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
@@ -117,8 +117,8 @@ Si de todos modos quereis probar otros sistemas teneis las instrucciones [aquí]
 
 5. Por el mismo hecho que el punto anterior, la versión alfa de Recalbox 4.1 no tiene el sistema llamado NOOBS de auto instalacion del sistema operativo y biene en formato de imagen de 8GB, nosotros tenemos que utilizar de momento el mismo sistema hasta que lancen su beta entonces este problema desaparecera.
 Tenemos dos opciones para resolver esto:
-    1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GParted, también hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
-Si solo tenemos windows podemos encontrar algun programa como [este](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) Es solo un ejemplo pero hay muchos mas.
+    1. Expandir la particion /share de la SD, esto es facil desde Linux el programa GParted, también hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
+Si solo tenemos windows o mac podemos descargar una imagen con autoarrancable con Gparted [aquí](https://gparted.org/download.php)
     2. Instalar una memoria USB externa, para activar ésta opción hay que crear la carpeta /roms en el USB que queramos utilizar y la misma estructura de carpetas que utiliza recalbox dentro de ésta, después iremos a RGB-Pi Config en el menu del SO y arrancaremos USB Mount.
     
 6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
