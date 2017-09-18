@@ -39,13 +39,13 @@ If you want to do it anyway you have the instructions [here](https://github.com/
 There are two options to solve this:
     1. Expand the partition /sahare of the SD, this is easier to do a Linux or Mac with the program GParted, there are also those who use the RPi itself installing Raspbian and putting the SD to expand into a USB reader.
 If only you have Windows you can find programs like [that](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) I leave one example but there are many more.
-    2. To install an external USB memory, to activate this option you have to create the / roms folder in the USB that we want to use and the same folder structure that uses recalbox, then we will go to Python in the OS menu and we will boot USB Mount.
+    2. To install an external USB memory, to activate this option you have to create the / roms folder in the USB that we want to use and the same folder structure that uses recalbox, then we will go to RGB-Pi Config in the OS menu and we will boot USB Mount.
 
 6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
-To solve it just open the ScreenUtility in the Python section and change the SystemResolution field from 450 to 320.
+To solve it just open the ScreenUtility in the RGB-Pi Config section and change the SystemResolution field from 450 to 320.
 
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
-To adjust the image you have the ScreenUtility application in the Python section from where you can adjust the horizontal and vertical position, you can also expand or collapse the image horizontally without losing the PixelPerfect, after adjusting the values you can launch a grid-centered option CenteringTest (This test function may be fail sometime for reasons related to Recalbox)
+To adjust the image you have the ScreenUtility application in the RGB-Pi Config section from where you can adjust the horizontal and vertical position, you can also expand or collapse the image horizontally without losing the PixelPerfect, after adjusting the values you can launch a grid-centered option CenteringTest (This test function may be fail sometime for reasons related to Recalbox)
 
 8. This can be due to the need to use .cue files to load the .bin files or because they must be compressed in a .zip
 
@@ -67,7 +67,7 @@ To adjust the image you have the ScreenUtility application in the Python section
 There are those who have made modifications in their cable to introduce +12v in pin 8 of the scart, this is possible to do it through an external power supply or with the use of a step up that takes +5v of the flat cable and make it +12v, **these modifications can be made at your own risk.**
 In case of wanting to do it it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
 
-17. Trying to always respect the original resolutions of each game the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do it through ScreenUtility in the section Python with the option Rotate Vertical Games -90.
+17. Trying to always respect the original resolutions of each game the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do it through ScreenUtility in the section RGB-Pi Config with the option Rotate Vertical Games -90.
 Not a good option for lovers of PixelPerfect since not having resolutions interlaced for the time lost many vertical lines, a game that normally has 320 lines in a resolution that only shows 240 does not look good, in the assumption That interlaced resolutions may be available in the future, these 320 lines could be encabeled with an interlaced resolution of 480i but a result as good as the original is not obtained.
 
 18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
@@ -119,13 +119,13 @@ Si de todos modos quereis probar otros sistemas teneis las instrucciones [aquí]
 Tenemos dos opciones para resolver esto:
     1. Expandir la particion /share de la SD, esto es facil desde Linux o Mac con el programa GParted, también hay quien utiliza la propia RPi con Raspbian y la SD que queremos expandir en un lector USB.
 Si solo tenemos windows podemos encontrar algun programa como [este](https://www.partitionwizard.com/resizepartition/how-to-extend-volume-of-sd-card.html) Es solo un ejemplo pero hay muchos mas.
-    2. Instalar una memoria USB externa, para activar ésta opción hay que crear la carpeta /roms en el USB que queramos utilizar y la misma estructura de carpetas que utiliza recalbox dentro de ésta, después iremos a Python en el menu del SO y arrancaremos USB Mount.
+    2. Instalar una memoria USB externa, para activar ésta opción hay que crear la carpeta /roms en el USB que queramos utilizar y la misma estructura de carpetas que utiliza recalbox dentro de ésta, después iremos a RGB-Pi Config en el menu del SO y arrancaremos USB Mount.
     
 6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
-Para solucionarlo solo hay que abrir la ScreenUtility en la seccion Python y cambiar el campo SystemResolution de 450 a 320.
+Para solucionarlo solo hay que abrir la ScreenUtility en la seccion RGB-Pi Config y cambiar el campo SystemResolution de 450 a 320.
 
 7. Las teles de tubo son muy distintas de las LCD y cada televisor tiene unos parametros de centrado distintos, de modo que no hay una configuración que se vea bien en todos los televisores y es posible que sea necesario centrar la imagen en tu TV, para ello ofrecemos una solucion propia y **no es necesario el uso de Retroarch**.
-Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion Python desde donde podrás ajustar la posicion horizontal y vertical, también puedes expandir o contraer la imagen horizontalmente sin perder el PixelPerfect, después de ajustar los valores se puede lanzar una rejilla de centrado en la opción CenteringTest (Es posible que esta funcion de test falle de vez en cuando por motivos relacionados con Recalbox)
+Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion RGB-Pi Config desde donde podrás ajustar la posicion horizontal y vertical, también puedes expandir o contraer la imagen horizontalmente sin perder el PixelPerfect, después de ajustar los valores se puede lanzar una rejilla de centrado en la opción CenteringTest (Es posible que esta funcion de test falle de vez en cuando por motivos relacionados con Recalbox)
 
 8. Esto se puede deber a que sea necesario el uso de archivos .cue para cargar los archivos .bin o porque deban estar comprimidos en un .zip
 
@@ -147,7 +147,7 @@ Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion Python 
 Hay quien ha modificado su cable para introducir +12v en el pin 8 del scart, se puede utilizar una fuente de alimentación o un stepu que cogeria los +5v del cable plano y los convertiria en +12v, **Estas modificaciones deben ser hechas bajo su propio riesgo**
 En el caso de querer hacerlo no es necesario levantar el pin 8 del PCB ya que éste no está conectado a tierra, ya se diseño así especificamente para facilitar una posible modificacion.
 
-17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo mediante la ScreenUtility en la seccion Python con la opcion Rotate Vertical Games -90.
+17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo mediante la ScreenUtility en la seccion RGB-Pi Config con la opcion Rotate Vertical Games -90.
 No es una buena opcion para los amantes del PixelPerfect puesto que al no disponer de resoluciones entrelazadas por el momento se pierden muchas lineas verticales, un juego que normalmente tiene 320 lineas en una resolución que solo muestra 240 no se ve nada bien, en el supuesto de que en un futuro se disponga de resoluciones entrelazadas se podria encaber esas 320 lineas con una resolución entrelazada de 480i pero no se obtiene un resultado tan bueno como el original.
 
 18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
