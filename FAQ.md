@@ -1,6 +1,6 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
-## This FAQ is oriented to the latest available version of the system 4.1 Alpha3, the answers here may not be useful for previous versions.
+## This FAQ is oriented to the latest available version of the system 4.1 Alpha3.1, the answers here may not be useful for previous versions.
 
 Questions:
 1. Why is the cable so short?
@@ -21,7 +21,7 @@ Questions:
 16. Why the TV channel is no selected automatically?
 17. Vertical games are seen on the side, how can I change them?
 18. Can I upgrade the system from within Recalbox?
-19. I have problems with the ScreenUtility or the menu of selection of frequencies.
+19. Handheld games look very small, how can I expand them?
 20. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
@@ -72,17 +72,15 @@ Not a good option for lovers of PixelPerfect since not having resolutions interl
 
 18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
 
-19. It is possible that your joystick is not compatible with this first version of the ScreenUtility, make sure you are controlling the Player1, if it is not possible to move around the screen you use a keyboard to connect it before opening the application with which you should have no problem. The same applies to the frequency selection screen, after a few seconds will be selected automatically start the emulator at 60Hz. Another possible problem is that the system hangs on entering or exiting the CenteringTest, this is a problem apparently related to Recalbox when entering and exiting repeatedly an emulator in a short period of time, are working to solve it.
-
-20. The resolution of the original portables was very low, respecting the PixelPerfect should be seen, if you want to expand it to full screen anyway you can do it from the ScreenUtility by activating the HandheldsStretched 1 option.
+19. The resolution of the original portables was very low, respecting the PixelPerfect should be seen, if you want to expand it to full screen anyway you can do it from the ScreenUtility by activating the HandheldsStretched 1 option.
 Thus, in addition to seeing the huge pixels, the aspect ratio of the image changes from the original.
 
-21. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+20. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
 ---------------------------------------------------------------------------------------------------------
 
 # Preguntas frecuentes
-## Este FAQ está orientado a la ultima verson del sistema 4.1 Alpha3, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
+## Este FAQ está orientado a la ultima verson del sistema 4.1 Alpha3.1, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
 
 Preguntas:
 1. ¿Por que el cable es tan corto?
@@ -103,9 +101,8 @@ Preguntas:
 16. ¿Porque el canal AV de la tele no se selecciona automaticamente?
 17. Los juegos verticales se ven tumbados, ¿como puedo cambiarlos?
 18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
-19. Tengo problemas con la ScreenUtility o el menu de selección de frecuencias.
-20. Los juegos de portatiles se ven muy pequeños, ¿como los puedo ampliar? 
-21. Tengo una duda que no se encuentra en ésta lista
+19. Los juegos de portatiles se ven muy pequeños, ¿como los puedo ampliar? 
+20. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
 1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
@@ -155,12 +152,10 @@ No es una buena opcion para los amantes del PixelPerfect puesto que al no dispon
 
 18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
 
-19. Es posible que tu joystick no sea compatible con ésta primera versión de la ScreenUtility, Asegurate de estár controlando el Player1, si no te es posible moverte por la pantalla utiliza un teclado conectandolo antes de abrir la aplicación con el que no deberias tener ningún problema. Esto mismo se aplica a la pantalla de selección de frecuencias, pasados unos segundos se seleccionara automaticamente arrancar el emulador a 60Hz. Otro posible problema es que el sistema se quede colgado al entrar o salir del CenteringTest, ésto es un problema al parecer relacionado con Recalbox al entrar y salir repetidamente de un emulador en un corto periodo de tiempo, estmaos trabajando en solucionarlo.
-
-20. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si de todos modos quieres expandirla a pantalla completa puede hacerlo desde la ScreenUtility activando la opción HandheldsStretched 1.
+19. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si de todos modos quieres expandirla a pantalla completa puede hacerlo desde la ScreenUtility activando la opción HandheldsStretched 1.
 De éste modo además de ver los pixeles enormes la proporción de aspecto de la imagen cambia respecto a la original.
 
-21. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+20. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
