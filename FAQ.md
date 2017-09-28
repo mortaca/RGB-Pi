@@ -22,7 +22,8 @@ Questions:
 17. Vertical games are seen on the side, how can I change them?
 18. Can I upgrade the system from within Recalbox?
 19. Handheld games look very small, how can I expand them?
-20. I have a question that is not on the list
+20. I do not have sound
+21. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
@@ -75,7 +76,9 @@ Not a good option for lovers of PixelPerfect since not having resolutions interl
 19. The resolution of the original portables was very low, respecting the PixelPerfect should be seen, if you want to expand it to full screen anyway you can do it from the ScreenUtility by activating the HandheldsStretched 1 option.
 Thus, in addition to seeing the huge pixels, the aspect ratio of the image changes from the original.
 
-20. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+20. Check that you do not have anything connected by HDMI, this deactivates the output by the GPIO.
+
+21. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -102,7 +105,8 @@ Preguntas:
 17. Los juegos verticales se ven tumbados, ¿como puedo cambiarlos?
 18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
 19. Los juegos de portatiles se ven muy pequeños, ¿como los puedo ampliar? 
-20. Tengo una duda que no se encuentra en ésta lista
+20. No tengo sonido.
+21. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
 1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
@@ -155,7 +159,9 @@ No es una buena opcion para los amantes del PixelPerfect puesto que al no dispon
 19. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si de todos modos quieres expandirla a pantalla completa puede hacerlo desde la ScreenUtility activando la opción HandheldsStretched 1.
 De éste modo además de ver los pixeles enormes la proporción de aspecto de la imagen cambia respecto a la original.
 
-20. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+20. Comprueba que no tengas nada conectado por HDMI, ésto desactiva la salida por el GPIO.
+
+21. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
