@@ -1,3 +1,11 @@
+Next Release Soon:
+
+    - USBMount modified to preserve the RGB-Pi Config folder
+    - 32x 50Hx vertical resolution fixed
+    - Delay on FF_Selector fixed
+    - Framebuffer upgraded from 16 to 18 Bits of color
+    - New emulators added: Commodore64, AdvanceMAME & Colecovision
+
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
 
     - Added FDS,WS,WSC & NGP
