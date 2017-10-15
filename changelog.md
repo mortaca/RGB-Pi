@@ -4,7 +4,7 @@ Next Release Soon:
     - 32x 50Hx vertical resolution fixed
     - Delay on FF_Selector fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
-    - New emulators added: Commodore64, AdvanceMAME & Colecovision
+    - New emulators added: Commodore64 & AdvanceMAME
     - New mode for arcade games with 256 scanlines
     - New bezels for portable consoles can be hide from SU
     - Removed the stretch option for portable consoles
