@@ -6,7 +6,8 @@ Next Release Soon:
     - Framebuffer upgraded from 16 to 18 Bits of color
     - New emulators added: Commodore64 & AdvanceMAME
     - New mode for arcade games with 256 scanlines
-    - New bezels for portable consoles can be hide from SU
+    - New bezels can be active from ScreenUtility
+    - Some logos fixed in detailed list
     - Removed the stretch option for portable consoles
 
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
