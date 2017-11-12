@@ -7,7 +7,7 @@ Next Release Soon:
     - New emulators added: Commodore64 & AdvanceMAME
     - New mode for arcade games with 256 scanlines
     - New bezels can be active from ScreenUtility
-    - Auto rotation of directional pad for TATE games in horizontal mode
+    - Auto rotation of directional buttons for TATE games in horizontal mode
     - Some logos fixed in detailed list
     - Removed the stretch option for portable consoles
 
