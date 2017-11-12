@@ -8,6 +8,7 @@ Next Release Soon:
     - New mode for arcade games with 256 scanlines
     - New bezels can be active from ScreenUtility
     - Auto rotation of directional buttons for TATE games in horizontal mode
+    - Changed aspect of TATE games in horizontal mode to cropped
     - Some logos fixed in detailed list
     - Removed the stretch option for portable consoles
 
