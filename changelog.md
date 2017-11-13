@@ -6,12 +6,10 @@ Next Release Soon:
     - Favorites bug fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
     - New emulators added: Commodore64 & AdvanceMAME
-    - New mode for arcade games with 256 scanlines
-    - New bezels can be active from ScreenUtility
+    - New bezels for portables can be active from ScreenUtility instead of stretching
     - Auto rotation of directional buttons for TATE games in horizontal mode
     - Changed aspect of TATE games in horizontal mode to cropped
-    - Some logos fixed in detailed list
-    - Removed the stretch option for portable consoles
+    - In theme some logos fixed in detailed list
 
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
 
