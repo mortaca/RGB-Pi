@@ -2,6 +2,7 @@ Next Release Soon:
 
     - USBMount modified to preserve the RGB-Pi Config folder
     - 32x 50Hx vertical resolution fixed
+    - MD centering fixed
     - Delay on FF_Selector fixed
     - Favorites bug fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
