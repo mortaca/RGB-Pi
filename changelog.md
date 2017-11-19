@@ -2,8 +2,7 @@ Next Release Soon:
 
     - USBMount modified to preserve the RGB-Pi Config folder
     - 32x 50Hx vertical resolution fixed
-    - MD centering fixed
-    - Changed modes 450 & 320 for Emulationstation by 270 & 240 (240 width fixed)
+    - Replaced modes 450 & 320 from SU by 270 & 240 with 450 H lines without overscan
     - Delay on FF_Selector fixed
     - Favorites bug fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
