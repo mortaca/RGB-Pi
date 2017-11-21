@@ -10,7 +10,8 @@ Next Release Soon:
     - New bezels for portables can be active from ScreenUtility instead of stretching
     - Auto rotation of directional buttons for TATE games in horizontal mode
     - Changed aspect of TATE games in horizontal mode to cropped
-    - In theme some logos fixed in detailed list
+    - In theme some black invisible logos fixed in detailed list
+    - New message when arcade game is not in database and launch in standar resolution
 
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
 
