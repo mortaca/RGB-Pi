@@ -4,7 +4,7 @@ Next Release Soon:
     - 32x 50Hz vertical resolution fixed
     - Replaced modes 450 & 320 from SU by 270 & 240 with 450 H lines without overscan
     - Delay on FF_Selector fixed
-    - Favorites bug fixed
+    - Aggregation of favorites with one button fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
     - New emulators added: Commodore64 & AdvanceMAME
     - New bezels for portables can be active from ScreenUtility instead of stretching
