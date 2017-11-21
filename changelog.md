@@ -9,7 +9,7 @@ Next Release Soon:
     - New emulators added: Commodore64 & AdvanceMAME (best arcade emulator)
     - New bezels for handheld availables from ScreenUtility instead stretching mode
     - Auto rotation of directional buttons for TATE games in horizontal mode
-    - Changed aspect of TATE games in horizontal mode to cropped not fullscreen
+    - Changed aspect ratio of TATE games rotated to cropped not fullscreen
     - In theme some black invisible logos fixed in detailed list
     - New message when arcade game is not in database and launch in standar resolution
 
