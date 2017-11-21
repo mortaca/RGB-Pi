@@ -1,7 +1,7 @@
 Next Release Soon:
 
     - USBMount modified to preserve the RGB-Pi Config folder
-    - 32x 50Hx vertical resolution fixed
+    - 32x 50Hz vertical resolution fixed
     - Replaced modes 450 & 320 from SU by 270 & 240 with 450 H lines without overscan
     - Delay on FF_Selector fixed
     - Favorites bug fixed
