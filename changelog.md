@@ -11,7 +11,7 @@ Next Release Soon:
     - Auto rotation of directional buttons for TATE games in horizontal mode
     - Changed aspect ratio of TATE games rotated to cropped not fullscreen
     - In theme some black invisible logos fixed in detailed list
-    - New message when arcade game is not in database and launch in standar resolution
+    - New message when arcade game is not in database and launch it in standar resolution
 
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
 
