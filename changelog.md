@@ -6,8 +6,8 @@ Next Release Soon:
     - Delay on FF_Selector fixed
     - Aggregation of favorites with one button fixed
     - Framebuffer upgraded from 16 to 18 Bits of color
-    - New emulators added: Commodore64 & AdvanceMAME
-    - New bezels for portables can be active from ScreenUtility instead of stretching
+    - New emulators added: Commodore64 & AdvanceMAME (best arcade emulator)
+    - New bezels for handheld availables from ScreenUtility instead stretching mode
     - Auto rotation of directional buttons for TATE games in horizontal mode
     - Changed aspect of TATE games in horizontal mode to cropped
     - In theme some black invisible logos fixed in detailed list
