@@ -1,16 +1,16 @@
 Next Release Soon:
 
-    - USBMount modified to preserve the RGB-Pi Config folder
+    - USBMount modified to preserve the Config folder
     - 32x 50Hz vertical resolution fixed
     - Replaced modes 450 & 320 from SU by 270 & 240 with 450 H lines without overscan
     - Delay on FF_Selector fixed
     - Aggregation of favorites with one button fixed
-    - Framebuffer upgraded from 16 to 18 Bits of color
-    - New emulators added: Commodore64 & AdvanceMAME (best arcade emulator)
+    - Framebuffer upgraded from 16 to 18 Bits of color (best image quality in 32/64Bits games)
+    - New emulators added: Commodore64 & AdvanceMAME (less input lag & best rotation)
     - New bezels for handheld availables from ScreenUtility instead stretching mode
-    - Auto rotation of directional buttons for TATE games in horizontal mode
-    - Changed aspect ratio of TATE games rotated to cropped not fullscreen
-    - In theme some black invisible logos fixed in detailed list
+    - Auto rotation of directional axis for TATE games in horizontal mode
+    - Changed aspect ratio of TATE games rotated -90º from fullscreen to cropped
+    - Some black invisible logos fixed in theme detailed list
     - New message when arcade game is not in database and launch it in standar resolution
 
 RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/09/2017 :
