@@ -6,7 +6,8 @@ RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
     - Delay on FF_Selector fixed
     - Aggregation of favorites with one button fixed
     - Framebuffer upgraded from 16 to 18 Bits of color (best image quality in 32/64Bits games)
-    - New emulators added: Commodore64 & AdvanceMAME (less input lag & best rotation)
+    - New emulators added: Commodore64
+    - New emulator added: AdvanceMAME (romset 0.106) less input lag & best rotation
     - New bezels for handheld availables from ScreenUtility instead stretching mode
     - Auto rotation of directional axis for TATE games in horizontal mode
     - Changed aspect ratio of TATE games rotated -90º from fullscreen to cropped
