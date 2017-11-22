@@ -1,4 +1,4 @@
-Next Release Soon:
+RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
     - USBMount modified to preserve the Config folder
     - 32x 50Hz vertical resolution fixed
