@@ -1,7 +1,7 @@
-Next release inprovements:
+Next release inprovements :
 
-    - USB Mount now mount scrapping folder and saves
-    - Bug to run games inside arcade folders fixed
+    - USB Mount now mount scrapping folder and saves
+    - Bug to run games inside arcade folders fixed
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
