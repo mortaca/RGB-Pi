@@ -1,6 +1,5 @@
 Next release inprovements:
 
-    - PSX white steipes fixed
     - USB Mount now mount scrapping folder and saves
     - Bug to run games inside arcade folders fixed
 
