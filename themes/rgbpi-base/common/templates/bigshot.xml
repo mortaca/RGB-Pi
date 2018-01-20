@@ -1,0 +1,42 @@
+<theme>
+    <formatVersion>4</formatVersion>
+	
+<!-- Game View - Detailed -->	
+	<view name="detailed">
+	
+	<!-- Game Image 600x600 -->
+		<image name="image-matte" extra="true">
+			<path>./../images/white.png</path>
+			<origin>0.0 0.0</origin>
+			<pos>0.5343 0.16</pos>
+			<size>0.4357 0.7745</size>
+		</image>
+		
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.75215 0.55</pos>
+			<maxSize>0.388 0.6898</maxSize>
+		</image>
+		
+	<!-- Metadata - Unused -->
+		<text name="md_lbl_favorite, md_favorite, md_lbl_players, md_players, md_lbl_genre, md_genre, md_lbl_developer, md_developer, md_lbl_publisher, md_publisher, md_lbl_releasedate, md_description">
+			<fontPath>./../fonts/AdobeBlank.ttf</fontPath>
+		</text>
+
+
+		
+		<datetime name="md_releasedate">
+			<fontPath>./../fonts/AdobeBlank.ttf</fontPath>
+		</datetime>
+		
+	<!-- Game List -->
+		<image name="gamelist-matte" extra="true">
+			<size>0.4743 0.7745</size>
+		</image>
+		
+		<textlist name="gamelist">
+			<size>0.4743 0.71</size>
+		</textlist>
+	</view>
+	
+</theme>

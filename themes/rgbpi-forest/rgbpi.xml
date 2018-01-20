@@ -1,0 +1,189 @@
+<!--
+  theme name:     rgbpi-forest
+  version:        1.0
+  author:         Rubén Tomás
+  license:        creative commons CC-BY-NC-SA
+-->
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <!-- SYSTEM VIEW -->
+    <view name="system">
+      <sound name="directory">
+        <path>./_assets/music</path>
+      </sound>
+
+      <image name="bg_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <color>001133</color>
+      </image>
+
+      <image name="bg_image" extra="true">
+        <path>./_assets/images/bg_forest.png</path>
+      </image>
+
+      <image name="controller" extra="true">
+        <origin>0.5 0.5</origin>
+        <pos>0.5 0.19</pos>     
+        <maxSize>0.5 0.325</maxSize>
+      </image>
+
+      <helpsystem name="help">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <textColor>DD2200</textColor>
+        <iconColor>DD2200</iconColor>
+        <pos>0.012 0.92</pos>
+        <fontSize>0.03</fontSize>
+      </helpsystem>
+    </view>
+
+    <!-- BASIC VIEW -->
+    <view name="basic">
+      <image name="logo">
+        <maxSize>0.5 0.16</maxSize>
+        <pos>0.5 0.01</pos>
+      </image>
+
+      <image name="bg_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <color>001133</color>
+      </image>
+
+      <image name="bg_image" extra="true">
+        <path>./_assets/images/bg_cave.png</path>
+      </image>
+
+      <image name="bg_logo_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 0.18</size>
+        <color>FFFFFF</color>
+      </image>
+
+      <textlist name="gamelist">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <selectorColor>0099FF</selectorColor>
+        <selectedColor>FFFFFF</selectedColor>
+        <primaryColor>FFFFFF</primaryColor>
+        <fontSize>0.04</fontSize>
+        <forceUppercase>1</forceUppercase>
+      </textlist>
+
+      <helpsystem name="help">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <textColor>DD2200</textColor>
+        <iconColor>DD2200</iconColor>
+        <pos>0.012 0.92</pos>
+        <fontSize>0.02</fontSize>
+      </helpsystem> 
+    </view>
+
+    <!-- DETAILED VIEW -->
+    <view name="detailed">
+      <image name="logo">
+        <maxSize>0.5 0.16</maxSize>
+        <pos>0.5 0.01</pos>
+      </image>
+
+      <image name="bg_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <color>001133</color>
+      </image>
+      
+      <image name="bg_image" extra="true">
+        <path>./_assets/images/bg_cave.png</path>
+      </image>
+      
+      <image name="bg_logo_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 0.18</size>
+        <color>FFFFFF</color>
+      </image>
+
+      <textlist name="gamelist">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <selectorColor>0099FF</selectorColor>
+        <selectedColor>FFFFFF</selectedColor>
+        <primaryColor>FFFFFF</primaryColor>
+        <fontSize>0.04</fontSize>
+        <pos>0.4 0.2</pos>
+        <size>0.6 0.6</size>
+        <horizontalMargin>0.02</horizontalMargin>
+        <forceUppercase>1</forceUppercase>
+      </textlist>
+
+      <image name="md_image">
+        <origin>0 0</origin>
+        <pos>0.02 0.2</pos>
+        <maxSize>0.35 0.6</maxSize>
+      </image>
+
+      <image name="bg_meta_color" extra="true">
+        <path>./_assets/images/bg_color.png</path>
+        <origin>0 0</origin>
+        <pos>0 0.82</pos>
+        <size>1 0.06</size>
+        <color>DD2200</color>
+      </image>
+
+      <text name="md_lbl_playcount">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <color>FFFFFF</color>
+        <fontSize>0.03</fontSize>
+        <forceUppercase>1</forceUppercase>
+        <pos>0.02 0.820</pos>
+      </text>
+
+      <text name="md_lbl_lastplayed">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <color>FFFFFF</color>
+        <fontSize>0.03</fontSize>
+        <forceUppercase>1</forceUppercase>
+        <pos>0.35 0.820</pos>
+      </text>
+
+      <text name="md_playcount">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <color>FFFFFF</color>
+        <fontSize>0.03</fontSize>
+        <forceUppercase>1</forceUppercase>
+        <size>0 0</size>
+      </text>
+
+      <datetime name="md_lastplayed">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <color>FFFFFF</color>
+        <fontSize>0.03</fontSize>
+        <forceUppercase>1</forceUppercase>
+      </datetime>
+
+      <!-- UNUSED METADATA -->
+      <text name="md_lbl_players, md_lbl_favorite, md_lbl_rating, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_releasedate">
+        <pos>2 2</pos>
+      </text>
+
+      <text name="md_players, md_favorite, md_rating, md_developer, md_publisher, md_genre, md_releasedate">
+        <pos>2 2</pos>
+      </text>
+
+      <helpsystem name="help">
+        <fontPath>./_assets/fonts/PetMe64.ttf</fontPath>
+        <textColor>DD2200</textColor>
+        <iconColor>DD2200</iconColor>
+        <pos>0.012 0.92</pos>
+        <fontSize>0.02</fontSize>
+      </helpsystem>
+    </view>
+</theme>

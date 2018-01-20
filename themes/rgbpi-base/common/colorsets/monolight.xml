@@ -1,0 +1,123 @@
+<theme>
+    <formatVersion>3</formatVersion>	
+
+<!-- System View -->
+	<view name="system">	
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/binding_light.png</path>
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>F2F2F2</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>CCCCCC</color>
+		</image>
+	
+		<helpsystem name="help">
+			<textColor>878787</textColor>
+			<iconColor>878787</iconColor>
+		</helpsystem>
+		
+	<!-- System Specific Images -->
+		<image name="overlay" extra="true">
+			<color>8E8E8E</color>
+		</image>
+	</view>
+	
+	
+<!-- Game View - All -->
+    <view name="basic, detailed">
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/binding_light.png</path>
+		</image>
+		
+		<image name="top" extra="true">
+			<color>F2F2F2</color>	
+		</image>
+		
+		<image name="top-highlight" extra="true">
+			<color>CCCCCC</color>	
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>F2F2F2</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>CCCCCC</color>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>878787</textColor>
+			<iconColor>878787</iconColor>
+		</helpsystem>		
+		
+	<!-- System Specific Images -->
+		<image name="logo">
+		</image>
+		
+		<image name="overlay" extra="true">
+			<color>878787</color>
+		</image>
+		
+	<!-- Game List -->
+		<image name="gamelist-matte" extra="true">
+			<color>00000022</color>
+		</image>
+	
+		<textlist name="gamelist">
+			<primaryColor>333333</primaryColor>
+			<secondaryColor>333333</secondaryColor>
+			<selectorColor>333333</selectorColor>
+			<selectedColor>DBDBDB</selectedColor>
+		</textlist>
+	</view>
+
+
+<!-- Game View - Basic -->
+	<view name="basic">
+		<image name="overlay" extra="true">
+			<color>00000022</color>
+		</image>
+	</view>
+
+
+<!-- Game View - Detailed -->
+	<view name="detailed">
+	<!-- Game Image -->
+		<image name="image-matte" extra="true">
+			<color>00000022</color>
+		</image>
+	
+	<!-- Metadata -->			
+		<image name="meta-matte" extra="true">
+			<color>00000022</color>
+		</image>
+		
+		<text name="md_lbl_players, md_lbl_genre, md_lbl_developer, md_lbl_publisher, md_lbl_releasedate">
+			<color>333333</color>
+		</text>
+		
+		<text name="md_players, md_genre, md_developer, md_publisher">
+			<color>333333</color>
+		</text>
+		
+		<datetime name="md_releasedate">
+			<color>333333</color>
+		</datetime>
+		
+	<!-- Description -->
+		<image name="description-matte" extra="true">
+			<color>00000022</color>
+		</image>
+		
+		<text name="md_description">
+			<color>333333</color>
+		</text>		
+	</view>
+	
+</theme>

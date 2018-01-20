@@ -1,0 +1,58 @@
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <include>./../rgbpi.xml</include>
+
+    <!-- MAIN SYSTEM VIEW -->
+    <view name="system">
+      <image name="logo">
+        <path>./logo.svg</path>
+      </image>
+
+      <image name="controller" extra="true">
+        <path>./controller.svg</path>
+      </image>
+
+      <image name="band1" extra="true">
+        <color>CBCBCB</color>
+      </image>
+
+      <image name="band2" extra="true">
+        <color>165193</color>
+      </image>
+
+      <image name="band3" extra="true">
+        <color>E60000</color>
+      </image>
+
+      <image name="band4" extra="true">
+        <color>1A1A1A</color>
+      </image>
+    </view>
+
+    <!-- BASIC VIEW -->
+    <view name="basic">
+      <image name="logo">
+        <path>./logo.svg</path>
+      </image>
+      
+      <textlist name="gamelist">
+        <selectorColor>165193</selectorColor>
+      </textlist>
+    </view>
+
+    <!-- DETAILED VIEW -->
+    <view name="detailed">
+      <image name="logo">
+        <path>./logo.svg</path>
+      </image>
+      
+      <image name="bg_meta_color" extra="true">
+        <color>165193</color>
+      </image>
+      
+      <textlist name="gamelist">
+        <selectorColor>165193</selectorColor>
+      </textlist>
+    </view>
+</theme>

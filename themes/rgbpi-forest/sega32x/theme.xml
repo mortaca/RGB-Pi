@@ -1,0 +1,22 @@
+<theme>
+    <formatVersion>4</formatVersion>
+
+    <include>./../rgbpi.xml</include>
+
+    <!-- MAIN SYSTEM VIEW -->
+    <view name="system">
+      <image name="logo">
+        <path>./logo.svg</path>
+      </image>
+
+      <image name="controller" extra="true">
+        <path>./controller.svg</path>
+      </image>
+    </view>
+
+    <view name="basic, detailed">
+      <image name="logo">
+        <path>./logo.svg</path>
+      </image>
+    </view>
+</theme>

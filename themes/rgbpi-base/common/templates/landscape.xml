@@ -1,0 +1,85 @@
+<theme>
+    <formatVersion>3</formatVersion>
+	
+<!-- Game View - Detailed -->	
+	<view name="detailed">
+	
+	<!-- Game Image 600x400 -->
+		<image name="image-matte" extra="true">
+			<path>./../images/white.png</path>		
+			<origin>0.0 0.0</origin>
+			<pos>0.42 0.2025</pos>						
+			<size>0.3641 0.4449</size>
+		</image>
+		
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.60205 0.42495</pos>
+			<maxSize>0.3125 0.3704</maxSize>
+		</image>	
+		
+	<!-- Metadata -->			
+		<image name="meta-matte" extra="true">
+			<path>./../images/white.png</path>
+			<origin>0 0</origin>
+			<pos>0.8021 0.2025</pos>
+			<size>0.1679 0.4449</size>
+		</image>
+		
+		<!-- Limit the length of the metadata -->
+		<text name="md_players, md_genre, md_developer, md_publisher">
+			<size>0.1409 0.023</size>
+		</text>
+		
+		<text name="md_lbl_players">
+			<pos>0.8171 0.2255</pos>
+		</text>		
+		<text name="md_players">
+			<pos>0.8221 0.2575</pos>			
+		</text>		
+		
+		<text name="md_lbl_genre">
+			<pos>0.8171 0.3095</pos>
+		</text>		
+		<text name="md_genre">
+			<pos>0.8221 0.3415</pos>
+		</text>
+		
+		<text name="md_lbl_developer">
+			<pos>0.8171 0.3935</pos>
+		</text>		
+		<text name="md_developer">
+			<pos>0.8221 0.4255</pos>
+		</text>		
+		
+		<text name="md_lbl_publisher">
+			<pos>0.8171 0.4775</pos>
+		</text>		
+		<text name="md_publisher">
+			<pos>0.8221 0.5095</pos>
+		</text>		
+		
+		<text name="md_lbl_releasedate">
+			<pos>0.8171 0.5615</pos>
+		</text>		
+		<datetime name="md_releasedate">
+			<pos>0.8221 0.591</pos>
+		</datetime>		
+		
+	<!-- Description -->
+		<image name="description-matte" extra="true">
+			<path>./../images/white.png</path>
+			<origin>0 0</origin>
+			<pos>0.42 0.6759</pos>
+			<size>0.55 0.2161</size>
+		</image>
+		
+		<text name="md_description">
+			<fontSize>0.021</fontSize>
+			<lineSpacing>1.55</lineSpacing>
+			<pos>0.435 0.6925</pos>
+			<size>0.52 0.181</size>			
+		</text>
+	</view>
+	
+</theme>

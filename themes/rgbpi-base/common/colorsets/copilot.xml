@@ -1,0 +1,123 @@
+<theme>
+    <formatVersion>3</formatVersion>	
+
+<!-- System View -->
+	<view name="system">	
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/stardust_dark.png</path>
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>E2E7EB</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>253354</color>
+		</image>
+	
+		<helpsystem name="help">
+			<textColor>253354</textColor>
+			<iconColor>253354</iconColor>
+		</helpsystem>
+		
+	<!-- System Specific Images -->
+		<image name="overlay" extra="true">
+			<color>C0C9D2</color>
+		</image>
+	</view>
+	
+	
+<!-- Game View - All -->
+    <view name="basic, detailed">
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/stardust_dark.png</path>
+		</image>
+		
+		<image name="top" extra="true">
+			<color>C0C9D2</color>	
+		</image>
+		
+		<image name="top-highlight" extra="true">
+			<color>253354</color>	
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>E2E7EB</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>253354</color>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>253354</textColor>
+			<iconColor>253354</iconColor>
+		</helpsystem>		
+		
+	<!-- System Specific Images -->
+		<image name="logo">
+		</image>
+		
+		<image name="overlay" extra="true">
+			<color>253354</color>
+		</image>
+		
+	<!-- Game List -->
+		<image name="gamelist-matte" extra="true">
+			<color>25335499</color>
+		</image>
+	
+		<textlist name="gamelist">
+			<primaryColor>E2E7EB</primaryColor>
+			<secondaryColor>E2E7EB</secondaryColor>
+			<selectorColor>E2E7EB</selectorColor>
+			<selectedColor>111111</selectedColor>
+		</textlist>
+	</view>
+
+
+<!-- Game View - Basic -->
+	<view name="basic">
+		<image name="overlay" extra="true">
+			<color>25335488</color>
+		</image>
+	</view>
+
+
+<!-- Game View - Detailed -->
+	<view name="detailed">
+	<!-- Game Image -->
+		<image name="image-matte" extra="true">
+			<color>25335499</color>
+		</image>
+	
+	<!-- Metadata -->			
+		<image name="meta-matte" extra="true">
+			<color>25335499</color>
+		</image>
+		
+		<text name="md_lbl_players, md_lbl_genre, md_lbl_developer, md_lbl_publisher, md_lbl_releasedate">
+			<color>E2E7EB</color>
+		</text>
+		
+		<text name="md_players, md_genre, md_developer, md_publisher">
+			<color>E2E7EB</color>
+		</text>
+		
+		<datetime name="md_releasedate">
+			<color>E2E7EB</color>
+		</datetime>
+		
+	<!-- Description -->
+		<image name="description-matte" extra="true">
+			<color>25335499</color>
+		</image>
+		
+		<text name="md_description">
+			<color>E2E7EB</color>
+		</text>		
+	</view>
+	
+</theme>

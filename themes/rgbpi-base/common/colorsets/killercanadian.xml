@@ -1,0 +1,123 @@
+<theme>
+    <formatVersion>3</formatVersion>	
+
+<!-- System View -->
+	<view name="system">	
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/binding_dark.png</path>
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>FDEE05</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>0870E3</color>
+		</image>
+	
+		<helpsystem name="help">
+			<textColor>000000</textColor>
+			<iconColor>000000</iconColor>
+		</helpsystem>
+		
+	<!-- System Specific Images -->
+		<image name="overlay" extra="true">
+			<color>DDDDDD</color>
+		</image>
+	</view>
+	
+	
+<!-- Game View - All -->
+    <view name="basic, detailed">
+	<!-- Page Layout -->
+		<image name="background" extra="true">
+			<path>./../images/binding_dark.png</path>
+		</image>
+		
+		<image name="top" extra="true">
+			<color>FDEE05</color>	
+		</image>
+		
+		<image name="top-highlight" extra="true">
+			<color>0870E3</color>	
+		</image>
+		
+		<image name="bottom" extra="true">
+			<color>FDEE05</color>
+		</image>
+		
+		<image name="bottom-highlight" extra="true">
+			<color>0870E3</color>
+		</image>
+		
+		<helpsystem name="help">
+			<textColor>000000</textColor>
+			<iconColor>000000</iconColor>
+		</helpsystem>		
+		
+	<!-- System Specific Images -->
+		<image name="logo">
+		</image>
+		
+		<image name="overlay" extra="true">
+			<color>000000</color>
+		</image>
+		
+	<!-- Game List -->
+		<image name="gamelist-matte" extra="true">
+			<color>0870E399</color>
+		</image>
+	
+		<textlist name="gamelist">
+			<primaryColor>DDDDDD</primaryColor>
+			<secondaryColor>DDDDDD</secondaryColor>
+			<selectorColor>DDDDDD</selectorColor>
+			<selectedColor>000000</selectedColor>
+		</textlist>
+	</view>
+
+
+<!-- Game View - Basic -->
+	<view name="basic">
+		<image name="overlay" extra="true">
+			<color>DDDDDD88</color>
+		</image>
+	</view>
+
+
+<!-- Game View - Detailed -->
+	<view name="detailed">
+	<!-- Game Image -->
+		<image name="image-matte" extra="true">
+			<color>0870E399</color>
+		</image>
+	
+	<!-- Metadata -->			
+		<image name="meta-matte" extra="true">
+			<color>0870E399</color>
+		</image>
+		
+		<text name="md_lbl_players, md_lbl_genre, md_lbl_developer, md_lbl_publisher, md_lbl_releasedate">
+			<color>000000</color>
+		</text>
+		
+		<text name="md_players, md_genre, md_developer, md_publisher">
+			<color>000000</color>
+		</text>
+		
+		<datetime name="md_releasedate">
+			<color>000000</color>
+		</datetime>
+		
+	<!-- Description -->
+		<image name="description-matte" extra="true">
+			<color>0870E399</color>
+		</image>
+		
+		<text name="md_description">
+			<color>000000</color>
+		</text>		
+	</view>
+	
+</theme>

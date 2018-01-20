@@ -1,0 +1,7 @@
+<theme>
+    <formatVersion>3</formatVersion>
+	
+<!-- Point this at a different colorset xml to change the color scheme. -->
+	<include>./common/colorsets/monodark.xml</include>
+	
+</theme>
