@@ -6,6 +6,7 @@ Next release inprovements :
     - Corrected proportion of the logos at themes
     - New vertical themes auto switchables
     - Two new themes included "Forest & Flat" (Logos proportioned & rotables)
+    - New function "Scale snaps" to automatically transform the snaps to correct proportion.
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
