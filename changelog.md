@@ -3,6 +3,9 @@ Next release inprovements :
     - USB Mount now mount scrapping folder and saves
     - Bug to run games inside arcade folders fixed
     - Multitap on some emulators disabled
+    - Corrected proportion of the logos at themes
+    - New vertical themes auto switchables
+    - Two new themes included "Forest & Flat" (Logos proportioned & rotables)
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
