@@ -1,6 +1,6 @@
 Next release inprovements :
 
-    - USB Mount now mount scrapping folder and saves
+    - USB Mount now mount saves folder
     - Bug to run games inside arcade folders fixed
     - Multitap on some emulators disabled
     - Corrected proportion of the logos at themes
