@@ -1,13 +1,16 @@
-Next release inprovements :
+RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
 
-    - USB Mount now mount saves folder
+    - System updated to Recalbox 4.1 Final 17.12.02 release
+    - Expand filesystem option included en config
+    - USB Mount now mount /roms /bios & /saves folder
     - Bug to run games inside arcade folders fixed
     - Multitap on some emulators disabled
     - Corrected proportion of the logos at themes
-    - New vertical themes auto switchables
-    - Two new themes included "Forest & Flat" (Logos proportioned & rotables)
-    - New function "Scale snaps" to automatically transform the snaps to correct proportion
-    - New function hide all the horizontal systems on rotated mode
+    - New vertical themes function auto rotables
+    - Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
+    - New function hide all the horizontal systems on rotated mode automatically
+    - Amiga & commodore64 homebrew example
+    - Original cable use verification system
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
