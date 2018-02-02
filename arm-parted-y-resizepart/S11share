@@ -75,6 +75,7 @@ then
     fi
 elif
 	# rTomas: if partiton exists then expand to 100%
+	PARTPREFIX=$(/recalbox/scripts/recalbox-part.sh prefix "${INTERNALDEVICE}")
 	PNUMBER=$(parted -s "${PARTPREFIX}" -m unit b print | tail -1 | grep -E 'ext4' | cut -d: -f 1)
 	PEND=$(parted -s "${PARTPREFIX}" -m unit Mb print free | tail -1 | grep -E 'free' | cut -d: -f 3)
 
