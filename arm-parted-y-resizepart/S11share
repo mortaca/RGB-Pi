@@ -1,0 +1,396 @@
+#!/bin/sh
+
+if test "$1" = "stop"
+then
+    # umount all network configs
+    # don't just remount the one of the config in case the config changed
+    umount -a -t nfs
+    umount -a -t cifs
+    exit 0
+fi
+
+if test "$1" != "start"
+then
+  exit 0
+fi
+
+###
+# SHARECONFFILE
+# can contain :
+# INTERNAL     => /dev/mmcblk0p3
+# RAM          => tmpfs
+# ANYEXTERNAL  => any device found not starting by /dev/mmcblk0p (use it when you've several usb keys, but plug only one at a time)
+# DEV [FSUUID] => a device having the FSUID uuid
+###
+
+SHARECONFFILE="/boot/recalbox-boot.conf"
+INTERNALDEVICE=$(/recalbox/scripts/recalbox-part.sh "share_internal")
+SHAREDEVICE=`cat ${SHARECONFFILE} | grep "sharedevice=" | head -n1 | cut -d'=' -f2`
+[[ "$?" -ne "0" || "$SHAREDEVICE" == "" ]] && SHAREDEVICE=INTERNAL
+
+getMaxTryConfig() {
+    SHARECONFFILE=${1}
+
+    X=$(grep -E '^[ \t]*sharewait[ \t]*=' "${SHARECONFFILE}" | sed -e s+'^[ \t]*sharewait[ \t]*='+''+)
+    if echo "${X}" | grep -qE '^[0-9][0-9]*$'
+    then
+	echo "${X}"
+	return
+    fi
+    echo 7 # default value
+}
+
+INTERNALDEVICETYPE="ext4" # faster than waiting udev to initialize to get the type
+MAXTRY=$(getMaxTryConfig "${SHARECONFFILE}")
+NTRY=0
+
+##### BUT FIRST, create the internal partition if it doesn't exist
+# command that can be used for test to remove the 3rd partition : parted -s -m /dev/mmcblk0 rm 3
+# create the internal partition if it doesn't exist
+#
+# we don't remove data ;  only create a new partition if p3 is missing, and some free space is available only at the end of the disk
+#
+if ! test -e "${INTERNALDEVICE}"
+then
+    # but the system partition exists
+    INTERNALPREVIOUSDEVICE=$(/recalbox/scripts/recalbox-part.sh previous "${INTERNALDEVICE}")
+    
+    if test -e "${INTERNALPREVIOUSDEVICE}" # the partition n-1 must exist (just in case the parameter given is not wrong)
+    then
+	PARTPREFIX=$(/recalbox/scripts/recalbox-part.sh prefix "${INTERNALDEVICE}")
+
+	# create the internal partition
+	PSTART=$(parted -s "${PARTPREFIX}" -m unit b print free | tail -1 | grep -E 'free;$' | cut -d: -f 2)
+	if test -n "${PSTART}"
+	then
+	    parted -s "${PARTPREFIX}" -m unit b mkpart primary "${PSTART}" 100%
+	    if test -e "${INTERNALDEVICE}"
+	    then
+		#mkfs.vfat -F 32 -n SHARE /dev/mmcblk0p3 # if you replace this line, please change the INTERNALDEVICETYPE variable too in consequence
+		#fsck.fat /dev/mmcblk0p3 -a
+		mkfs.ext4 "${INTERNALDEVICE}" -q -F -L SHARE
+		e2fsck -f -p "${INTERNALDEVICE}"
+	    fi
+	fi
+    fi
+elif
+	# rTomas: if partiton exists the expand to 100%
+	PNUMBER=$(parted -s "${PARTPREFIX}" -m unit b print | tail -1 | grep -E 'ext4' | cut -d: -f 1)
+	PEND=$(parted -s "${PARTPREFIX}" -m unit Mb print free | tail -1 | grep -E 'free' | cut -d: -f 3)
+
+	if test -n "${PNUMBER}"
+	then
+		parted -s "${PARTPREFIX}" ---pretend-input-tty resizepart "${PNUMBER}" Yes "${PEND}"
+	fi
+fi
+
+mountDeviceOrFallback() {
+    DEVICE=$1
+    TDEVICE=$2
+    RECALBOXFULLFS="/var/recalboxfs"
+    FALLBACK=1
+
+    if test -n "${DEVICE}"
+    then
+	if mkdir -p "${RECALBOXFULLFS}"
+	then
+	    if /recalbox/scripts/recalbox-mount.sh "${TDEVICE}" 1 "${DEVICE}" "${RECALBOXFULLFS}"
+	    then
+		if mkdir -p "${RECALBOXFULLFS}/recalbox"
+		then
+		    if mount "${RECALBOXFULLFS}/recalbox" "/recalbox/share" -o "noatime"
+		    then
+			FALLBACK=0
+		    fi
+		fi
+	    fi
+	fi
+    fi
+
+    if test "${FALLBACK}" = 1
+    then
+	if ! /recalbox/scripts/recalbox-mount.sh "${INTERNALDEVICETYPE}" 1 "${INTERNALDEVICE}" /recalbox/share
+	then
+	    mount -t tmpfs -o size=128M tmpfs /recalbox/share
+	fi
+    fi
+}
+
+mountNetwork() {
+    # /boot/recalbox-boot.conf examples :
+    # sharedevice=NETWORK
+    #
+    # Basic commands : sharenetwork_<nfs|smb><[0-9]>=<SHARE|ROMS|SAVES|BIOS>@<host>:<remote directory>:<mount options>
+    #
+    # sharenetwork_nfs1=SHARE@192.168.0.1:/Documents/recalbox
+    # or
+    # sharenetwork_nfs1=ROMS@192.168.0.1:/Documents/recalbox/roms
+    # sharenetwork_nfs2=SAVES@192.168.0.1:/Documents/recalbox/saves
+    # or
+    # sharenetwork_smb1=SHARE@192.168.0.1:Documents/recalbox:guest
+    #
+    # Advanced commands : sharenetwork_cmd<[0-9]>=<command to run>
+    # sharenetwork_cmd1=mount -o port=2049,nolock,proto=tcp 192.168.0.1:/Documents/recalbox /recalbox/share
+    # or
+    # sharenetwork_cmd1=mount -o port=2049,nolock,proto=tcp 192.168.0.1:/Documents/recalbox/roms /recalbox/share/roms
+    # sharenetwork_cmd2=mount -o port=2049,nolock,proto=tcp 192.168.0.1:/Documents/recalbox/saves /recalbox/share/saves
+    # or
+    # sharenetwork_cmd1=mount.cifs //192.168.0.1/recalbox /recalbox/share -o guest
+
+
+    # execute all commands in /boot/recalbox-boot.conf which are like : sharenetwork_cmd1=my command
+    if ! grep -E '^[ ]*sharenetwork_[a-z]*[0-9][ ]*=' "${SHARECONFFILE}" |
+	    sed -e s+'^[ ]*sharenetwork_\([a-z]*\)[0-9][ ]*='+'\1 '+ |
+	    while read CTYPE CMD
+	    do
+		XTRY=5  # X tries and give up
+		XWAIT=4 # N seconds between each try
+
+		while test "${XTRY}" -gt 0
+		do
+		    let XTRY--
+
+		    CMD_EXEC=echo
+		    if test "${CTYPE}" = "cmd"
+		    then
+			CMD_EXEC="${CMD}"
+		    else
+			CMD_TARGET=$(echo "${CMD}" | sed -e s+'^\([^@]*\)@.*$'+'\1'+)
+			CMD_HOST=$(echo "${CMD}" | sed -e s+'^[^@]*@\([^:]*\):.*$'+'\1'+)
+			CMD_RDIR=$(echo "${CMD}" | sed -e s+'^[^@]*@[^:]*:\([^:]*\).*$'+'\1'+)
+			CMD_OPT=$(echo "${CMD}" | sed -e s+'^[^@]*@[^:]*:[^:]*'+''+ -e s+'^:'++)
+
+			# MAP to the recalbox directory
+			CMD_TDIR="/recalbox/share"
+			case "${CMD_TARGET}" in
+			    "SHARE")
+				CMD_TDIR="/recalbox/share"
+			    ;;
+			    "ROMS")
+				CMD_TDIR="/recalbox/share/roms"
+			    ;;
+			    "SAVES")
+				CMD_TDIR="/recalbox/share/saves"
+			    ;;
+			    "BIOS")
+				CMD_TDIR="/recalbox/share/bios"
+			    ;;
+			esac
+
+			case "${CTYPE}" in
+			    "nfs")
+				CMD_ADDOPT=
+				test -n "${CMD_OPT}" && CMD_ADDOPT=",${CMD_OPT}"
+				CMD_EXEC="mount -o port=2049,nolock,proto=tcp${CMD_ADDOPT} ${CMD_HOST}:${CMD_RDIR} ${CMD_TDIR}"
+				;;
+			    "smb")
+				CMD_ADDOPT=
+				test -n "${CMD_OPT}" && CMD_ADDOPT="-o ${CMD_OPT}"
+				CMD_EXEC="mount.cifs //${CMD_HOST}/${CMD_RDIR} ${CMD_TDIR} ${CMD_ADDOPT}"
+				;;
+			esac
+		    fi
+
+		    echo "${CMD_EXEC}" >> /tmp/mountNetwork.log
+		    if ${CMD_EXEC}
+		    then
+			XTRY=0
+		    else
+			# give up
+			if test ${XTRY} = 0
+			then
+			    return 1
+			fi
+			sleep ${XWAIT} # wait n seconds between each try
+		    fi
+		done
+	    done
+    then
+	return 1
+    fi
+    return 0
+}
+
+do_boot_upgrade() {
+    BOOTTAR=$1
+
+    # all these files doesn't exist on non rpi platform, so, we have to test them
+    BOOTFILES="cmdline.txt config.txt recalbox-boot.conf"
+
+    # backup files to keep
+    for BOOTFILE in ${BOOTFILES}
+    do
+	if test -e "/boot/${BOOTFILE}"
+	then
+	    cp "/boot/${BOOTFILE}" "/boot/${BOOTFILE}.upgrade" || return 1
+	fi
+    done
+
+    # upgrade the boot
+    if ! (cd /boot && xz -dc < "${BOOTTAR}" | tar xvf - >> /tmp/upgrade.files)
+    then
+	return 1
+    fi
+
+    # revert backup files
+    for BOOTFILE in ${BOOTFILES}
+    do
+	if test -e "/boot/${BOOTFILE}.upgrade"
+	then
+	    mv "/boot/${BOOTFILE}.upgrade" "/boot/${BOOTFILE}" || return 1
+	fi
+    done
+}
+
+do_upgrade() {
+    BOOTTAR="/recalbox/share/system/upgrade/boot.tar.xz"
+    ROOTTAR="/recalbox/share/system/upgrade/root.tar.xz"
+    NB_FILES_TARGET=`cat /recalbox/share/system/upgrade/root.list | wc -l`
+    # percentage
+    touch /tmp/upgrade.files
+    (
+	echo "title Upgrading the system"
+	while true
+	do
+	    NF=$(cat /tmp/upgrade.files | wc -l)
+	    let NP=${NF}00/${NB_FILES_TARGET}
+	    echo "percent ${NP}"
+	    sleep 10
+	done
+    ) | /recalbox/scripts/shell2fb.py &
+    
+    # upgrading /boot
+    EXIT_CODE=1
+    date
+    echo "Upgrading /boot"
+    if mount -o remount,rw /boot
+    then
+	if do_boot_upgrade "${BOOTTAR}"
+	then
+	    EXIT_CODE=0
+	fi
+	sync
+    fi
+    test "${EXIT_CODE}" = 1 && return 1 # don't insist if /boot failed to upgrade
+
+    date
+
+    # upgrading /root
+    EXIT_CODE=1
+    date
+    echo "Upgrading /"
+    if mount -o remount,rw /
+    then
+	if (cd / && \
+	    cp ./etc/fstab ./etc/fstab.upgrade && \
+	    xz -dc < "${ROOTTAR}" | tar xvf - >> /tmp/upgrade.files && \
+	    mv ./etc/fstab.upgrade ./etc/fstab)
+	then
+	    NEW_VERSION=$(sed -rn "s/^\s*([0-9a-zA-Z.]*)\s*.*$/\1/p" /recalbox/recalbox.version)
+	    python -c "import sys; sys.path.append('/usr/lib/python2.7/site-packages/configgen'); from emulatorlauncher import config_upgrade; config_upgrade('$NEW_VERSION')"
+	    EXIT_CODE=0
+	fi
+	sync
+    fi
+    test "${EXIT_CODE}" = 1 && return 1 # don't insist if /root failed to upgrade
+
+    echo "Upgrade ended successfully."
+    date
+    return 0
+}
+
+RMODE="$SHAREDEVICE" 
+
+if echo "${RMODE}" | grep -qE '^DEV '
+then
+    MODE="DEV"
+    UUID=$(echo "${RMODE}" | sed -e s+'^DEV '++)
+else
+    MODE=${RMODE}
+fi
+
+case "${MODE}" in
+    "DEV")
+	LDEVICE=$(blkid | grep " UUID=\"${UUID}\"")
+	while test -z "${LDEVICE}" -a "${NTRY}" -lt "${MAXTRY}" # wait the device that can take some seconds after udev started
+	do
+	    let NTRY++
+	    sleep 1
+	    LDEVICE=$(blkid | grep " UUID=\"${UUID}\"")
+	done
+	DEVICE=$(echo "${LDEVICE}" | sed -e s+'^\([^:]*\):.*$'+'\1'+)
+	TDEVICE=$(echo "${LDEVICE}" | sed -e s+'^.* TYPE="\([^"]*\)"$'+'\1'+)
+	mountDeviceOrFallback "${DEVICE}" "${TDEVICE}"
+	;;
+    "ANYEXTERNAL")
+        PARTPREFIX=$(/recalbox/scripts/recalbox-part.sh prefix "${INTERNALDEVICE}")
+	LDEVICE=$(blkid | grep -vE "^${PARTPREFIX}" | head -1)
+	while test -z "${LDEVICE}" -a "${NTRY}" -lt "${MAXTRY}" # wait the device that can take some seconds after udev started
+	do
+	    let NTRY++
+	    sleep 1
+	    LDEVICE=$(blkid | grep -vE "^${PARTPREFIX}" | head -1)
+	done
+	DEVICE=$(echo "${LDEVICE}" | sed -e s+'^\([^:]*\):.*$'+'\1'+)
+	TDEVICE=$(echo "${LDEVICE}" | sed -e s+'^.* TYPE="\([^"]*\)"$'+'\1'+)
+	mountDeviceOrFallback "${DEVICE}" "${TDEVICE}"
+	;;
+    "RAM")
+	mount -t tmpfs -o size=128M tmpfs /recalbox/share
+	;;
+    "NETWORK")
+	# first, INTERNAL mount, then, network mount over the NETWORK mounts
+	# to allow to mount over /recalbox/share, but only over /recalbox/share/roms if wanted
+	# mounting network mounts over usb key have not really sense
+	if ! /recalbox/scripts/recalbox-mount.sh "${INTERNALDEVICETYPE}" 1 "${INTERNALDEVICE}" /recalbox/share
+	then
+	    # fallback
+	    mount -t tmpfs -o size=128M tmpfs /recalbox/share
+	fi
+
+	# Network mounts
+	# no fallback required, mounted on the share
+	mountNetwork > /tmp/mountNetwork.log 2> /tmp/mountNetwork.err # could be usefull to debug
+	;;
+    "INTERNAL"|*)
+	if ! /recalbox/scripts/recalbox-mount.sh "${INTERNALDEVICETYPE}" 1 "${INTERNALDEVICE}" /recalbox/share
+	then
+	    # fallback
+	    # the internal partition is no more required in fact
+	    mount -t tmpfs -o size=128M tmpfs /recalbox/share
+	fi
+	;;
+esac
+
+# what about doing an upgrade ?
+if test -e "/recalbox/share/system/upgrade/boot.tar.xz" -a -e "/recalbox/share/system/upgrade/root.tar.xz"
+then
+    # let's go
+    do_upgrade > /recalbox/share/system/upgrade/upgrade.out.log 2> /recalbox/share/system/upgrade/upgrade.err.log
+    
+    # remove to not apply it indefinitly, even if it fails
+    rm "/recalbox/share/system/upgrade/boot.tar.xz" "/recalbox/share/system/upgrade/root.tar.xz"
+    
+    # rebooting now
+    shutdown -r now
+fi
+
+# share upgrade, just unzip share.zip from upgrade, no need to reboot
+if test -e "/recalbox/share/system/upgrade/share.zip"
+then
+    (cd /recalbox/share && unzip -o /recalbox/share/system/upgrade/share.zip) > /recalbox/share/system/upgrade/upgrade.share.out.log 2> /recalbox/share/system/upgrade/upgrade.share.err.log
+    # always remove to not apply indefinitly
+    rm -f /recalbox/share/system/upgrade/share.zip
+fi
+
+# now, let mount delayed usbmount devices
+ls /var/run/usbmount.delay |
+    while read RULE
+    do
+	RTYPE=$(echo "${RULE}" | sed -e s+'^[0-9]*\.'++)
+	# source the udev context and apply the usbmount
+	(. "/var/run/usbmount.delay/${RULE}"
+	 /usr/share/usbmount/usbmount "${RTYPE}"
+	 rm "/var/run/usbmount.delay/${RULE}")
+    done
+touch /var/run/recalbox.share.mounted # reenable standard usbmount
