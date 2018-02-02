@@ -74,13 +74,13 @@ then
 	fi
     fi
 elif
-	# rTomas: if partiton exists the expand to 100%
+	# rTomas: if partiton exists then expand to 100%
 	PNUMBER=$(parted -s "${PARTPREFIX}" -m unit b print | tail -1 | grep -E 'ext4' | cut -d: -f 1)
 	PEND=$(parted -s "${PARTPREFIX}" -m unit Mb print free | tail -1 | grep -E 'free' | cut -d: -f 3)
 
 	if test -n "${PNUMBER}"
 	then
-		parted -s "${PARTPREFIX}" ---pretend-input-tty resizepart "${PNUMBER}" Yes "${PEND}"
+		parted -s "${PARTPREFIX}" resizepart "${PNUMBER}" "${PEND}"
 	fi
 fi
 
