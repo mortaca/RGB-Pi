@@ -1,7 +1,7 @@
 RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
 
     - System updated to Recalbox 4.1 Final 17.12.02 release
-    - Expand filesystem option included on config section
+    - Auto expansion of the filesystem on the first boot
     - USB Mount now mount /roms /bios & /saves folders
     - Bug to run games inside arcade folders fixed
     - Multitap on some emulators disabled
