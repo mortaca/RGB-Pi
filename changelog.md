@@ -11,7 +11,7 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     - New function hide all the horizontal systems on rotated mode automatically
     - Amiga & commodore64 homebrew example
     - Original cable use verification system
-    - New skins for the frequency selector.
+    - New skins for the frequency selector
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
