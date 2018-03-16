@@ -15,6 +15,7 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     - New RGB test screen
     - Timeout on FF_selector & keyboard control
     - Keyboard control on ScreenUtility
+    - Bug when scap over usb (no empty space) solved
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
