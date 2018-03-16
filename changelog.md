@@ -1,8 +1,8 @@
 RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
 
-    - System updated to Recalbox 4.1 Final 17.12.02 release
-    - Self expansion of the file system on first boot
-    - USB Mount now mount /roms /bios & /saves folders
+    v System updated to Recalbox 4.1 Final 17.12.02 release
+    v Self expansion of the file system on first boot
+    v USB Mount now mount /roms /bios & /saves folders
     - Bug to run games inside arcade folders fixed
     - Multitap on some emulators disabled
     - Corrected proportion of the logos at themes
@@ -12,6 +12,9 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     - Amiga & commodore64 homebrew example
     - Original cable use verification system
     - New skins for the frequency selector
+    - New RGB test screen
+    - Timeout on FF_selector & keyboard control
+    - Keyboard control on ScreenUtility
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
