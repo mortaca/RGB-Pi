@@ -12,7 +12,7 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     - Amiga & commodore64 homebrew example
     - Original cable use verification system
     - New skins for the frequency selector
-    - New RGB test screen
+    v New RGB test screen
     - Timeout on FF_selector & keyboard control
     - Keyboard control on ScreenUtility
     - Bug when scap over usb (no empty space) solved
