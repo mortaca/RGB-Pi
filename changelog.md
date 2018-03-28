@@ -4,14 +4,14 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     v Self expansion of the file system on first boot
     v USB Mount now mount /roms /bios & /saves folders
     v Bug to run games inside arcade folders fixed
-    - Multitap on some emulators disabled
+    v Multitap on snes emulator disabled
     v Corrected proportion of the logos at themes
     v New vertical themes function auto rotables
-    - Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
-    - New function hide all the horizontal systems on rotated mode automatically
-    - Amiga & commodore64 homebrew example
-    - Original cable use verification system
-    - New skins for the frequency selector
+    v Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
+    v New function hide all the horizontal systems on rotated mode automatically
+    V Amiga homebrew demo by Ironic
+    v Original cable use verification system
+    v New skins for the frequency selector availables
     v New RGB test screen
     - Timeout on FF_selector & keyboard control
     - Keyboard control on ScreenUtility
