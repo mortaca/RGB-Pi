@@ -1,21 +1,19 @@
 RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
 
-    v System updated to Recalbox 4.1 Final 17.12.02 release
-    v Self expansion of the file system on first boot
-    v USB Mount now mount /roms /bios & /saves folders
-    v Bug to run games inside arcade folders fixed
-    v Multitap on snes emulator disabled
-    v Corrected proportion of the logos at themes
-    v New vertical themes function auto rotables
-    v Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
-    v New function hide all the horizontal systems on rotated mode automatically
-    V Amiga homebrew demo by Ironic
-    v Original cable use verification system
-    v New skins for the frequency selector availables
-    v New RGB test screen
-    - Timeout on FF_selector & keyboard control
-    - Keyboard control on ScreenUtility
-    - Bug when scap over usb (no empty space) solved
+    - System updated to Recalbox 4.1 Final 17.12.02 release
+    - Self expansion of the file system on first boot
+    - USB Mount now mount /roms /bios & /saves folders
+    - Bug to run games inside arcade folders fixed
+    - Multitap on snes emulator disabled
+    - Corrected proportion of the logos at themes
+    - New vertical themes function auto rotables
+    - Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
+    - New function hide all the horizontal systems on rotated mode automatically
+    - Amiga homebrew demo by Ironic
+    - Original cable use verification system
+    - New skins for the frequency selector availables
+    - New RGB test screen
+    - Joystick checking on FF_selector & SU
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
