@@ -2,6 +2,7 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
 
     - System updated to Recalbox 4.1 Final 17.12.02 release
     - Self expansion of the file system on first boot
+    - Bug showing red color on Trinitron TV's fixed
     - USB Mount now mount /roms /bios & /saves folders
     - Bug to run games inside arcade folders fixed
     - Multitap on snes emulator disabled
