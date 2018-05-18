@@ -1,4 +1,4 @@
-RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
+RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
     - System updated to Recalbox 4.1 Final 17.12.02 release
     - Self expansion of the file system on first boot
