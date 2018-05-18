@@ -8,7 +8,7 @@ RGB-Pi 4.1 Final Beta for RPi3 - coming soon :
     - Custom homebrew welcome selection by Javier
     - Bug to run games inside arcade folders fixed
     - Multitap on snes emulator disabled
-    - Corrected proportion of the logos at themes
+    - Corrected proportion of the logos on themes
     - New vertical themes function auto rotables
     - Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
     - New function hide all the horizontal systems on rotated mode automatically
