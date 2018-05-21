@@ -5,6 +5,7 @@ Available in English and Spanish / *Disponible en Ingles y Español*
 Questions:
 1. Why is the cable so short?
 2. Why doesn't it have a female scart?
+4. I have a Sony Trinitron TV and the red colors are very muted.
 3. Can I use the cable with Retropie or other than its modified version of Recalbox?
 5. How can I use an external USB storage?
 6. The menu image looks distorted but the games look good.
@@ -22,8 +23,7 @@ Questions:
 18. Can I upgrade the system from within Recalbox?
 19. Handheld games look very small
 20. I do not have sound
-21. I have a question that is not on the listfffffffffffffffffffffffffffffffffffffffff
-
+21. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
@@ -34,7 +34,7 @@ If you need a longuer distance you can use a scart male-female extension, we can
 3. Yes, it is possible to use it on any system supported by RPI, but attention! You will not have the original resolutions provided by our software for each game, you will see everything through a fixed resolution.
 If you want to do it anyway you have the instructions [here](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
 
-4. We are limited by the pace of development of the Recalbox team, they have not yet released version 4.1 and are in Alpha phase, so we have to be Alpha phase also until they release the Beta version.
+4. In the case of having a Sony Trinitron TV and detecting that the red colors are very dark or brown you should go to the Config section and activate the Trinitron Fix script, if you have a Trinitron but you have not noticed any problems with the colors you must activate the Fix.
 
 5. To use USB external storage with RGB-Pi, use only the USB Mount script in the Config section, first you have to format the USB in Fat32 and create the following folders /roms /bios and /saves, then in /roms each system must have its folder with the same name that is used in the SD memory for example /roms/psx, once the system is booted with USB connected we will select USB Mount and the USB folders will be available, it will be necessary to activate this one Last step in each system reboot.
 
