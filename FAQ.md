@@ -22,7 +22,8 @@ Questions:
 18. Can I upgrade the system from within Recalbox?
 19. Handheld games look very small
 20. I do not have sound
-21. I have a question that is not on the list
+21. I have a question that is not on the listfffffffffffffffffffffffffffffffffffffffff
+
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
