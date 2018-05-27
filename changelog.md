@@ -1,7 +1,7 @@
 RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
 
-    - SuperDB, improved arcade database with custom H_Freq calculation for games with vertical resolutions 240p and 256p
-    - SuperDB, horizontal overscan fixed on games of more than 320 for example CPS games.
+    - Improved arcade database with custom H_Freq calculation for games with vertical resolutions 240p and 256p
+    - Horizontal overscan fixed on games of more than 320 for example CPS games.
     - ScummVM direct link to the games fixed without launcher
     - ScummVM horizontal overscan fixed
     - C64 issue on "Forest & Flat" themes solved
