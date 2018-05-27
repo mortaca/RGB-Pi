@@ -1,3 +1,10 @@
+RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
+
+    - SuperDB, improved arcade database with custom H_Freq calculation for games with vertical resolutions 240p and 256p
+    - SuperDB, horizontal overscan fixed on games of more than 320 for example CPS games.
+    - ScummVM direct link to the games fixed without launcher
+    - ScummVM horizontal overscan fixed
+
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
     - System updated to Recalbox 4.1 Final 17.12.02 release
