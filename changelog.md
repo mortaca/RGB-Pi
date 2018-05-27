@@ -4,6 +4,7 @@ RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
     - SuperDB, horizontal overscan fixed on games of more than 320 for example CPS games.
     - ScummVM direct link to the games fixed without launcher
     - ScummVM horizontal overscan fixed
+    - C64 issue on "Forest & Flat" themes solved
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
@@ -13,7 +14,7 @@ RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
     - Added ScummVM at 240p resolution
     - USB Mount now mount /roms /bios & /saves folders
     - Custom homebrew welcome selection by Javier
-    - Bug to run games inside arcade folders fixed
+    - Bug to run games inside advancemame folders fixed
     - Multitap on snes emulator disabled
     - Corrected proportion of the logos on themes
     - New vertical themes function auto rotables
@@ -22,7 +23,7 @@ RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
     - Amiga homebrew demo by Ironic
     - Original cable use verification system
     - New skins for the frequency selector availables
-    - New RGB test screen
+    - New RGB test screen with color bars
     - Joystick checking on FF_selector & SU
 
 RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
