@@ -1,10 +1,11 @@
 RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
 
-    - Improved arcade database with custom H_Freq calculation for resolutions 240p and 256p
-    - Horizontal overscan fixed on arcade games of more than 320 for example CPS games.
+    x Improved arcade database with custom H_Freq calculation for resolutions 240p and 256p
+    x Horizontal overscan fixed on arcade games of more than 320 for example CPS games.
     - ScummVM direct link to the games fixed without launcher
-    - ScummVM horizontal overscan fixed
     - C64 issue on "Forest & Flat" themes solved
+    x Centering test on mode TATE fixed
+    x Tearing on the left side on TATE mode  
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
