@@ -5,7 +5,8 @@ RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
     - ScummVM direct link to the games fixed without launcher
     - C64 issue on "Forest & Flat" themes solved
     x Centering test on mode TATE fixed
-    x Tearing on the left side on TATE mode  
+    x Tearing on the left side on TATE mode
+    x Credits section with easter egg
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
