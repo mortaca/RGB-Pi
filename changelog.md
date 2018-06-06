@@ -8,6 +8,7 @@ RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
     x Tearing on the left side on TATE mode
     x Credits section with easter egg
     - solved issue with interlaced games on AdvMAME
+    - fixed little bugs on the game list
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
