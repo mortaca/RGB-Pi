@@ -1,4 +1,4 @@
-RGB-Pi 4.1 Final 2 for RPi3 - Comingsoon :
+RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
 
     x Improved arcade database with custom H_Freq calculation for resolutions 240p and 256p
     x Horizontal overscan fixed on arcade games of more than 320 for example CPS games.
