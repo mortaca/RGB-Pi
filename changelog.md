@@ -1,6 +1,6 @@
 RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
 
-    x Improved arcade database with custom H_Freq calculation for resolutions 240p and 256p
+    x New ARCADE selector to crop games with vertical overscan
     x Horizontal overscan fixed on arcade games of more than 320 for example CPS games.
     - ScummVM direct link to the games fixed without launcher
     - C64 issue on "Forest & Flat" themes solved
@@ -9,6 +9,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
     x Credits section with easter egg
     - solved issue with interlaced games on AdvMAME
     - fixed little bugs on the game list
+    - Items ordered in Config list
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
 
