@@ -1,6 +1,6 @@
 RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
 
-    x New ARCADE selector to crop games with vertical overscan
+    x New ARCADE "Encapsulator" to force games with vertical overscan or underscan
     x Horizontal overscan fixed on arcade games of more than 320 for example CPS games.
     - ScummVM direct link to the games fixed without launcher
     - ScummVM with TrinitronFIX available
