@@ -8,7 +8,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
     - Test pattern on TATE mode fixed
     - Second rute for the BIOS of AdvMAME in /bios
     x Tearing on the left side on TATE mode
-    x Credits section with easter egg
+    - Credits section with easter egg
     - solved issue with interlaced games on AdvMAME
     - fixed little bugs on the game list
     - Items ordered in Config list
