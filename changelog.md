@@ -6,6 +6,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
     - ScummVM with TrinitronFIX available
     - C64 issue on "Forest & Flat" themes solved
     - Test pattern on TATE mode fixed
+    - Second rute for the BIOS of AdvMAME in /bios
     x Tearing on the left side on TATE mode
     x Credits section with easter egg
     - solved issue with interlaced games on AdvMAME
