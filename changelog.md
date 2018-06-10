@@ -7,9 +7,9 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
     - C64 issue on "Forest & Flat" themes solved
     - Test pattern on TATE mode fixed
     - Second rute for the BIOS of AdvMAME in /bios
-    - Credits section with easter egg
-    - solved issue with interlaced games on AdvMAME
-    - fixed little bugs on the game list
+    - New credits section with easter egg
+    - Solved issue with interlaced games on AdvMAME and updated DB
+    - Fixed little bugs on the game list
     - Items ordered in Config list
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
