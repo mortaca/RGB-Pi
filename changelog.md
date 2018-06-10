@@ -1,5 +1,6 @@
 RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
 
+    - Auto "USB Mount" on startup
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
     - ScummVM direct link to the games fixed without launcher
     - ScummVM with TrinitronFIX available
