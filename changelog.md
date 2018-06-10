@@ -1,4 +1,4 @@
-RGB-Pi 4.1 Final 1.1 for RPi3 - Comingsoon :
+RGB-Pi 4.1 Final 1.1 for RPi3 - Coming soon :
 
     - Auto USB Mount on startup
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
