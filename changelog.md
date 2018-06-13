@@ -4,7 +4,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Coming soon :
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
     - ScummVM direct link to the games fixed without launcher
     - ScummVM with TrinitronFIX available
-    - C64 issue on "Forest & Flat" themes solved
+    - Some logos on Forest & Flat themes fixed
     - Test pattern on TATE mode fixed
     - Second rute for the BIOS of AdvMAME in /bios
     - New credits section with easter egg
