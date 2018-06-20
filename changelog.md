@@ -10,6 +10,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Coming soon :
     - New credits section with easter egg
     - Solved issue with interlaced games on AdvMAME and updated DB
     - Fixed little bugs on the game list
+    - Solved bug on TrinitronFix databases
     - Items ordered in Config list
 
 RGB-Pi 4.1 Final for RPi3 - 18/05/2018 :
