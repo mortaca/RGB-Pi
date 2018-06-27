@@ -2,7 +2,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - Coming soon :
 
     - Auto USB Mount on startup
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
-    - Netplay Script (To config easy the netplay on all retroarch emulators)
+    - Easy Netplay (New custom menu to configure and play online to Retroarch cores)
     - ScummVM direct link to the games fixed without launcher
     - ScummVM with TrinitronFIX available
     - Some logos on Forest & Flat themes fixed
