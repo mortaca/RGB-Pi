@@ -34,7 +34,7 @@ If you need a longuer distance you can use a scart male-female extension, we can
 3. Yes, it is possible to use it on any system supported by RPI, but attention! You will not have the original resolutions provided by our software for each game, you will see everything through a fixed resolution.
 If you want to do it anyway you have the instructions [here](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
 
-4. In the case of having a Sony Trinitron TV and detecting that the red colors are very dark or brown you should go to the Config section and activate the Trinitron Fix script, if you have a Trinitron but you have not noticed any problems with the colors you must activate the Fix.
+4. In the case of having a Sony Trinitron TV and detecting that the red colors are very dark or brown you should go to the Config section and activate the Trinitron Fix script, if you have a Trinitron but you have not noticed any problems with the colors you don't activate the Fix.
 
 5. To use USB external storage with RGB-Pi, use only the USB Mount script in the Config section, first you have to format the USB in Fat32 and create the following folders /roms /bios and /saves, then in /roms each system must have its folder with the same name that is used in the SD memory for example /roms/psx, once the system is booted with USB connected we will select USB Mount and the USB folders will be available, it will be necessary to activate this one Last step in each system reboot.
 
