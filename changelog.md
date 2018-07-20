@@ -1,3 +1,11 @@
+RGB-Pi 4.1 Final 1.2 for RPi3 - coming soon :
+
+    - New system added SNES CD
+    - VideoCD Player added
+    - Pause shortcut with hotkey+R
+    - solved issue with advmame blury image
+    - minor bugs solved
+    
 RGB-Pi 4.1 Final 1.1 for RPi3 - 7/7/2018 :
 
     - Auto USB Mount on startup
