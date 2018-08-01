@@ -1,4 +1,4 @@
-RGB-Pi 4.1 Final 1.1 for RPi3 - 7/7/2018 :
+RGB-Pi 4.1 Final 1.1 for RPi3 - 1/8/2018 :
 
     - Auto USB Mount on startup
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
@@ -13,6 +13,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - 7/7/2018 :
     - Fixed little bugs on the game list
     - Solved bug on TrinitronFix databases
     - Items ordered in Config list
+    - Added new system DOSBox (since 1/8/2018)
 
 RGB-Pi 4.1 Final for RPi3 - 18/5/2018 :
 
