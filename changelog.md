@@ -14,7 +14,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - 10/8/2018 :
     - Solved bug on TrinitronFix databases
     - Items ordered in Config list
     - Added new system DOSBox (since 1/8/2018)
-    - New FBA Core 0.2.97.42 (since 10/8/2018)
+    - New FBA Core 0.2.97.43 (since 10/8/2018)
 
 RGB-Pi 4.1 Final for RPi3 - 18/5/2018 :
 
