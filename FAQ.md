@@ -1,6 +1,6 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
-## This FAQ is oriented to the latest available version of the system 4.1 Final, the answers here may not be useful for previous versions.
+## This FAQ is oriented to the latest available version of the system 4.1 Final 1.1, the answers here may not be useful for previous versions.
 
 Questions:
 1. Why is the cable so short?
@@ -23,7 +23,11 @@ Questions:
 18. Can I upgrade the system from within Recalbox?
 19. Handheld games look very small
 20. I do not have sound
-21. I have a question that is not on the list
+21. What is EasyNetplay and how does it work?
+22. What are the arcade Cropped and Forced modes?
+23. The intro slows down at the first start.
+24. My external hard drive or pendrive is not mounted automatically.
+25. I have a question that is not on the list
 ---------------------------------------------------------------------------------------------------
 Answers:
 1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
@@ -44,7 +48,7 @@ To solve it just open the ScreenUtility in the RGB-Pi Config section and change 
 7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
 To adjust the image you have the ScreenUtility application in the RGB-Pi Config section from where you can adjust the horizontal and vertical position, you can also expand or collapse the image horizontally without losing the PixelPerfect, after adjusting the values you can launch a grid-centered option CenteringTest (This test function may be fail sometime for reasons related to Recalbox)
 
-8. For MAME2003 the romset 0.78, AdvanceMAME 0.106 and FBAlpha Libretro v0.2.97.42.
+8. For MAME2003 the romset 0.78, AdvanceMAME 0.106 and FBAlpha Libretro v0.2.97.43.
 
 9. Our system uses custom files to retroarch so any changes will be discarded, if you want to introduce a change in retroarch you can find the files we use segregated by consoles in the folder /share/RGB-Pi/Retroarch
 
@@ -74,12 +78,13 @@ Thus, in addition to seeing the huge pixels, the aspect ratio of the image chang
 
 20. Check that you do not have anything connected by HDMI, this deactivates the output by the GPIO.
 
-21. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+
+25. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
 ---------------------------------------------------------------------------------------------------------
 
 # Preguntas frecuentes
-## Este FAQ está orientado a la ultima verson del sistema 4.1 Final, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
+## Este FAQ está orientado a la ultima verson del sistema 4.1 Final 1.1, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
 
 Preguntas:
 1. ¿Por que el cable es tan corto?
@@ -102,7 +107,11 @@ Preguntas:
 18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
 19. Los juegos de portatiles se ven muy pequeños.
 20. No tengo sonido.
-21. Tengo una duda que no se encuentra en ésta lista
+21. ¿Que es EasyNetplay y como funciona?
+22. ¿Que son los modos Cropped y Forced de arcade?
+23. La intro se ralentiza en el primer arranque.
+24. Mi disco duro externo o pendrive no se monta automaticamente.
+25. Tengo una duda que no se encuentra en ésta lista
 ---------------------------------------------------------------------------------------------------
 Respuestas:
 1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
@@ -123,7 +132,7 @@ Para solucionarlo solo hay que abrir la ScreenUtility en la seccion RGB-Pi Confi
 7. Las teles de tubo son muy distintas de las LCD y cada televisor tiene unos parametros de centrado distintos, de modo que no hay una configuración que se vea bien en todos los televisores y es posible que sea necesario centrar la imagen en tu TV, para ello ofrecemos una solucion propia y **no es necesario el uso de Retroarch**.
 Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion RGB-Pi Config desde donde podrás ajustar la posicion horizontal y vertical, también puedes expandir o contraer la imagen horizontalmente sin perder el PixelPerfect, después de ajustar los valores se puede lanzar una rejilla de centrado en la opción CenteringTest (Es posible que esta funcion de test falle de vez en cuando por motivos relacionados con Recalbox)
 
-8. Para MAME2003 el romset 0.78, AdvanceMAME 0.106 y FBAlpha Libretro v0.2.97.42.
+8. Para MAME2003 el romset 0.78, AdvanceMAME 0.106 y FBAlpha Libretro v0.2.97.43.
 
 9. Nuestro sistema utiliza archivos personalizados para Retroarch y cualquier cambio que se haga desde el menu sera descartado, si quieres introducir algun cambio en los archivos personalizados de retroarch los puedes encontrar en la carpeta /share/RGB-Pi/Retroarch/ cada uno con el nombre de la consola a la que afecta.
 
@@ -153,7 +162,22 @@ De éste modo además de ver los pixeles enormes la proporción de aspecto de la
 
 20. Comprueba que no tengas nada conectado por HDMI, ésto desactiva la salida por el GPIO.
 
-21. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+21. EasyNetplay es una interfaz propia de RGB-Pi pensada para configurar de forma sencilla el Netplay o juego en linea, una vez dentro tenemos dos modos de funcionamiento, como HOST o como CLIENTE, en cada partida tiene que haber un HOST al que se van a conectar el resto de jugadores, si activas el modo HOST quedara desactivado el modo cliente automaticamente y deberas abrir el puerto 55435 en tu ruter apuntando hacia la direccion IP de tu Pi, dependiendo de tu modelo de ruter esto se hace de forma distinta, es necesario que busqueis en google vuestro modelo concreto y como abrir los puertos hacia una IP.
+    Una vez hecho esto ya podemos salir de la aplicación y comprobaremos cual es nuestra IP publica desde un telefono movil conectado a nuestra red o desde el pc para darsela al resto de jugadores.
+    En la parte superior derecha de la aplicación encontrareis un enlace al servidor de Discord donde hay disponibles diversas salas de chat de voz para ser utilizadas desde el telefono movil durante la partida, por ahi mismo podeis dar vuestra IP de forma segura solo a los amigos con lo que vayais a jugar.
+    En el caso del resto de jugadores que no van a ser host deben activar el modo cliente dentro de EasyNetplay, tendran la opcion de escoger 5 casillas de almacenamiento de IPs distintas que se pueden editar sin teclado con el uso del mando saltando de uno en uno o de 10 en 10 los valores numericos, una vez terminado ésto ya podemos salir de la aplicación y a partir de éste momento estamos listos para jugar en red.
+    Es importante que todos los jugadores compartan la misma rom exacta y que sean emuladores de retroarch, por ejemplo advmame no es posible utilizarlo para Netplay.
+    Con todo ésto podemos empezar a jugar pasando de un juego a otro sin tener que tocar nada mas en la configuración, recordar que si queremos tener una buena experiencia de juego es necesario utilizar cable de red directamente al ruter, el uso de wifi o PLCs va a hacer la experiencia injugable.
+    El primero en entrar en la partida tiene que ser siempre el que haga de HOST y una vez dentro pueden ir entrando los CLIENTES, para salir de la partida seria en el orden inverso siendo el HOST el ultimo en abandonarla.
+    Exista la posibilidad cuando hay partidas de 4 jugadores de añadir un poco de input lag para que la sincronización entre todos los jugadores sea mejor, tambien puede ser util en conexiones con una latencia un poco mala, hay que entrar en el menu de retroarch con hotkey+B y buscar en opciones y network la casilla input_latency_fame que estara puesta en 2 se puede ampliar a 3 o 4 si fuese necesario, cuando se entre en el menu la partida se pausara para el resto de usuarios, este valor se reseteara cada vez que abandomenos un juego.
+    
+22. El selector de arcade que nos muestra las opciones Forced y Cropped solo se activa en juego que superan las 240 scanlines, los juegos que son exactamente de 240 lineas son ajustados en altura automaticamente con lo que tendran un poco de overscan vertical pero es mejor solución que forzarlos ya que en ese modo se verian unas franjas negras excesivamente grandes, los juegos de 256 lineas o mas tenemos ahora la opción de forzarlos modificando la frecuencia horizontal del monitor para que se compriman pudiendo ver la imagen completa del juego mas una pequeña franja negra o verlos en modo Cropped con la imagen cortada y mucho overscan vertical, esto sucede porque son juegos pensados para maquinas arcade donde se podia ajustar el valor de amplitud vertical con un potenciometro que no tenemos en las TVs comerciales, del mismo modo juegos de 224 lineas pero de 55Hz que una TV reconoce como PAL y los comprime podemos forzarlos y verlos en su resolución original evitando las franjas negras.
+
+23. Esto sucede porque el sistema está expandiendo la capacidad de la micro SD, hay que dejar que termine y no apagar la Pi en este punto, en la siguiente vez qye se arranque el sistema se vera la intro correctamente.
+
+24. Los discos duros externos o pendrives de mucha capacidad pueden no ser montados automaticamente en el arranque para evitar un arranque demasiado lento, deben ser activados de forma manual con USB Mount.
+
+25. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
