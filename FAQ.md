@@ -78,6 +78,20 @@ Thus, in addition to seeing the huge pixels, the aspect ratio of the image chang
 
 20. Check that you do not have anything connected by HDMI, this deactivates the output by the GPIO.
 
+21. EasyNetplay is an interface of RGB-Pi designed to easily configure the Netplay or online game, once inside we have two operating modes, such as HOST or as a CLIENT, in each game there must be a HOST to which they will connect the rest of the players, if you activate the HOST mode the client mode will be deactivated automatically and you will have to open port 55435 in your router pointing to the IP address of your Pi, depending on your router model this is done differently, it is necessary that you search in google your concrete model and how to open the ports towards an IP.
+    Once this is done we can leave the application and check which is our IP published from a mobile phone connected to our network or from the pc to give it to other players.
+    In the upper right part of the application you will find a link to the Discord server where there are several voice chat rooms available to be used from the mobile phone during the game, for there you can give your IP safely only to friends with those who go to play.
+    In the case of other players who are not going to be host must activate the client mode within EasyNetplay, will have the option to choose 5 storage boxes of different IPs that can be edited without keyboard with the use of the command jumping 1 in 1 or of 10 in 10 the numeric values, once this is finished we can leave the application and from this moment we are ready to play online.
+    It is important that all players share the exact same rom and that they are retroarch emulators, for example advmame it is not possible to use it for Netplay.
+    With all this we can start playing from one game to another without having to touch anything else in the configuration, remember that if we want to have a good gaming experience it is necessary to use network cable directly to the router, the use of wifi or PLCs goes to make the experience unplayable.
+    The first to enter the game must always be the HOST and once inside the CUSTOMERS can enter, to exit the game in the reverse order being the HOST the last to leave.
+    There is the possibility when there are games of 4 players to add a bit of input lag so that the synchronization between all players is better, it can also be useful in connections with a little bad latency, you have to enter the menu of retroarch with hotkey + B and search in options and network input_latency_fame box that will be set to 2 can be extended to 3 or 4 if necessary, when you enter the menu the game will be paused for other users, this value will be reset every time leave us a game.
+    
+22. The arcade selector that shows us the options Forced and Cropped is only activated in games that exceed 240 scanlines, games that are exactly 240 lines are automatically adjusted in height so they will have a bit of vertical overscan but it is better solution to force them because in that mode would be excessive black stripes, the games of 256 lines or more we now have the option to force them by modifying the horizontal frequency of the monitor so that they can be compressed to see the full image of the game plus a small strip black or see them in Cropped mode with the image cut and much vertical overscan, this happens because they are games designed for arcade machines where you could adjust the value of vertical size of the image with a potentiometer that we do not have in commercial TVs, in the same way games of 224 lines but of 55Hz that a TV recognizes as PAL and compresses them we can force them and see them in their original resolution avoiding the s black stripes.
+
+23. This happens because the system is expanding the capacity of the micro SD, you have to let it finish and not turn off the Pi at this point, the next time you start the system you will see the intro correctly.
+
+24. External hard drives or high capacity pendrives may not be mounted automatically at start-up to avoid too slow starting, they must be activated manually with USB Mount.
 
 25. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
 
@@ -177,7 +191,7 @@ De éste modo además de ver los pixeles enormes la proporción de aspecto de la
 
 24. Los discos duros externos o pendrives de mucha capacidad pueden no ser montados automaticamente en el arranque para evitar un arranque demasiado lento, deben ser activados de forma manual con USB Mount.
 
-25. Por favor contactanos a través de **infor@rgb-pi.com** o en alguno de los foros donde participamos.
+25. Por favor contactanos a través de **info@rgb-pi.com** o en alguno de los foros donde participamos.
 
 
     
