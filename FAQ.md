@@ -73,8 +73,7 @@ Not a good option for lovers of PixelPerfect since not having resolutions interl
 
 18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
 
-19. The resolution of the original portables was very low, respecting the PixelPerfect should be seen, if you want to expand it to full screen anyway you can do it from the ScreenUtility by activating the HandheldsStretched 1 option.
-Thus, in addition to seeing the huge pixels, the aspect ratio of the image changes from the original.
+19. The resolution of the original handhelds was very low, respecting the PixelPerfect so it should be seen, if it bothers you to see the black frame around the screen you can activate the bezels with the image of the original console from the ScreenUtility with the warning that leaving a fixed image on a CRT for a long time can leave marks on the phosphorus.
 
 20. Check that you do not have anything connected by HDMI, this deactivates the output by the GPIO.
 
@@ -171,8 +170,7 @@ No es una buena opcion para los amantes del PixelPerfect puesto que al no dispon
 
 18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
 
-19. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si de todos modos quieres expandirla a pantalla completa puede hacerlo desde la ScreenUtility activando la opción HandheldsStretched 1.
-De éste modo además de ver los pixeles enormes la proporción de aspecto de la imagen cambia respecto a la original.
+19. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si te molesta ver el marco negro al rededor de la pantalla puedes activar los bezeles con la imagen de la consola original desde el ScreenUtility con la advertencia de que dejar una imagen fija en un CRT durante mucho tiempo puede dejar marcas enel fosforo.
 
 20. Comprueba que no tengas nada conectado por HDMI, ésto desactiva la salida por el GPIO.
 
