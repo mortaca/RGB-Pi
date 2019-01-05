@@ -1,4 +1,5 @@
 RGB-Pi Retropie 4.4 Beta for RPi2/3B/3B+ - 5/1/2019 :
+    - working
 
 RGB-Pi Recalbox 4.1 Final 1.1 for RPi3 - 10/8/2018 :
 
