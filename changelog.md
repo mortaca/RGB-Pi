@@ -1,4 +1,4 @@
-RGB-Pi Retropie 4.4 Beta for RPi2/3B/3B+ - 5/1/2019 :
+RGB-Pi Retropie 4.4 Beta for RPi2B/3B/3B+ - 5/1/2019 :
 
     - working
 
