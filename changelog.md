@@ -1,4 +1,6 @@
-RGB-Pi 4.1 Final 1.1 for RPi3 - 10/8/2018 :
+RGB-Pi Retropie 4.4 Beta for RPi2/3B/3B+ - 5/1/2019 :
+
+RGB-Pi Recalbox 4.1 Final 1.1 for RPi3 - 10/8/2018 :
 
     - Auto USB Mount on startup
     - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
@@ -16,7 +18,7 @@ RGB-Pi 4.1 Final 1.1 for RPi3 - 10/8/2018 :
     - Added new system DOSBox (since 1/8/2018)
     - New FBA Core 0.2.97.43 (since 10/8/2018)
 
-RGB-Pi 4.1 Final for RPi3 - 18/5/2018 :
+RGB-Pi Recalbox 4.1 Final for RPi3 - 18/5/2018 :
 
     - System updated to Recalbox 4.1 Final 17.12.02 release
     - Self expansion of the file system on first boot
@@ -36,7 +38,7 @@ RGB-Pi 4.1 Final for RPi3 - 18/5/2018 :
     - New RGB test screen with color bars
     - Joystick checking on FF_selector & SU
 
-RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
+RGB-Pi Recalbox 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
 
     - USBMount modified to preserve the Config folder
     - 32x 50Hz vertical resolution fixed
@@ -52,7 +54,7 @@ RGB-Pi 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
     - Some black invisible logos fixed in theme detailed list
     - New message when arcade game is not in database and launch it in standar resolution
 
-RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/9/2017 :
+RGB-Pi Recalbox 4.1 Alpha 3.1 for Rpi3 - 18/9/2017 :
 
     - Added FDS,WS,WSC & NGP
     - Compatibility for all joysticks in SU & FF Selector
@@ -63,7 +65,7 @@ RGB-Pi 4.1 Alpha 3.1 for Rpi3 - 18/9/2017 :
     - Changed folder /python by /config inside /roms
     - Changed logos of PCE & CD-ROM2
 
-RGB-Pi 4.1 Alpha 3 for Rpi3 - 27/8/2017 :
+RGB-Pi Recalbox 4.1 Alpha 3 for Rpi3 - 27/8/2017 :
 
     - Total Recalbox systems added, minus WonderSwan, Game&Watch and FDS
     - New aplication ScreenUtility to manage screen options from TV
@@ -71,13 +73,13 @@ RGB-Pi 4.1 Alpha 3 for Rpi3 - 27/8/2017 :
     - New frequency selector
     - New theme and custom intro
     
-RGB-Pi 4.1 Alpha 2 for Rpi3 - 23/5/2017 :
+RGB-Pi Recalbox 4.1 Alpha 2 for Rpi3 - 23/5/2017 :
 
     - New systems added; segacd, sega32x, atari2600, gba, gbc, gb, gamegear, ngp, pcenginecd.
     - Solved issue with USB storage mount.
     - JoyPad remaping with; select=hotkey, exit=select+start, retroarch menu=select+L
 
-RGB-Pi 4.1 Alpha for Rpi3 - 14/5/2017 :
+RGB-Pi Recalbox 4.1 Alpha for Rpi3 - 14/5/2017 :
 
     - Image compiled only for RaspberryPi3 and 4GB SD expandible.
     - Build based on Recalbox 4.1.
@@ -87,17 +89,17 @@ RGB-Pi 4.1 Alpha for Rpi3 - 14/5/2017 :
     - Segregated arcade games by horizontal (yoko) or vertical (tate) orientation.
     - Theme modified to view big pictures in scraping mode, new icons and new black theme.
     
-RGB-Pi 4.0 Beta 3 - 22/1/2017 :
+RGB-Pi Recalbox 4.0 Beta 3 - 22/1/2017 :
 
     - Fixed bugs in GameList, Ugly fonts and more space to the name of the game.
     - New aspect ratio selection method, unlocking fixed resolution for every machine to autoselect the own resolution of every       rom in 1:1 pixel aspect ratio, this get pixel perfect for all roms with the main resolution os the machine is knowed like       NeoGeo, now the system recognices betwin 304x240 and 320x240 games and avoid the tearing.
 
-RGB-Pi 4.0 Beta 2 - 19/1/2017 :
+RGB-Pi Recalbox 4.0 Beta 2 - 19/1/2017 :
 
     - Recovery and frontend resolutions changed from 320x240 to 480x300 greatly improving the appearance.
     - Solved issues with PSX and N64 resolutions, psx 320x240 and N64 down scaled from 640x480 to 480x300 until we get               interlaced modes.
 
-RGB-Pi 4.0 Beta Firts launch - 12/1/2017 :
+RGB-Pi Recalbox 4.0 Beta Firts launch - 12/1/2017 :
 
     - NOOBS from Recalbox substituided by PINN to view installation progress and recovery mode from CRT, PINN also solved             powerup issues with attached devices to the GPIO.
     - RPi firmaware update to allow resolutions to change on the fly.
