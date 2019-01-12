@@ -1,6 +1,11 @@
 RGB-Pi Retropie 4.4 Beta for RPi2B/3B/3B+ - 5/1/2019 :
 
-    - working
+    - RGB-Pi system over Retropie 4.4 updatable
+    - Modification of the system integration
+    - New sistema USBMount with hotplug, disabel option and auto-rename folders from recalbox
+    - Trinitron Fix with new skin and state indicator
+    - Rotation of the system disabled by issues with performance of the Pi
+    - ZxSpectrum at 50Hz by default
 
 RGB-Pi Recalbox 4.1 Final 1.1 for RPi3 - 10/8/2018 :
 
