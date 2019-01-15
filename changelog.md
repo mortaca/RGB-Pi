@@ -1,3 +1,15 @@
+RGB-Pi Retropie 4.4 Beta1 for RPi2B/3B/3B+ - 15/1/2019 :
+
+    - Solved issue with resolution on MD & MS changing the default core to genesis-plus
+    - Added Picodrive support without frames to MD & MS
+    - Added new systems to main theme
+    - ScreenUtility update with frequency selector integrated
+    - Advmame 3.9 pre-installed
+    - Amiberry pre-installed in alpha not playable
+    - Disabled the auto-rotation of Dpad on mame & fba tate games
+    - New theme SNES-MINI de ruckage for CRT modfied for RGB-Pi
+    - Issue on usbmount fixed on folder sg-1000
+
 RGB-Pi Retropie 4.4 Beta for RPi2B/3B/3B+ - 5/1/2019 :
 
     - RGB-Pi system over Retropie 4.4 updatable
