@@ -7,7 +7,7 @@ RGB-Pi Retropie 4.4 Beta1 for RPi2B/3B/3B+ - 15/1/2019 :
     - Advmame 3.9 pre-installed
     - Amiberry pre-installed in alpha not playable
     - Disabled the auto-rotation of Dpad on mame & fba tate games
-    - New theme SNES-MINI de ruckage for CRT modfied for RGB-Pi
+    - New theme SNES-MINI by ruckage for CRT modfied for RGB-Pi
     - Issue on usbmount fixed on folder sg-1000
 
 RGB-Pi Retropie 4.4 Beta for RPi2B/3B/3B+ - 5/1/2019 :
