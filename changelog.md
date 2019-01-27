@@ -1,4 +1,14 @@
-RGB-Pi Retropie 4.4 Beta1 for RPi2B/3B/3B+ - 15/1/2019 :
+RGB-Pi Retropie 4.4 Beta 1.2 for RPi2B/3B/3B+ - 27/1/2019 :
+
+    - New USBMount function to unmount
+    - Modified scripts to launch amiga, dosbox or scummvm from USB
+    - Changed default option and enabled Vsync and MultiCore
+    - Solved some iussues with themes, added new systems, pics and list centered.
+    - Two new Amiga emulators, amiberry & lr-puae
+    - Hidden scripts on the resolutions changes
+    - FBA Database updated to 0.2.97.44
+    
+RGB-Pi Retropie 4.4 Beta 1 for RPi2B/3B/3B+ - 15/1/2019 :
 
     - Solved issue with resolution on MD & MS changing the default core to genesis-plus
     - Added Picodrive support without frames to MD & MS
