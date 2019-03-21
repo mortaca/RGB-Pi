@@ -5,8 +5,8 @@ Available in English and Spanish / *Disponible en Ingles y Español*
 Questions:
 1. Why is the cable so short?
 2. Why doesn't it have a female scart?
-4. I have a Sony Trinitron TV and the red colors are very muted.
 3. Can I use the cable with Retropie or other than its modified version of Recalbox?
+4. I have a Sony Trinitron TV and the red colors are very muted.
 5. How can I use an external USB storage?
 6. The menu image looks distorted but the games look good.
 7. In games I see a black strip or I get off the screen.
