@@ -34,7 +34,7 @@ Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi installation instructions
 
 Steps:
-1. DONT'T SKIP THIS STEP, Put one of the ┳ pieces in pin 7 of the jamma harness
+1. DON'T SKIP THIS STEP, Put one of the ┳ pieces in pin 7 of the jamma harness
 2. WITHOUT THE PCB CONNECTED turn on the machine and adjust the voltage in pin 3 to 5.25v
 3. Plug the pcb into the raspberry with the jamma connector facing out
 4. Put a heatsink on the golden part indicated with the heat symbol
