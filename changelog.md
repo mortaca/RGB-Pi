@@ -72,7 +72,7 @@ RGB-Pi OS (Beta - Image) 2019 06 30
     - Fixed shuffle menu music
     - Fixed overscan of all systems
 
-RGB-Pi OS (Final Alpha) 2019 06 22
+RGB-Pi OS (Final Alpha - Image) 2019 06 22
 Initial RGB-Pi OS Release. You can check the most important features described down below:
 
     - Custom interface specially adapted for CRT TVs
