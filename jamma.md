@@ -1,17 +1,17 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
     ┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
-    ┃GND            A┃1             GND┃
-    ┃GND            B┃2             GND┃
-    ┃+5V            C┃3             +5v┃
+    ┃GND____________A┃1             GND┃
+    ┃GND____________B┃2             GND┃
+    ┃+5V____________C┃3             +5v┃
     ┃+5v            D┃4             +5v┃
     ┃               E┃5                ┃
     ┃+12v           F┃6            +12v┃
     ┃Key            H┃7             Key┃
     ┃               J┃8                ┃
     ┃               K┃9                ┃
-    ┃Speaker -/L    L┃10    Speaker +/R┃
-    ┃P1Button 7     M┃11               ┃
+    ┃Speaker -/L____L┃10    Speaker +/R┃
+    ┃P1Button 7_____M┃11               ┃
     ┃Video GREEN    N┃12       VideoRED┃
     ┃Video SYNC     P┃13      VideoBLUE┃
     ┃P2 Button 7    R┃14       VideoGND┃
