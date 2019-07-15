@@ -1,4 +1,4 @@
-RGB-Pi OS (Beta - Internal update) 2019 07 14 
+RGB-Pi OS (Beta - Internal update) 2019 07 14;
 
     - Changed (FIX) VSync from 3 to 4 (grid readjustment required)
     - Fixed some Arcade games image distortion (i.e gigawing)
@@ -9,7 +9,7 @@ RGB-Pi OS (Beta - Internal update) 2019 07 14
     - Increased keyrepeat response time
     - Fixed Sega CD (JP) games not loading
 
-RGB-Pi OS (Beta - Image) 2019 06 30 
+RGB-Pi OS (Beta - Image) 2019 06 30;
 
     - Added game statistics information in Info screen
     - Added Extras menu for special retroarch options
@@ -72,7 +72,7 @@ RGB-Pi OS (Beta - Image) 2019 06 30
     - Fixed shuffle menu music
     - Fixed overscan of all systems
 
-RGB-Pi OS (Final Alpha - Image) 2019 06 22
+RGB-Pi OS (Final Alpha - Image) 2019 06 22;
 
 Initial RGB-Pi OS Release. You can check the most important features described down below:
 
