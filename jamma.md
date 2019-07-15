@@ -34,7 +34,7 @@ Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi installation instructions
 
 Steps:
-1. Put one of the pieces of plastic you will receive on pin 7 of the jamma connector
+1. DONT'T SKIP THIS STEP, Put one of the ┳ pieces in pin 7 of the jamma harness
 2. WITHOUT THE PCB CONNECTED turn on the machine and adjust the voltage in pin 3 to 5.25v
 3. Plug the pcb into the raspberry with the jamma connector facing out
 4. Put a heatsink on the golden part indicated with the heat symbol
@@ -49,7 +49,7 @@ Steps:
 # JAMMA RGB-Pi instrucciones de instalacion
 
 Pasos:
-1. Ponga una de las piezas de plastico que recibira en el pin 7 del conector jamma
+1. NO SALTARSE ESTE PASO, Ponga una de las piezas ┳ en el pin 7 del conector jamma
 2. SIN EL PCB CONECTADO encienda la maquina y ajuste la tension en el pin 3 a 5.25v
 3. Conecte el pcb en la raspberry con el conector jamma hacia afuera
 4. Poner un disipador por la parte dorada indicada con el simbolo de calor
