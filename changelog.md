@@ -1,5 +1,5 @@
 
-RGB-Pi OS (Update) 20190714
+RGB-Pi OS (Internal Update) 20190714
 
     - Changed (FIX) VSync from 3 to 4 (grid readjustment required)
     - Fixed some Arcade games image distortion (i.e gigawing)
