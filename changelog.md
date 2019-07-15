@@ -1,140 +1,33 @@
-RGB-Pi Retropie 4.4 Beta 1.2 for RPi2B/3B/3B+ - 27/1/2019 :
 
-    - New USBMount function to unmount
-    - Modified scripts to launch amiga, dosbox or scummvm from USB
-    - Changed default option and enabled Vsync and MultiCore
-    - Solved some iussues with themes, added new systems, pics and list centered.
-    - Two new Amiga emulators, amiberry & lr-puae
-    - Hidden scripts on the resolutions changes
-    - FBA Database updated to 0.2.97.44
+RGB-Pi OS (Beta) 20190714
+
+    - Changed (FIX) VSync from 3 to 4 (grid readjustment required)
+    - Fixed some Arcade games image distortion (i.e gigawing)
+    - Fixed DOSBox launcher and verbosity output
+    - Fixed Wifi firewall rules
+    - Fixed Remaps folder permissions
+    - Added help on rotating image to the left
+    - Increased keyrepeat response time
+    - Fixed Sega CD (JP) games not loading
+
+RGB-Pi OS (Final Alpha) 20190515 
+
+    - Custom interface specially adapted for CRT TVs
+    - New screen configuration assistant
+    - Special horizontal and vertical arcade mode visualizations
+    - Personalized interface button skins
+    - Improved sound system with equalizer engine
+    - Simplified bluetooth configuration system
+    - New simplified Netplay
+    - Game visualization by list or folder modes
+    - New SD/USB/NFS manager system
+    - Online system updates
+    - Integrated Scraper
+    - Integrated Help
+    - Soft screen rotation with no performance impact
+    - Updated emulators and cores
+    - Raspberry Pi 2B, 3B and 3B Plus support
+    - Video player
     
-RGB-Pi Retropie 4.4 Beta 1 for RPi2B/3B/3B+ - 15/1/2019 :
 
-    - Solved issue with resolution on MD & MS changing the default core to genesis-plus
-    - Added Picodrive support without frames to MD & MS
-    - Added new systems to main theme
-    - ScreenUtility update with frequency selector integrated
-    - Advmame 3.9 pre-installed
-    - Amiberry pre-installed in alpha not playable
-    - Disabled the auto-rotation of Dpad on mame & fba tate games
-    - New theme SNES-MINI by ruckage for CRT modfied for RGB-Pi
-    - Issue on usbmount fixed on folder sg-1000
 
-RGB-Pi Retropie 4.4 Beta for RPi2B/3B/3B+ - 5/1/2019 :
-
-    - RGB-Pi system over Retropie 4.4 updatable
-    - Modification of the system integration
-    - New USBMount with hotplug, disable option and auto-rename folders from recalboxUSB
-    - TrinitronFix with new skin and state indicator
-    - Rotation of the system disabled by issues with RPi performance
-    - ZxSpectrum at 50Hz by default
-    - Atari Lynx bezel bug solved
-    - some theme bugs solved
-    - Auto rotation of Dpad on TATE games disabled
-    
-RGB-Pi Recalbox 4.1 Final 1.1 for RPi3 - 10/8/2018 :
-
-    - Auto USB Mount on startup
-    - New ARCADE selector named "Encapsulator" to force games with vertical overscan or underscan
-    - Easy Netplay (New custom menu to configure and play online to Retroarch cores)
-    - ScummVM direct link to the games fixed without launcher
-    - ScummVM with TrinitronFIX available
-    - Some logos on Forest & Flat themes fixed
-    - Test pattern on TATE mode fixed
-    - Second rute for the BIOS of AdvMAME in /bios
-    - New credits section with easter egg
-    - Solved issue with interlaced games on AdvMAME and updated DB
-    - Fixed little bugs on the game list
-    - Solved bug on TrinitronFix databases
-    - Items ordered in Config list
-    - Added new system DOSBox (since 1/8/2018)
-    - New FBA Core 0.2.97.43 (since 10/8/2018)
-
-RGB-Pi Recalbox 4.1 Final for RPi3 - 18/5/2018 :
-
-    - System updated to Recalbox 4.1 Final 17.12.02 release
-    - Self expansion of the file system on first boot
-    - Bug showing red color on Trinitron TV's fixed with TRINITRON FIX script
-    - Added ScummVM at 240p resolution
-    - USB Mount now mount /roms /bios & /saves folders
-    - Custom homebrew welcome selection by Javier
-    - Bug to run games inside advancemame folders fixed
-    - Multitap on snes emulator disabled
-    - Corrected proportion of the logos on themes
-    - New vertical themes function auto rotables
-    - Two new themes included "Forest & Flat" (Logos proportioned & auto rotables)
-    - New function hide all the horizontal systems on rotated mode automatically
-    - Amiga homebrew demo by Ironic
-    - Original cable use verification system
-    - New skins for the frequency selector availables
-    - New RGB test screen with color bars
-    - Joystick checking on FF_selector & SU
-
-RGB-Pi Recalbox 4.1 Alpha 3.2 for Rpi3 - 22/11/2017 :
-
-    - USBMount modified to preserve the Config folder
-    - 32x 50Hz vertical resolution fixed
-    - Replaced modes 450 & 320 from SU by 270 & 240 with 450 H lines without overscan
-    - Delay on FF_Selector fixed
-    - Aggregation of favorites with one button fixed
-    - Framebuffer upgraded from 16 to 18 Bits of color (best image quality in 32/64Bits games)
-    - New emulators added: Commodore64
-    - New emulator added: AdvanceMAME (romset 0.106) less input lag & best rotation
-    - New bezels for handheld availables from ScreenUtility instead stretching mode
-    - Auto rotation of directional axis for TATE games in horizontal mode
-    - Changed aspect ratio of TATE games rotated -90º from fullscreen to cropped
-    - Some black invisible logos fixed in theme detailed list
-    - New message when arcade game is not in database and launch it in standar resolution
-
-RGB-Pi Recalbox 4.1 Alpha 3.1 for Rpi3 - 18/9/2017 :
-
-    - Added FDS,WS,WSC & NGP
-    - Compatibility for all joysticks in SU & FF Selector
-    - Fixed bugs in SU with test, rotating system & resolution change.
-    - Fixed bug exiting from MD
-    - Added script IndividualEditor to edit Timings.cfg
-    - Added /bios folder to USBMount script
-    - Changed folder /python by /config inside /roms
-    - Changed logos of PCE & CD-ROM2
-
-RGB-Pi Recalbox 4.1 Alpha 3 for Rpi3 - 27/8/2017 :
-
-    - Total Recalbox systems added, minus WonderSwan, Game&Watch and FDS
-    - New aplication ScreenUtility to manage screen options from TV
-    - Script to mount USB storages
-    - New frequency selector
-    - New theme and custom intro
-    
-RGB-Pi Recalbox 4.1 Alpha 2 for Rpi3 - 23/5/2017 :
-
-    - New systems added; segacd, sega32x, atari2600, gba, gbc, gb, gamegear, ngp, pcenginecd.
-    - Solved issue with USB storage mount.
-    - JoyPad remaping with; select=hotkey, exit=select+start, retroarch menu=select+L
-
-RGB-Pi Recalbox 4.1 Alpha for Rpi3 - 14/5/2017 :
-
-    - Image compiled only for RaspberryPi3 and 4GB SD expandible.
-    - Build based on Recalbox 4.1.
-    - Resolution database to select the correct refresh rate and H, V lines for each rom.
-    - Script autogenerator of hdmi_timings on the fly with centering, refresh and resolution values.
-    - Segregated consoles by 50 or 60 Hz.
-    - Segregated arcade games by horizontal (yoko) or vertical (tate) orientation.
-    - Theme modified to view big pictures in scraping mode, new icons and new black theme.
-    
-RGB-Pi Recalbox 4.0 Beta 3 - 22/1/2017 :
-
-    - Fixed bugs in GameList, Ugly fonts and more space to the name of the game.
-    - New aspect ratio selection method, unlocking fixed resolution for every machine to autoselect the own resolution of every       rom in 1:1 pixel aspect ratio, this get pixel perfect for all roms with the main resolution os the machine is knowed like       NeoGeo, now the system recognices betwin 304x240 and 320x240 games and avoid the tearing.
-
-RGB-Pi Recalbox 4.0 Beta 2 - 19/1/2017 :
-
-    - Recovery and frontend resolutions changed from 320x240 to 480x300 greatly improving the appearance.
-    - Solved issues with PSX and N64 resolutions, psx 320x240 and N64 down scaled from 640x480 to 480x300 until we get               interlaced modes.
-
-RGB-Pi Recalbox 4.0 Beta Firts launch - 12/1/2017 :
-
-    - NOOBS from Recalbox substituided by PINN to view installation progress and recovery mode from CRT, PINN also solved             powerup issues with attached devices to the GPIO.
-    - RPi firmaware update to allow resolutions to change on the fly.
-    - Udated Recalbox configgen code to get different resolutions for every system from recalbox.conf.
-    - Generate custom files .cfg for every machine to set the correct aspect ratio of the games and others custom options.
-    - Recompile PINN to add RGB-Pi logo at start, and added logo to the splash screen on Recalbox.
