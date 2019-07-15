@@ -1,195 +1,432 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
-## This FAQ is oriented to the latest available version of the system 4.1 Final 1.1, the answers here may not be useful for previous versions.
+## This FAQ is oriented to the latest available version of the system RGB-Pi OS Beta 19_06_30s, the answers here may not be useful for previous versions.
 
 Questions:
-1. Why is the cable so short?
-2. Why doesn't it have a female scart?
-3. Can I use the cable with Retropie or other than its modified version of Recalbox?
-4. I have a Sony Trinitron TV and the red colors are very muted.
-5. How can I use an external USB storage?
-6. The menu image looks distorted but the games look good.
-7. In games I see a black strip or I get off the screen.
-8. What romsets are needed for arcade?
-9. I make changes in Retroarch and they can not be saved.
-10. I have a RPi2 or a previous model, what system do I use?
-11. Why is not Kodi available?
-12. Can I use RGB-Pi on a LCD TV or with some upscaler?
-13. When the TV is silent there is an annoying noise in the audio.
-14. Can I connect a fan to the GPIO?
-15. Can I connect a power switch or the joysticks through the GPIO?
-16. Why the TV channel is no selected automatically?
-17. Vertical games are seen on the side, how can I change them?
-18. Can I upgrade the system from within Recalbox?
-19. Handheld games look very small
-20. I do not have sound
-21. What is EasyNetplay and how does it work?
-22. What are the arcade Cropped and Forced modes?
-23. The intro slows down at the first start.
-24. My external hard drive or pendrive is not mounted automatically.
-25. I have a question that is not on the list
+1. What are the supported systems?
+2. How can I copy game ROMs?
+3. Why is the cable so short?
+4. Why doesn't it have a female scart connector?
+5. I have a Sony Trinitron TV and red colors look muted.
+6. Can I use the cable with Retropie, Recalbox or Lakka?
+7. How can I use an external USB/NFS storage?
+8. Why some games displays black bars or are a little off the screen?
+9. What romsets are used by the different arcade emulators?
+10. Which RPi models are supported?
+11. Can I use RGB-Pi on a LCD TV or with some upscaler?
+12. Can I connect a fan to the GPIO?
+13. Can I connect a power switch or joystick through the GPIO?
+14. Why the TV channel is not selected automatically?
+15. Vertical games are not displayed in vertical position, how can I change that?
+16. Handheld games look very small.
+17. I don't have sound.
+18. What is Netplay and how does it work?
+19. Is it good playing with screen bezels enabled?
+20. How can I create a backup of my favorites?
+21. How can I use my custom scrap images?
+22. How can I save my Retroarch FBA remaps?
+
 ---------------------------------------------------------------------------------------------------
-Answers:
-1. The flat cable can not exceed 25cm to avoid getting interference when it is a non-insulated cable.
-If you need a longuer distance you can use a scart male-female extension, we can not ensure that the quality becomes as         high as connecting the RGB-Pi directly to the TV.
 
-2. The use of a scart female implies the need for an additional scart cable, I liked the idea that only RGB-Pi is necessary and nothing more to work, besides I can not control what type of extensor cable each person could use and may have interference and a bad experience.
+1. What are the supported systems?
 
-3. Yes, it is possible to use it on any system supported by RPI, but attention! You will not have the original resolutions provided by our software for each game, you will see everything through a fixed resolution.
-If you want to do it anyway you have the instructions [here](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
+Arcade Machines MAME/FBA (.zip)
+Atari 2600 (.a26 .rom)
+Atari 400/800/XL/XE/5200 (.a52 .atr .bas .car .dcm .xex .xfd)
+Atari 7800 (.a78)
+Atari LYNX (.lnx)
+WonderSwan (.ws)
+WonderSwan Color (.wsc)
+ColecoVision (.col)
+PC Engine (.pce)
+|CD-ROM2 System (.ccd .chd .cue)
+Odyssey2 (.o2)
+Nintendo NES (.fds .nes)
+Famicom Disk System (.fds .nes)
+Super Nintendo (.sfc .smc)
+Nintendo 64 (.z64 .n64 .v64)
+Game Boy (.gb)
+Game Boy Color (.gbc)
+Game Boy Advance (.gba)
+SG-1000 (.sg), Master System (.sms)
+Megadrive (.gen .md .smd)
+|Mega-CD (.chd .cue)
+Megadrive 32X (.32x)
+Game Gear (.gg)
+NEOGEO (.zip)
+NEOGEO Pocket (.ngp)
+NEOGEO Pocket Color (.ngc)
+PlayStation (.pbp .cue .cbn .img .iso .m3u)
+Amstrad CPC (.dsk)
+Atari ST (.st .stx .ipf)
+Commodore 64 (.crt .d64)
+|Commodore Amiga (.uae .adf)
+MSX (.rom .mx1 .mx2)
+ZX Spectrum (.tap .tzx)
+ScummVM (.svm)
+MS-DOS (.sh)
+2. How can I copy game ROMs?
 
-4. In the case of having a Sony Trinitron TV and detecting that the red colors are very dark or brown you should go to the Config section and activate the Trinitron Fix script, if you have a Trinitron but you have not noticed any problems with the colors you don't activate the Fix.
+You have several options to access to the ROMs folder:
 
-5. To use USB external storage with RGB-Pi, use only the USB Mount script in the Config section, first you have to format the USB in Fat32 and create the following folders /roms /bios and /saves, then in /roms each system must have its folder with the same name that is used in the SD memory for example /roms/psx, once the system is booted with USB connected we will select USB Mount and the USB folders will be available, it will be necessary to activate this one Last step in each system reboot.
+a) From Windows, open the file browser and type \\rgbpi in the address bar
+b) You can connect via SFTP (check your IP from [Network] menu) with user: pi and password: rgbpi
+|c) If you are in Linux, plug the SD card into your computer from rootfs partition go to /home/pi/RetroPie/roms folder
+d) You can create a RGB-Pi external USB unit from [Settings > Load Games From > USB/NFS]
+3. Why is the cable so short?
 
-6. This is because Emulationstation uses a peculiar resolution of 450x270 50Hz and on some televisions can give problems.
-To solve it just open the ScreenUtility in the RGB-Pi Config section and change the SystemResolution field from 450 to 320.
+Since the cable is unshielded, it can not exceed 25cm to avoid external interference.
+If you need a longer distance, you can use a scart male to female extension cable, but we cannot guarantee the same image quality as compared to directly connecting RGB-Pi cable to TV.
+4. Why doesn't it have a female scart connector?
 
-7. The CRT televisions are very different from the current LCD and each TV had a slightly different centering adjustment, so there is no configuration that is good on all monitors and it is necessary that each one adjust the image to your TV, We offer a centering solution so **no acces to Retroarch is required** to adjust the image.
-To adjust the image you have the ScreenUtility application in the RGB-Pi Config section from where you can adjust the horizontal and vertical position, you can also expand or collapse the image horizontally without losing the PixelPerfect, after adjusting the values you can launch a grid-centered option CenteringTest (This test function may be fail sometime for reasons related to Recalbox)
+We liked the idea that only RGB-Pi is necessary.
+Using a female connector would require an additional male to male cable.
+|Appart from the additional expense, it would result in a loss of quality depending on the cable extension used as explained in question 2.
+5. I have a Sony Trinitron TV and red colors look muted.
 
-8. For MAME2003 the romset 0.78, AdvanceMAME 0.106 and FBAlpha Libretro v0.2.97.43.
+In case of having a Sony Trinitron TV and noticing that red colors are displayed dark or brown, you can fix it by activating the corresponding fix from [Display > Trinitron Color Fix] menu option.
+|This issue only affects to some Sony Triniton TV models, so that if you didn't noticed any wrong color, you shouldn't activate this option.
 
-9. Our system uses custom files to retroarch so any changes will be discarded, if you want to introduce a change in retroarch you can find the files we use segregated by consoles in the folder /share/RGB-Pi/Retroarch
+From [Image > Image Adjustmen] menu screen, a small blue square box is available with the text OK inside. If you cannot read the same, you must enable the fix.
+6. Can I use the cable with Retropie, Recalbox or Lakka?
 
-10. The latest improvements are only available for the RPi3, if you have a previous version contact me to elaborate a specific distribution for the system that you use, once the Beta version is released it will be available for all systems.
+Yes, you can use it on any Raspberry Pi supported system, but be aware that these systems doesn't provide any kind of customization for displaying each system and/or game using the original resolution.
+|This will result in games being displayed using a fixed resolution and in many cases suffering of glitches, shuttering, and other image issues.
+|That said, if you really want to enable the cable use in any of these systems, you can find the instructions here: https://github.com/mortaca/RGB-Pi/blob
+/master/README.md
+7. How can I use an external USB/NFS storage?
 
-11. Still we can not get an interlaced mode and to display Kodi in necessary 640x480i resolution, a lower resolution makes it totally unusable, at the time that it is possible to use it with an acceptable quality we will support it.
+To mount a USB unit:
 
-12. It can be but it is totally absurd, it is better to directly use the HDMI output and Recalbox.
+1) You only need to activate [Settings > Load Games From > USB/NFS] menu option.
+2) System will request for confirmation if formatting the unit is required.
+|To connect to NFS drive:
 
-13. This is due to interference in the cable by the WiFi signal that the Raspberry emits, disable the WiFi in the menu and the noise will disappear.
+1) You need to configure the shared unit as RW (read/write) without permissions. 
+2) You will need [roms] and [BIOS] folder structure. The easiest way is to copy it from a USB formatted by RGB-Pi OS.
+|3) From RGB-Pi OS go to [Network > NFS] and replace the predefault values server#sare. I.e.: 192.168.1.25#/srv/nfs/rgbpi
+4) Now you only need to activate [Settings > Load Games From > USB/NFS] menu option.
+8. Why some games displays black bars or are a little off the screen?
 
-14. Many people use a fan connected to +5v and GND in the GPIO, the RGB-Pi connector occupies these pins but does not use it, it is possible to solder a cable from the bottom if you have knowledge of welding, another option is to pick the +5v from the USB port using a cut cable.
+Many games, even when played in the original system, have these problems because of the way they were originally developed. 
+|Also, do note that CRT TVs are very different from LCD TVs. Each TV has a slightly different centering adjustment even when using same TV models, so there is not any universal configuration that fits 100% OK in all TVs.
+|You have three options for making TV adjustments:
 
-15. It is not possible to connect a switch to power the RPi or any joystick to the GPIO port while the RGB-Pi is connected since almost all the pins are used to take out the necessary 18 Bits of video and sound.
+1) Make software image adjustments by using the image assistant tool provided from [Image > Image Adjustment] menu option.
+|2) Make image adjustments by using the (commonly hidden) service menu offered by many TV models. You can find out how to open your TV's service menu by searching in internet.
+|3) Make physical adjustments to your TV (Warning - High Voltage). In many cases, applying some minor adjustments to the TV's yoke can fix many common issues.
+9. What romsets are used by the different arcade emulators?
 
-16. In order for the TV to be automatically set to RGB mode, it is necessary to supply +12V to the scart and the RPi can only supply +5v which would activate the 16/9 mode and it is necessary to use the remote control to switch to 4/3.
-There are those who have made modifications in their cable to introduce +12v in pin 8 of the scart, this is possible to do it through an external power supply or with the use of a step up that takes +5v of the flat cable and make it +12v, **these modifications can be made at your own risk.**
-In case of wanting to do it it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
+- fbalpha v0.2.97.43
+- advmame (MAME 0.106)
+- mame2003 (MAME 0.78)
+- mame2010 (MAME 0.139)
+10. Which RPi models are supported?
 
-17. Trying to always respect the original resolutions of each game the verticals should be seen in this way, in case you want to rotate them 90º it is possible to do it through ScreenUtility in the section RGB-Pi Config with the option Rotate Vertical Games -90.
-Not a good option for lovers of PixelPerfect since not having resolutions interlaced for the time lost many vertical lines, a game that normally has 320 lines in a resolution that only shows 240 does not look good, in the assumption That interlaced resolutions may be available in the future, these 320 lines could be encabeled with an interlaced resolution of 480i but a result as good as the original is not obtained.
+RGB-Pi OS has been tested in RPi2, RPi3 and RPi3 Plus models.
+11. Can I use RGB-Pi on a LCD TV or with some upscaler?
 
-18. No, if you do this you will lose all the modifications made to support the RGB-Pi cable and the system will stop working.
+You can but there is no point on using the cable for non CRT TVs. For connecting to flat TVs, we recommend using the HDMI output and Lakka distribution.
+12. Can I connect a fan to the GPIO?
 
-19. The resolution of the original handhelds was very low, respecting the PixelPerfect so it should be seen, if it bothers you to see the black frame around the screen you can activate the bezels with the image of the original console from the ScreenUtility with the warning that leaving a fixed image on a CRT for a long time can leave marks on the phosphorus.
+Many people use fans connected to the 5v and GND GPIO pins. Unfortunatelly the RGB-Pi connector occupies these pins although does not use them so that:
+|1) It is possible to solder a cable from behind if you have welding skills.
+2) Another option is to get the 5v from the USB port using a modified cable.
+13. Can I connect a power switch or joystick through the GPIO?
 
-20. Check that you do not have anything connected by HDMI, this deactivates the output by the GPIO.
+It is not possible to connect any device to the GPIO port while the RGB-Pi is connected since almost all pins are used to take out the necessary 18 Bits for audio and video.
+14. Why the TV channel is not selected automatically?
 
-21. EasyNetplay is an interface of RGB-Pi designed to easily configure the Netplay or online game, once inside we have two operating modes, such as HOST or as a CLIENT, in each game there must be a HOST to which they will connect the rest of the players, if you activate the HOST mode the client mode will be deactivated automatically and you will have to open port 55435 in your router pointing to the IP address of your Pi, depending on your router model this is done differently, it is necessary that you search in google your concrete model and how to open the ports towards an IP.
-    Once this is done we can leave the application and check which is our IP published from a mobile phone connected to our network or from the pc to give it to other players.
-    In the upper right part of the application you will find a link to the Discord server where there are several voice chat rooms available to be used from the mobile phone during the game, for there you can give your IP safely only to friends with those who go to play.
-    In the case of other players who are not going to be host must activate the client mode within EasyNetplay, will have the option to choose 5 storage boxes of different IPs that can be edited without keyboard with the use of the command jumping 1 in 1 or of 10 in 10 the numeric values, once this is finished we can leave the application and from this moment we are ready to play online.
-    It is important that all players share the exact same rom and that they are retroarch emulators, for example advmame it is not possible to use it for Netplay.
-    With all this we can start playing from one game to another without having to touch anything else in the configuration, remember that if we want to have a good gaming experience it is necessary to use network cable directly to the router, the use of wifi or PLCs goes to make the experience unplayable.
-    The first to enter the game must always be the HOST and once inside the CUSTOMERS can enter, to exit the game in the reverse order being the HOST the last to leave.
-    There is the possibility when there are games of 4 players to add a bit of input lag so that the synchronization between all players is better, it can also be useful in connections with a little bad latency, you have to enter the menu of retroarch with hotkey + B and search in options and network input_latency_fame box that will be set to 2 can be extended to 3 or 4 if necessary, when you enter the menu the game will be paused for other users, this value will be reset every time leave us a game.
-    
-22. The arcade selector that shows us the options Forced and Cropped is only activated in games that exceed 240 scanlines, games that are exactly 240 lines are automatically adjusted in height so they will have a bit of vertical overscan but it is better solution to force them because in that mode would be excessive black stripes, the games of 256 lines or more we now have the option to force them by modifying the horizontal frequency of the monitor so that they can be compressed to see the full image of the game plus a small strip black or see them in Cropped mode with the image cut and much vertical overscan, this happens because they are games designed for arcade machines where you could adjust the value of vertical size of the image with a potentiometer that we do not have in commercial TVs, in the same way games of 224 lines but of 55Hz that a TV recognizes as PAL and compresses them we can force them and see them in their original resolution avoiding the s black stripes.
+Important! This information is only valid if you are using the first revision of the RGB-Pi cable.
 
-23. This happens because the system is expanding the capacity of the micro SD, you have to let it finish and not turn off the Pi at this point, the next time you start the system you will see the intro correctly.
+In order to automatically set the TV to RGB mode, it is necessary to supply 12V to the scart cable but the RPi can only supply 5v.
+|Some people have made modifications in their cable to introduce 12v in pin 8 of the scart. This is feasible using an external power supply or using of a step-up that takes 5v of the cable and make it 12v.
+|Doing any moddification to the cable/RPi will be at your own risk. In case of proceeding, it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
+|NEW! The new version of the cable that is now available from the website, has this feature built-in among other improvements.
+15. Vertical games are not displayed in vertical position, how can I change that?
 
-24. External hard drives or high capacity pendrives may not be mounted automatically at start-up to avoid too slow starting, they must be activated manually with USB Mount.
+By default, vertical games are rotated for playing in horizontal mode.
+|Not a good option for PixelPerfect lovers, since because of the lack of interlaced resolutions, many vertical lines are lost when downscaling from 320 to 240 lines.
 
-25. Please contact us at **info@rgb-pi.com** or in the forums where we participate.
+In case you wanted to play with your screen in vertical position, you can do it by selecting [Display > System Mode > Arcade Vertical] menu option.
+16. Handheld games look very small.
 
+The original resolution of portable consoles was very low, and since we try to keep PixelPerfect image display from all systems, this is the expected behavior.
+17. I don't have sound.
+
+Check that you don't have anything connected by HDMI. This deactivates the output by GPIO.
+18. What is Netplay and how does it work?
+
+Netplay is an interface designed to easily configure online gaming.
+
+You have two operational modes, Server and Client. Choose Server if you want to serv other players or Client if you want to join to the online play provided by Server.
+|If you are going to play as Server, after selecting this option, other players must select Client option and select your Nick from the Server name list.
+After that, Server must start the game in first place followed by the rest of Client players.
+|For privacy reassons, once Server option is selected, your friends have 30 seconds to connect with you by selecting the Client option. After that timeframe, you need to repeat the process.
+|Note: in order to make the netplay work, please check that you have the port 55439 open in your router.
+19. Is it good playing with screen bezels enabled?
+
+It is recommended to disable such option since its continued use can burn-in the same on your TV / Arcade screen.
+20. How can I create a backup of my favorites?
+
+Both game list and favorites are stored in the SD card.
+
+If you need to reinstall the system and don't want to lose your data, you can make a backup in two different ways:
+|1) No Net (System doesn't boot up)
+
+Even if the SD card is corrupted (if it's your case), probably you can mount it in any Linux distribution:
+- Access the drive labeled as rootfs
+- Navigate to /home/pi/RGB-Pi/data folder and make a copy of all games*.csv files
+|2) By Net (System boots)
+
+You can access by net to make your backup:
+- Connect via SFTP (check your IP from [Network] menu) with user: pi and password: rgbpi
+- Navigate to /home/pi/RGB-Pi/data folder and make a copy of all games*.csv files
+|Finally, you can now restore and replace all the files of your new system by the ones that you have just copied by following the same connection methods you followed for the backup.
+21. How can I use my custom scrap images?
+
+You can copy your custom images to:
+- SFTP: /home/pi/RetroPie/images
+- Windows SMB: \\rgbpi\images
+
+Note: you must create an additional folder with the name of the system to be used.
+|The supported image format is .png with a resolution of 320x240.
+
+The use of high resolution images can affect the system performance.
+|The name of the image files must follow this format: romfilename.png
+
+Example:
+
+ROM name: shinobi.sms
+PNG name: shinobi.png
+
+Finally you must activate [Settings > Brackgrounds > Custom] menu option.
+|22. How can I save my Retroarch FBA remaps?
+
+RGB-Pi OS has incorporated an automatic remap system for NeoGeo MVS/AES for matching the original systems.
+|If you want to make your own remaps for FBA arcade, you must delete the following system files:
+
+- /opt/retropie/configs/all
+/retroarch/config/remaps/FB Alpha
+/FB Alpha.rmp
+- /opt/retropie/configs/all
+/retroarch/config/remaps/FB Alpha
+/_FB Alpha.rmp
 ---------------------------------------------------------------------------------------------------------
 
 # Preguntas frecuentes
-## Este FAQ está orientado a la ultima verson del sistema 4.1 Final 1.1, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
+## Este FAQ está orientado a la ultima verson del sistema RGB-Pi OS Beta 19_06_30s, las respuestas que aquí se encuentran pueden no ser aplicables a versiones anteriores.
 
 Preguntas:
-1. ¿Por que el cable es tan corto?
-2. ¿Porque no tiene un conector scart hembra?
-3. ¿Puedo usar el cable en Retropie u otros sistemas que no sean vuestra versión modificada de Recalbox?
-4. Tengo una TV Sony Trinitron y los colores rojos se ven muy apagados.
-5. ¿Como puedo utilizar un almacenamiento externo USB?
-6. La imagen del menu se ve distorsionada pero los juegos se ven bien.
-7. En los juegos veo una franja negra en un lateral o que la imagen se sale de la pantalla.
-8. ¿Que romsets se necesitan para arcade?
-9. Hago cambios en Retroarch pero no se quedan guardados.
-10. Tengo una RPi2 o anterior, ¿que sistema debo utilizar?
-11. ¿Porque no está disponible Kodi?
-12. ¿Se puede utilizar RGB-Pi en un televisor LCD directo o con algun reescalador?
-13. Al quedar la TV en silencio se escucha un ruido molesto en el audio.
-14. ¿Puedo conectar un ventilador en el GPIO?
-15. ¿Puedo conectar un interruptor de encendido o los joystick al GPIO?
-16. ¿Porque el canal AV de la tele no se selecciona automaticamente?
-17. Los juegos verticales se ven tumbados, ¿como puedo cambiarlos?
-18. ¿Puedo actualizar el sistema desde dentro de Recalbox?
-19. Los juegos de portatiles se ven muy pequeños.
-20. No tengo sonido.
-21. ¿Que es EasyNetplay y como funciona?
-22. ¿Que son los modos Cropped y Forced de arcade?
-23. La intro se ralentiza en el primer arranque.
-24. Mi disco duro externo o pendrive no se monta automaticamente.
-25. Tengo una duda que no se encuentra en ésta lista
----------------------------------------------------------------------------------------------------
-Respuestas:
-1. El cable plano no debe superar los 25cm para evitar interferencias al ser un cable no aislado.
-Si necesitas una distancia mayor puedes utilizar un alargador scart hembra macho, pero no puedo asegurar que la calidad sea tan alta como conectando el RGB-Pi directo a la tele.
+1. Qué sistemas están soportados?
+2. Cómo copio ROMs de juegos?
+3. Por qué es el cable tan corto?
+4. Por qué no tiene un conector scart hembra?
+5. Tengo una TV Sony Triniton y los colores rojos se ven apagados.
+6. Puedo usar el cable con Retropie, Recalbox o Lakka?
+7. Cómo puedo usar una unidad externa USB/NFS?
+8. Por qué algunos juegos muestran bandas negras o se salen un poco de la pantalla?
+9. Qué romsets son usados por los diferentes emuladores arcade?
+10. Qué modelos de RPi están soportados?
+11. Puedo usar RGB-Pi en una TV LCD o con un escalador?
+12. Puedo conectar un ventilador al GPIO?
+13. Puedo conectar un interruptor o joystick al GPIO?
+14. Por qué el canal de TV no se selecciona automáticamente?
+15. Los juegos verticales no se ven en posición vertical, cómo puedo cambiar esto?
+16. Los juegos portátiles se ven muy pequeños.
+17. No tengo sonido.
+18. Qué es Netplay y como funciona?
+19. Es bueno jugar con marcos de pantalla activados?
+20. Cómo creo una copia de seguridad de mis favoritos?
+21. Cómo usar mis imágenes de escrapeo personalizadas?
+22. Cómo guardo mis remaps de FBA Retroarch?
 
-2. El uso de un scart hembra implicaria la necesidad de un cable scart adicional, me gusta la idea de no necesitar nada mas que un RGB-Pi para funcionar, tampoco seria posible controlar que tipo de extensor utilizaria cada persona y posiblemente mucha gente sufriria interferencias que provocaran una mala experiencia.
+-------------------------------------------------------------------------------------------------------
 
-3. Si, es posible utilizar el cable en cualquier sistema soportado por la RPi, pero atención! No vais a tener las resoluciones originales de cada juego proporcionadas por nuestro software, vais a ver todo a través de una unica resolución fija.
-Si de todos modos quereis probar otros sistemas teneis las instrucciones [aquí](https://github.com/mortaca/RGB-Pi/blob/master/README.md)
+1. Qué sistemas están soportados?
 
-4. En el caso de tener una TV Sony Trinitron y detectar que los colores rojos se ven muy apagados o marrones debes ir a la sección Config y activar el script Trinitron Fix, si tienes una Trinitron pero no has notado ningún problema con los colores no debes activar el Fix.
+Máquinas Arcade MAME/FBA (.zip)
+Atari 2600 (.a26 .rom)
+Atari 400/800/XL/XE/5200 (.a52 .atr .bas .car .dcm .xex .xfd)
+Atari 7800 (.a78)
+Atari LYNX (.lnx)
+WonderSwan (.ws)
+WonderSwan Color (.wsc)
+ColecoVision (.col)
+PC Engine (.pce)
+|CD-ROM2 System (.ccd .chd .cue)
+Odyssey2 (.o2)
+Nintendo NES (.fds .nes)
+Famicom Disk System (.fds .nes)
+Super Nintendo (.sfc .smc)
+Nintendo 64 (.z64 .n64 .v64)
+Game Boy (.gb)
+Game Boy Color (.gbc)
+Game Boy Advance (.gba)
+SG-1000 (.sg), Master System (.sms)
+Megadrive (.gen .md .smd)
+|Mega-CD (.chd .cue)
+Megadrive 32X (.32x)
+Game Gear (.gg)
+NEOGEO (.zip)
+NEOGEO Pocket (.ngp)
+NEOGEO Pocket Color (.ngc)
+PlayStation (.pbp .cue .cbn .img .iso .m3u)
+Amstrad CPC (.dsk)
+Atari ST (.st .stx .ipf)
+Commodore 64 (.crt .d64)
+|Commodore Amiga (.uae .adf)
+MSX (.rom .mx1 .mx2)
+ZX Spectrum (.tap .tzx)
+ScummVM (.svm)
+MS-DOS (.sh)
+2. Cómo copio ROMs de juegos?
 
-5. Para utilizar el amacenamiento externo USB con RGB-Pi hay que hacer uso exclusivamente del script USB Mount en la seccion Config, primero hay que formatear el USB en Fat32 y creat las siguientes carpetas /roms /bios y /saves, después dentro de /roms cada sistema debe tener su carpeta con el mismo nombre que se utiliza en la memoria SD por ejemplo /roms/psx, una vez arrancado el sistema con el USB conectado seleccionaremos USB Mount y las carpetas del USB quedaran disponibles, sera necesario activar éste ultimo paso en cada reinicio del sistema.
+Existen varias opciones para acceder a la carpeta de ROMs:
 
-6. Esto sucede porque para Emulationstation usamos una resolucion particular de 450x270 50Hz y en algunas televisiones puede causar problemas.
-Para solucionarlo solo hay que abrir la ScreenUtility en la seccion RGB-Pi Config y cambiar el campo SystemResolution de 450 a 320.
+a) Desde Windows, abre el navegador de archivos y escribe \\rgbpi en la barra de direcciones
+b) Puedes conectar via SFTP (consulta tu IP desde el menú [Redes]) con el usuario: pi y contraseña: rgbpi
+|c) Si usas Linux, conecta la tarjeta SD a tu ordenador y desde la partición rootfs ve a la carpeta /home/pi/RetroPie/roms
+d) Puedes crear una unidad RGB-Pi externa USB desde [Ajustes > Cargar Juegos Desde > USB/NFS]
+3. Por qué es el cable tan corto?
 
-7. Las teles de tubo son muy distintas de las LCD y cada televisor tiene unos parametros de centrado distintos, de modo que no hay una configuración que se vea bien en todos los televisores y es posible que sea necesario centrar la imagen en tu TV, para ello ofrecemos una solucion propia y **no es necesario el uso de Retroarch**.
-Para ajustar la imagen tienes las aplicacion ScreenUtility en la seccion RGB-Pi Config desde donde podrás ajustar la posicion horizontal y vertical, también puedes expandir o contraer la imagen horizontalmente sin perder el PixelPerfect, después de ajustar los valores se puede lanzar una rejilla de centrado en la opción CenteringTest (Es posible que esta funcion de test falle de vez en cuando por motivos relacionados con Recalbox)
+Debido a que el cable no está blindado, no puede exceder los 25cm para evitar interferencias.
+Si necesitas mayor distancia, puedes usar un cable alargador de scart macho a hembra, pero no podemos garantizar que la calidad de la imagen sea la misma que conectando diréctamente RGB-Pi a la TV.
+4. Por qué no tiene un conector scart hembra?
 
-8. Para MAME2003 el romset 0.78, AdvanceMAME 0.106 y FBAlpha Libretro v0.2.97.43.
+Nos gusta la idea de que solo sea necesario el cable RGB-Pi.
+El uso de un conector hembra obligaría hacer uso de un cable macho a macho adicional.
+|Esto además de un gasto adicional para el usuario, conlleva una pérdida de calidad dependiendo del cable alargador utilizado como se explica en la pregunta 2.
+5. Tengo una TV Sony Triniton y los colores rojos se ven apagados.
 
-9. Nuestro sistema utiliza archivos personalizados para Retroarch y cualquier cambio que se haga desde el menu sera descartado, si quieres introducir algun cambio en los archivos personalizados de retroarch los puedes encontrar en la carpeta /share/RGB-Pi/Retroarch/ cada uno con el nombre de la consola a la que afecta.
+En caso de tener una TV Sony Triniton y notar que los colores rojos se ven oscuros o marrones, puedes arreglarlo activando el arreglo correspondiente desde el menú de opciones [Imagen > Arreglo Color Trinitron].
+|Este problema solo afecta a algunos modelos de Sony Triniton, por lo que si no has notado colores incorrectos no debes activar esta opción.
 
-10. Las ultimas mejoras solo están disponibles para la RPi3, si tienes una versión anterior ponte en contacto conmigo para elaborar una distribución especifica para el sistema que utilices, una vez se lance la versión Beta ésta estara disponible para todos los sistemas.
+Desde el menú [Imagen > Ajuste de Imagen] está disponible un pequeño recuadro azul con las letras OK en su interior. Si no puedes leerlo debes activar el fix.
+6. Puedo usar el cable con Retropie, Recalbox o Lakka?
 
-11. De momento no podemos tener resoluciones entrelazadas y para Kodi es necesario 640x480i, una resolucion inferior provoca que sea totalmente inutilizable, en el momento que sea posible manejar Kodi con una calidad aceptable le daremos soporte.
+Sí, puedes usarlo en cualquier sistema soportado por Raspberry Pi, pero ten en cuenta que estos sistemas no proveen de las personalizaciones para poder mostrar casa sistema y/o juego usando la resolución original.
+|Esto resultará en que los juegos se verán usando una resolución fija y en muchos casos sufriendo de errores gráficos, tirones, y otros problemas de imagen.
+|Dicho esto, si realmente quieres activar el uso del cable en alguno de estos sistemas, puedes encontrar instrucciones de cómo hacerlo aquí: https://github.com/mortaca/RGB-Pi/blob
+/master/README.md
+7. Cómo puedo usar una unidad externa USB/NFS?
 
-12. Se puede pero es totalmente absurdo, es mejor utilizar directamente la salida HDMI y Recalbox.
+Para montar una unidad USB:
 
-13. Esto es debido a interfetencias en el cable por la señal WiFi que emite la Raspberry, desactivar el WiFi en el menu y el ruido desaparecera.
+1) Solo tienes que activar la opción del menú [Ajustes > Cargar Juegos Desde > USB/NFS].
+2) El sistema pedirá confirmación para formatear la unidad en caso requerido.
+|Para conectar a una unidad NFS:
 
-14. Mucha gente utiliza un ventilador conectado al pin de +5v y GND en el GPIO, el conector de RGB-Pi ocupa estos pines pero no los utiliza, es posible soldar los cables por la parte inferior para los que tengan algun conocimiento de soldadura, otra opción es coger los +5v de un cable USB cortado.
+1) Neceritas configurar tu unidad de red como RW (lectura/escritura) y sin permisos.
+2) Necesitarás una estructura de directorios [roms] y [BIOS]. Lo más sencillo es que los copies de un USB formateado por RGB-Pi OS.
+|3) Desde RGB-Pi OS ve al menú [Redes > NFS] y sustituye los valores por defecto server#share. Ejemplo: 192.168.1.25#/srv/nfs/rgbpi
+4) Ahora solo tienes que activar la opción del menú [Ajustes > Cargar Juegos Desde > USB/NFS].
+8. Por qué algunos juegos muestran bandas negras o se salen un poco de la pantalla?
 
-15. No es posible utilizar un boton de encendido o ningún joystick conectado al GPIO porque el RGB-Pi está utilizando la mayoria de los pines para sacar los 18 Bits de video necesario y el sonido.
+Muchos juegos, incluso jugados en el sistema original, tienen estos problemas debido a la manera en que fueron programados originalmente.
+|Además hay que entender que las TV CRT son muy diferente de las LCD. Cada TV tiene unos ajustes algo distindos en centrado incluso tratándose del mismo modelo, de manera que no existe una configuración universal que se ajuste 100% a todas las TVs. 
+|Tienes tres diferentes opciones para hacer ajustes en tu TV:
 
-16. Para que la tele se ponga en modo RGB automaticamente es necesario suministrar +12v al scart y la RPi solo puede suministrar +5v con lo que conseguiriamos poner la tele en 16/9 y seria necesario utilizar el mando para cambiar a 4/3.
-Hay quien ha modificado su cable para introducir +12v en el pin 8 del scart, se puede utilizar una fuente de alimentación o un step up que cogeria los +5v del cable plano y los convertiria en +12v, **Estas modificaciones deben ser hechas bajo su propio riesgo**
-En el caso de querer hacerlo no es necesario levantar el pin 8 del PCB ya que éste no está conectado a tierra, ya se diseño así especificamente para facilitar una posible modificacion.
+1) Hacer ajustes por software usando el asistente proporcionado desde el menú de opciones [Imagen > Ajuste de Imagen].
+|2) Hacer ajustes de imagen usando el menú de servicio ofrecido por muchos fabricantes de TVs (normalmente oculto). Puedes descubrir como abrir este menú buscando en internet.
+|3) Hacer ajustes físicos en tu TV (Peligro - Alto Voltage). En muchos casos, aplicando pequeños ajustes al yugo de tu TV puedes corregir los problemas más comunes.
+9. Qué romsets son usados por los diferentes emuladores arcade?
 
-17. Intentando respetar siempre las resoluciones originales de cada juego los verticales deben verse de éste modo, en caso de querer rotarlos 90º es posible hacerlo mediante la ScreenUtility en la seccion RGB-Pi Config con la opcion Rotate Vertical Games -90.
-No es una buena opcion para los amantes del PixelPerfect puesto que al no disponer de resoluciones entrelazadas por el momento se pierden muchas lineas verticales, un juego que normalmente tiene 320 lineas en una resolución que solo muestra 240 no se ve nada bien, en el supuesto de que en un futuro se disponga de resoluciones entrelazadas se podria encaber esas 320 lineas con una resolución entrelazada de 480i pero no se obtiene un resultado tan bueno como el original.
+- fbalpha v0.2.97.43
+- advmame (MAME 0.106)
+- mame2003 (MAME 0.78)
+- mame2010 (MAME 0.139)
+10. Qué modelos de RPi están soportados?
 
-18. No, si haces esto perderas todas las modificaciónes hechas para soportar el cable RGB-Pi y el sistema dejara de funcionar.
+RGB-Pi OS ha sido probado en los modelos RPI2, RPi3 y RPi3 Plus.
+11. Puedo usar RGB-Pi en una TV LCD o con un escalador?
 
-19. La resolución de las portatiles originales era muy baja, respetando el PixelPerfect así debe verse, si te molesta ver el marco negro al rededor de la pantalla puedes activar los bezeles con la imagen de la consola original desde el ScreenUtility con la advertencia de que dejar una imagen fija en un CRT durante mucho tiempo puede dejar marcas enel fosforo.
+Puedes pero no tiene mucho sentido usar el cable en TVs no CRT. Para conectar a TVs planas, recomendamos el uso del conector HDMI y la distribución Lakka.
+12. Puedo conectar un ventilador al GPIO?
 
-20. Comprueba que no tengas nada conectado por HDMI, ésto desactiva la salida por el GPIO.
+Mucha gente usa ventiladores conectador a los pines de 5v y GND del GPIO. Desafortunadamente el cable RGB-Pi ocupa estos pines aunque no los utiliza, de manera que:
+|1) Es posible soldar un cable por detrás si tienes habilidades soldando.
+2) Otra opción es sacar los 5v del puerto USB usando un cable modificado.
+13. Puedo conectar un interruptor o joystick al GPIO?
 
-21. EasyNetplay es una interfaz propia de RGB-Pi pensada para configurar de forma sencilla el Netplay o juego en linea, una vez dentro tenemos dos modos de funcionamiento, como HOST o como CLIENTE, en cada partida tiene que haber un HOST al que se van a conectar el resto de jugadores, si activas el modo HOST quedara desactivado el modo cliente automaticamente y deberas abrir el puerto 55435 en tu ruter apuntando hacia la direccion IP de tu Pi, dependiendo de tu modelo de ruter esto se hace de forma distinta, es necesario que busqueis en google vuestro modelo concreto y como abrir los puertos hacia una IP.
-    Una vez hecho esto ya podemos salir de la aplicación y comprobaremos cual es nuestra IP publica desde un telefono movil conectado a nuestra red o desde el pc para darsela al resto de jugadores.
-    En la parte superior derecha de la aplicación encontrareis un enlace al servidor de Discord donde hay disponibles diversas salas de chat de voz para ser utilizadas desde el telefono movil durante la partida, por ahi mismo podeis dar vuestra IP de forma segura solo a los amigos con los que vayáis a jugar.
-    En el caso del resto de jugadores que no van a ser host deben activar el modo cliente dentro de EasyNetplay, tendran la opcion de escoger 5 casillas de almacenamiento de IPs distintas que se pueden editar sin teclado con el uso del mando saltando de 1 en 1 o de 10 en 10 los valores numericos, una vez terminado ésto ya podemos salir de la aplicación y a partir de éste momento estamos listos para jugar en red.
-    Es importante que todos los jugadores compartan la misma rom exacta y que sean emuladores de retroarch, por ejemplo advmame no es posible utilizarlo para Netplay.
-    Con todo ésto podemos empezar a jugar pasando de un juego a otro sin tener que tocar nada mas en la configuración, recordar que si queremos tener una buena experiencia de juego es necesario utilizar cable de red directamente al ruter, el uso de wifi o PLCs va a hacer la experiencia injugable.
-    El primero en entrar en la partida tiene que ser siempre el que haga de HOST y una vez dentro pueden ir entrando los CLIENTES, para salir de la partida seria en el orden inverso siendo el HOST el ultimo en abandonarla.
-    Existe la posibilidad cuando hay partidas de 4 jugadores de añadir un poco de input lag para que la sincronización entre todos los jugadores sea mejor, tambien puede ser util en conexiones con una latencia un poco mala, hay que entrar en el menu de retroarch con hotkey+B y buscar en opciones y network la casilla input_latency_fame que estara puesta en 2 se puede ampliar a 3 o 4 si fuese necesario, cuando se entre en el menu la partida se pausara para el resto de usuarios, este valor se reseteara cada vez que abandomenos un juego.
-    
-22. El selector de arcade que nos muestra las opciones Forced y Cropped solo se activa en juegos que superan las 240 scanlines, los juegos que son exactamente de 240 lineas son ajustados en altura automaticamente con lo que tendran un poco de overscan vertical pero es mejor solución que forzarlos ya que en ese modo se verian unas franjas negras excesivamente grandes, los juegos de 256 lineas o mas tenemos ahora la opción de forzarlos modificando la frecuencia horizontal del monitor para que se compriman pudiendo ver la imagen completa del juego mas una pequeña franja negra o verlos en modo Cropped con la imagen cortada y mucho overscan vertical, esto sucede porque son juegos pensados para maquinas arcade donde se podia ajustar el valor de tamaño vertical de la imagen con un potenciometro que no tenemos en las TVs comerciales, del mismo modo juegos de 224 lineas pero de 55Hz que una TV reconoce como PAL y los comprime podemos forzarlos y verlos en su resolución original evitando las franjas negras.
+No es posible conectar ningún dispositivo al GPIO mientras RGB-Pi está conectado ya que casi todos los pines son usados para sacar los 18 Bits del audio y vídeo.
+14. Por qué el canal de TV no se selecciona automáticamente?
 
-23. Esto sucede porque el sistema está expandiendo la capacidad de la micro SD, hay que dejar que termine y no apagar la Pi en este punto, en la siguiente vez qye se arranque el sistema se vera la intro correctamente.
+Importante! Esta información solo es válida si estás usando la primera revisión del cable RGB-Pi.
 
-24. Los discos duros externos o pendrives de mucha capacidad pueden no ser montados automaticamente en el arranque para evitar un arranque demasiado lento, deben ser activados de forma manual con USB Mount.
+Para poder poner la TV en modo RGB automáticamente, es necesario proveer de 12v al cable scart, pero la RPi solo dispone de 5v.
+|Algunas personas has realizado modificadiones en sus cables para introducir 12v en el pin 8 del scart. Esto es factible usando una fuente externa o usando un elevador de tensión que convierta los 5v en 12v.
+|Cualquier modificación al cable/RPi será bajo su propio riesgo. En caso de proceder, no es necesario levantar el pin 8 de la PBC ya que no está conectada a negativo y está diseñada para posibles modificaciones.
+|NOVEDAD! La nueva versión del cable disponible desde la web oficial, ya dispone de esta funcionalidad además de otras mejoras.
+15. Los juegos verticales no se ven en posición vertical, cómo puedo cambiar esto?
 
-25. Por favor contactanos a través de **info@rgb-pi.com** o en alguno de los foros donde participamos.
+Por defecto, los juegos verticales están rotados para su uso en modo horizontal.
+|No es la opción preferida para los amantes del PixelPerfect, ya que a causa de la falta de resoluciones entrelazadas, muchas líneas verticales se pierden al pasar de 320 a 240 líneas. 
+
+En caso de que desees jugar con la pantalla en vertical, puedes hacerlo desde el menú de opciones [Imagen > Modo de Sistema > Arcade Vertical].
+16. Los juegos portátiles se ven muy pequeños.
+
+La resolución original de las consolas portátiles era muy baja, y dado que intentamos mantener la imagen PixelPerfect para todos los sistemas, este es el comportamiento esperado.
+17. No tengo sonido.
+
+Comprueba que no tienes nada conectado al puesrto HDMI. Esto desactiva la salida GPIO.
+18. Qué es Netplay y como funciona?
+
+Netplay es una interface diseñado para configurar facilmente el juego online.
+
+Tienes dos modos de operación, Server y Client. Elige Server si quieres servir a otros juegadores o Client si te quieres unir a la partida online provista por un Server.
+|Si vas a jugar como Server, después de seleccionar esta opción, los otros jugadores deben seleccionar la opción Client y luego seleccionar tu Nick desde la lista de nombres de Servidor.
+Tras esto, el Server debe iniciar el juego el primero seguido del resto de jugadores Client.
+|Por privacidad de datos, al seleccionar Server, tus amigos tendrán 30 segundos para conectar contigo seleccionando la opción Client. Pasado ese tiempo deberás repetir la operación.
+|Nota: para que el netplay funcione, asegurate de tener abierto el puerto 55439 en tu router.
+19. Es bueno jugar con marcos de pantalla activados?
+
+Se recomienda desactivar dicha opción ya que su uso continuado puede dejar marcas en la pantalla de tu TV / Arcade.
+20. Cómo creo una copia de seguridad de mis favoritos?
+
+Tanto la lista de juegos como los favoritos se almacenan en la tarjeta SD.
+
+Si necesitas reinstalar el sistema y no quieres perder tus datos, puedes hacer una copia de seguridad de dos maneras:
+|1) Sin Red (El sistema no arranca)
+
+Incluso con la tarjeta SD corrupta (si es tu caso), probablemente puedas montarla en cualquier distribución Linux:
+- Accede a la unidad con el nombre rootfs
+- Navega al directorio /home/pi/RGB-Pi/data y haz una copia de todos los archivos games*.csv
+|2) Por Red (El sistema arranca)
+
+Puedes acceder por red para hacer tu copia de seguridad:
+- Conecta via SFTP (consulta tu IP desde el menú [Redes]) con el usuario: pi y contraseña: rgbpi
+- Navega al directorio /home/pi/RGB-Pi/data y haz una copia de todos los archivos games*.csv
+|Finalmente, en tu nuevo sistema ya puedes restaurar y reemplaza todos los archivos del sistema por los que acabas de copiar siguiendo el mismo método de conexión que para hacer la copia de seguridad.
+21. Cómo usar mis imágenes de escrapeo personalizadas?
+
+Puedes copiar tus imágenes diréctamente en:
+- SFTP: /home/pi/RetroPie/images
+- Windows SMB: \\rgbpi\images
+
+Nota: debes crear un subdirectorio adicional con el nombre del sistema a usar.
+|El formato de imagen soportado es .png con una resolución de 320x240.
+
+El uso de imágenes de alta resolución puede afectar el rendimiento del sistema.
+|El nombre de los archivos de imágenes deben tener el formato: romfilename.png
+
+Ejemplo:
+
+Nombre ROM: shinobi.sms
+Nombre PNG: shinobi.png
+
+Finalmente debes activar la opción [Ajustes > Fondos > Personalizado].
+22. Cómo guardo mis remaps de FBA Retroarch?
+
+RGB-Pi OS tiene incorporado un sistema automático de remapeo para NeoGeo MVS/AES para ajustarse a los sistemas originales.
+|Si quieres hacer remapeos en arcade FBA, tienes que borrar los siguientes archivos de sistema:
+
+- /opt/retropie/configs/all
+/retroarch/config/remaps/FB Alpha
+/FB Alpha.rmp
+- /opt/retropie/configs/all
+/retroarch/config/remaps/FB Alpha
+/_FB Alpha.rmp
 
 
     
