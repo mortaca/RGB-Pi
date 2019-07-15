@@ -1,7 +1,7 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
     ┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
-    ┃GND            A┃1             GND┃         
+    ┃GND            A┃1             GND┃
     ┃GND            B┃2             GND┃
     ┃+5V            C┃3             +5v┃
     ┃+5v            D┃4             +5v┃
