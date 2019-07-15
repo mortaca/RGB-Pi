@@ -1,10 +1,10 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
     ┏━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
-    ┃GND____________A┃1             GND┃
-    ┃GND____________B┃2             GND┃
-    ┃+5V____________C┃3             +5v┃
-    ┃+5v            D┃4             +5v┃
+    ┃GND____________A┃1_____________GND┃
+    ┃GND____________B┃2_____________GND┃
+    ┃+5V____________C┃3_____________+5v┃
+    ┃+5v            D┃4_____________+5v┃
     ┃               E┃5                ┃
     ┃+12v           F┃6            +12v┃
     ┃Key            H┃7             Key┃
