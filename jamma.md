@@ -1,5 +1,14 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
-# RGB-Pi JAMMA installation instructions
+# JAMMA RGB-Pi Pinout
+ ___________________
+|GND     A|1     GND|
+|GND     B|2     GND|
+|+5V     C|3     GND|
+|
+|
+|
+
+# JAMMA RGB-Pi installation instructions
 
 Steps:
 1. Put one of the pieces of plastic you will receive on pin 7 of the jamma connector
@@ -14,7 +23,7 @@ Steps:
 
 ---------------------------------------------------------------------------------------------------------
 
-# RGB-Pi JAMMA instrucciones de instalacion
+# JAMMA RGB-Pi instrucciones de instalacion
 
 Pasos:
 1. Ponga una de las piezas de plastico que recibira en el pin 7 del conector jamma
