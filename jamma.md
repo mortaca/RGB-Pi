@@ -1,6 +1,6 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
-    ------------------------------------
+    +----------------------------------+
     |GND            A|1             GND|
     |GND            B|2             GND|
     |+5V            C|3             +5v|
@@ -29,7 +29,7 @@ Available in English and Spanish / *Disponible en Ingles y Español*
     |P2 Button5     d|26     Button5 P1|
     |P2 Button6     e|27     Button6 P1|
     |GND            f|28            GND|
-    ------------------------------------
+    +----------------------------------+
     
 # JAMMA RGB-Pi installation instructions
 
