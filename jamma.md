@@ -1,13 +1,36 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
-     ___________________
-    |GND     A|1     GND|
-    |GND     B|2     GND|
-    |+5V     C|3     GND|
-    |
-    |
-    |
-
+     __________________________________
+    |GND            A|1             GND|
+    |GND            B|2             GND|
+    |+5V            C|3             +5v|
+    |+5v            D|4             +5v|
+    |               E|5                |
+    |+12v           F|6            +12v|
+    |Key            H|7             Key|
+    |               J|8                |
+    |               K|9                |
+    |Speaker -/L    L|10    Speaker +/R|
+    |P1Button 7     M|11               |
+    |Video GREEN    N|12       VideoRED|
+    |Video SYNC     P|13      VideoBLUE|
+    |P2 Button 7    R|14       VideoGND|
+    |P2 Button 8    S|15    Butoon 8 P1|
+    |Coin 2         T|16          Coin1|
+    |P2 Start       U|17       Start P1|
+    |P2 Up          V|18          Up P1|
+    |P2 Down        W|19        Down P1|
+    |P2 Left        X|20        Left P1|
+    |P2 Right       Y|21       Right P1|
+    |P2 Button1     Z|22     Button1 P1|
+    |P2 Button2     a|23     Button2 P1|
+    |P2 Button3     b|24     Button3 P1|
+    |P2 Button4     c|25     Button4 P1|
+    |P2 Button5     d|26     Button5 P1|
+    |P2 Button6     e|27     Button6 P1|
+    |GND            f|28            GND|
+    |__________________________________|
+    
 # JAMMA RGB-Pi installation instructions
 
 Steps:
