@@ -73,6 +73,7 @@ RGB-Pi OS (Beta - Image) 2019 06 30
     - Fixed overscan of all systems
 
 RGB-Pi OS (Final Alpha - Image) 2019 06 22
+
 Initial RGB-Pi OS Release. You can check the most important features described down below:
 
     - Custom interface specially adapted for CRT TVs
