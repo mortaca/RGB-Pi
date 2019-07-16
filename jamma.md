@@ -39,7 +39,7 @@ Steps:
 3. Plug the pcb into the raspberry with the jamma connector facing out
 4. Put a heatsink on the golden part indicated with the heat symbol
 5. Download the latest version of the operating system from rgb-pi.com
-6. Format one 8GB or hiest microSD in Fat32
+6. Format one 8GB or biggest microSD in Fat32
 7. Download Etcher from etcher.io to record the image in the SD
 8. Record the image WITHOUT DECOMPRESSING in the SD and EXTRACT WITH SAFETY
 9. Put the SD in the Pi and connect the jamma plate WITH THE MACHINE OFF
