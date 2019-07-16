@@ -4,7 +4,7 @@ Available in English and Spanish / *Disponible en Ingles y Español*
 Steps:
 1. Connect the cable on the GPIO to the outside of the RaspberryPi
 2. Download the latest version of the operating system from rgb-pi.com
-3. Format one 8GB or higest microSD in Fat32
+3. Format one 8GB or bigger microSD in Fat32
 4. Download Etcher from etcher.io to write the image in the SD
 5. Burn the image WITHOUT DECOMPRESSING in the SD and EXTRACT WITH SAFETY
 6. We can already put the SD in the Pi and connect to the TV
