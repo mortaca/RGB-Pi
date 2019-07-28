@@ -1,5 +1,6 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # JAMMA RGB-Pi Pinout
+    JAMMA / MVS
     ┏━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
     ┃GND             A┃1             GND┃
     ┃GND             B┃2             GND┃
