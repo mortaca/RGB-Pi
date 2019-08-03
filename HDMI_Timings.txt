@@ -5,6 +5,9 @@ hdmi_timings=<h_active_pixels> <h_sync_polarity <h_front_porch> <h_sync_pulse> <
 Usable Pixel clock are :
 4800000 - 6400000 - 9600000 - 19200000 and anything over 38400000
 
+** JAMMA **
+hdmi_timings=320 1 16 30 34 240 1 2 3 22 0 0 0 60 0 6400000 1
+
 ** EmulationStation ** 60Hz
 hdmi_timings 480 1 14 45 56 300 1 10 5 5 0 0 0 60 0 9600000 1
 hdmi_timings 480 1 14 45 56 302 1 8 5 26 0 0 0 60 0 9600000 1
