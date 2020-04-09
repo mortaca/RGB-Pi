@@ -1,5 +1,5 @@
 **RGB-Pi OS 2 (Alpha - Update) Soon**
-
+```
 - Changed system menu and system options interface.
 - Added full CW and CCW UI rotation modes. 
 - Added new Skin UI engine.
@@ -41,7 +41,7 @@
 - Added videoplayer expand and letterbox modes.
 - Added OS turbo mode enabled by default for improbed performance.
 - Removed cable check restriction.
-
+```
 **RGB-Pi OS (Beta - Update) 2019 08 06**
 ```
 - Fixed UI font. Now is fully monospace
