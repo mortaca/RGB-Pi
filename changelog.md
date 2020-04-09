@@ -1,4 +1,4 @@
-**RGB-Pi OS 2 (Alpha - Update) Soon**
+**RGB-Pi OS 2 (Alpha - 20200501) Soon**
 ```
 - Changed system menu and system options interface.
 - Added full CW and CCW UI rotation modes. 
