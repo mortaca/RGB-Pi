@@ -1,3 +1,47 @@
+**RGB-Pi OS 2 (Alpha - Update) Soon**
+
+- Changed system menu and system options interface.
+- Added full CW and CCW UI rotation modes. 
+- Added new Skin UI engine.
+- Added new unified search + scrap engine.
+- Added new game list option menu.
+- Changed game list and favorite data is now saved in selected unit.
+- Added quick sort modes by letter, year, players and system.
+- Added forward and backward for all the quick search modes.
+- Added Virtual Keyboard for data entry.
+- Added Kiosk mode password protected. 
+- Added 5 new languages.
+- Added display menu music title.
+- Added rom folder auto-regenaration.
+- Added NFS2/3 and NFS4 modes.
+- Added NFS check to avoid overwrite hi-scores.
+- Added current selected external unit icon.
+- Added two new screen savers, black screen and CRT power off.
+- Added Image List menu type.
+- Added system power and temperature alarms.
+- Added arcade FreePlay mode.
+- Added controller and button layout association. 
+- Fixed firewall blocking issues.
+- Fixed SSID and Password char issues.
+- Fixed all remaps on real RGB-Pi JAMMA mode.
+- Changed unified Start hotkey for solving issues with PC-Engine, MegaDrive and JAMMA.
+- Changed music to genuine Evan King chiptune albums.
+- Added new custom music album option.
+- Added new Bluetooth menu.
+- Added new Netplay menu.
+- Added new External Unit menu.
+- Changed all RetroArch options to specific menus.
+- Changed EQ menu.
+- Changed controller mapping by direct selection.
+- Added new manual power off option.
+- Added power off sequence image indicators.
+- Removed auto scan games on boot for super fast load.
+- Added experimental Sharp x68000.
+- Changed FB Alpha by FB Neo.
+- Added videoplayer expand and letterbox modes.
+- Added OS turbo mode enabled by default for improbed performance.
+- Removed cable check restriction.
+
 **RGB-Pi OS (Beta - Update) 2019 08 06**
 ```
 - Fixed UI font. Now is fully monospace
