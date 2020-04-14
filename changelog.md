@@ -19,7 +19,7 @@
 - Added Kiosk mode password protected. 
 - Added 5 new languages (EN,ES,FR,DE,IT,PT,JP).
 - Added display menu music title.
-- Added rom folder auto-regenaration.
+- Added rom folder auto-regeneration.
 - Added NFS2/3 and NFS4 modes.
 - Added NFS check to avoid overwrite hi-scores.
 - Added current selected external unit icon.
