@@ -1,8 +1,8 @@
-HDMI Timings
+## HDMI Timings
 
 hdmi_timings=<h_active_pixels> <h_sync_polarity <h_front_porch> <h_sync_pulse> <h_back_porch> <v_active_lines> <v_sync_polarity> <v_front_porch> <v_sync_pulse> <v_back_porch> <v_sync_offset_a> <v_sync_offset_b> <pixel_rep> <frame_rate> <interlaced> <pixel_freq> <aspect_ratio>
 
-Usable Pixel clock are :
+Usable Pixel clocks are:
 4800000 - 6400000 - 9600000 - 19200000 and anything over 38400000
 
 ** JAMMA **

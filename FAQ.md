@@ -1,127 +1,131 @@
 Available in English and Spanish / *Disponible en Ingles y Español*
 # Frequently Asked Questions
-## This FAQ is oriented to the latest available version of the system RGB-Pi OS Beta 19_06_30s, the answers here may not be useful for previous versions.
+## This FAQ is meant for the latest available version of the RGB-Pi OS Beta system 19_06_30s, the answers here may not be useful for previous versions.
 
 Questions:
-1. What are the supported systems?
-2. How can I copy game ROMs?
+1. What systems are supported?
+2. How can I copy a game ROMs?
 3. Why is the cable so short?
 4. Why doesn't it have a female scart connector?
 5. I have a Sony Trinitron TV and red colors look muted.
 6. Can I use the cable with Retropie, Recalbox or Lakka?
 7. How can I use an external USB/NFS storage?
-8. Why some games displays black bars or are a little off the screen?
+8. Why do some games displays black bars or are a little off the screen?
 9. What romsets are used by the different arcade emulators?
 10. Which RPi models are supported?
 11. Can I use RGB-Pi on a LCD TV or with some upscaler?
 12. Can I connect a fan to the GPIO?
 13. Can I connect a power switch or joystick through the GPIO?
-14. Why the TV channel is not selected automatically?
-15. Vertical games are not displayed in vertical position, how can I change that?
+14. Why is the TV channel not selected automatically?
+15. Vertical games are not displayed vertically, how can I fix that?
 16. Handheld games look very small.
 17. I don't have sound.
 18. What is Netplay and how does it work?
-19. Is it good playing with screen bezels enabled?
+19. Is it a good idea playing with screen bezels enabled?
 20. How can I create a backup of my favorites?
 21. How can I use my custom scrap images?
 22. How can I save my Retroarch FBA remaps?
 
 ---------------------------------------------------------------------------------------------------
 
-1. What are the supported systems?
+1. What systems are supported?
 
-Arcade Machines MAME/FBA (.zip)
-Atari 2600 (.a26 .rom)
-Atari 400/800/XL/XE/5200 (.a52 .atr .bas .car .dcm .xex .xfd)
-Atari 7800 (.a78)
-Atari LYNX (.lnx)
-WonderSwan (.ws)
-WonderSwan Color (.wsc)
-ColecoVision (.col)
-PC Engine (.pce)
-|CD-ROM2 System (.ccd .chd .cue)
-Odyssey2 (.o2)
-Nintendo NES (.fds .nes)
-Famicom Disk System (.fds .nes)
-Super Nintendo (.sfc .smc)
-Nintendo 64 (.z64 .n64 .v64)
-Game Boy (.gb)
-Game Boy Color (.gbc)
-Game Boy Advance (.gba)
-SG-1000 (.sg), Master System (.sms)
-Megadrive (.gen .md .smd)
-|Mega-CD (.chd .cue)
-Megadrive 32X (.32x)
-Game Gear (.gg)
-NEOGEO (.zip)
-NEOGEO Pocket (.ngp)
-NEOGEO Pocket Color (.ngc)
-PlayStation (.pbp .cue .cbn .img .iso .m3u)
-Amstrad CPC (.dsk)
-Atari ST (.st .stx .ipf)
-Commodore 64 (.crt .d64)
-|Commodore Amiga (.uae .adf)
-MSX (.rom .mx1 .mx2)
-ZX Spectrum (.tap .tzx)
-ScummVM (.svm)
-MS-DOS (.sh)
+* Arcade Machines MAME/FBA (.zip)
+* Atari 2600 (.a26 .rom)
+* Atari 400/800/XL/XE/5200 (.a52 .atr .bas .car .dcm .xex .xfd)
+* Atari 7800 (.a78)
+* Atari LYNX (.lnx)
+* WonderSwan (.ws)
+* WonderSwan Color (.wsc)
+* ColecoVision (.col)
+* PC Engine (.pce)
+* CD-ROM2 System (.ccd .chd .cue)
+* Odyssey2 (.o2)
+* Nintendo NES (.fds .nes)
+* Famicom Disk System (.fds .nes)
+* Super Nintendo (.sfc .smc)
+* Nintendo 64 (.z64 .n64 .v64)
+* Game Boy (.gb)
+* Game Boy Color (.gbc)
+* Game Boy Advance (.gba)
+* SG-1000 (.sg), Master System (.sms)
+* Megadrive (.gen .md .smd) 
+* Mega-CD (.chd .cue)
+* Megadrive 32X (.32x)
+* Game Gear (.gg)
+* NEOGEO AES & MVS (.zip)
+* NEOGEO Pocket (.ngp)
+* NEOGEO Pocket Color (.ngc)
+* PlayStation (.pbp .cue .cbn .img .iso .m3u)
+* Amstrad CPC (.dsk)
+* Atari ST (.st .stx .ipf)
+* Commodore 64 (.crt .d64)
+* Commodore Amiga (.uae .adf)
+* MSX (.rom .mx1 .mx2)
+* ZX Spectrum (.tap .tzx)
+* ScummVM (.svm)
+* MS-DOS (.sh)
 
-2. How can I copy game ROMs?
+2. How can I copy a game ROMs?
 
 You have several options to access to the ROMs folder:
 
-a) From Windows, open the file browser and type \\rgbpi in the address bar
-b) You can connect via SFTP (check your IP from [Network] menu) with user: pi and password: rgbpi
-|c) If you are in Linux, plug the SD card into your computer from rootfs partition go to /home/pi/RetroPie/roms folder
-d) You can create a RGB-Pi external USB unit from [Settings > Load Games From > USB/NFS]
+a) In Windows, open the file browser and type `\\rgbpi` in the address bar
+b) You can connect via SFTP (check the Pi's IP from `[Network]` menu) using the follwing credentials: user: `pi` / password: `rgbpi`
+c) If you are on Linux, plug the SD card into your computer from rootfs partition go to `/home/pi/RetroPie/roms folder`
+d) Create an external RGB-Pi USB unit using `[Settings > Load Games From > USB/NFS]`
+
 
 3. Why is the cable so short?
 
 Since the cable is unshielded, it can not exceed 25cm to avoid external interference.
-If you need a longer distance, you can use a scart male to female extension cable, but we cannot guarantee the same image quality as compared to directly connecting RGB-Pi cable to TV.
+If you need a longer cable, you can use a scart male to female extension cable, but the image quality will depend a lot on the cable you will choose.
+
 
 4. Why doesn't it have a female scart connector?
 
-We liked the idea that only RGB-Pi is necessary.
+We liked the idea that only the RGB-Pi is necessary.
 Using a female connector would require an additional male to male cable.
-|Appart from the additional expense, it would result in a loss of quality depending on the cable extension used as explained in question 2.
+Appart from the additional expense, it would result in a loss of quality depending on the extension cable used as explained in question 3.
+
 
 5. I have a Sony Trinitron TV and red colors look muted.
 
-In case of having a Sony Trinitron TV and noticing that red colors are displayed dark or brown, you can fix it by activating the corresponding fix from [Display > Trinitron Color Fix] menu option.
-|This issue only affects to some Sony Triniton TV models, so that if you didn't noticed any wrong color, you shouldn't activate this option.
+In the case of having a Sony Trinitron TV and that the red colors look dark or brown: activate the corresponding fix from `[Display > Trinitron Color Fix]` menu option.
+This issue only affects to some Sony Triniton TV models, so only do that if you noticed the colors beeing off.
 
-From [Image > Image Adjustmen] menu screen, a small blue square box is available with the text OK inside. If you cannot read the same, you must enable the fix.
+From the `[Image > Image Adjustmen]` menu screen, a small blue square box is available with the an `OK` text inside. If you cannot read it, you must enable the fix.
+
 
 6. Can I use the cable with Retropie, Recalbox or Lakka?
 
 Yes, you can use it on any Raspberry Pi supported system, but be aware that these systems doesn't provide any kind of customization for displaying each system and/or game using the original resolution.
-|This will result in games being displayed using a fixed resolution and in many cases suffering of glitches, shuttering, and other image issues.
-|That said, if you really want to enable the cable use in any of these systems, you can find the instructions here: https://github.com/mortaca/RGB-Pi/blob
-/master/README.md
+|This will result in games being displayed using a fixed resolution and in many cases suffering of glitches, shuttering and/or other image issues.
+|That said, if you still want to enable the cable use in any of these systems, you can find instructions [over here](https://github.com/mortaca/RGB-Pi/blob/master/README.md).
+
 
 7. How can I use an external USB/NFS storage?
 
 To mount a USB unit:
 
-1) You only need to activate [Settings > Load Games From > USB/NFS] menu option.
-2) System will request for confirmation if formatting the unit is required.
+1) Toggle the `[Settings > Load Games From > USB/NFS]` menu option.
+2) The system will request a confirmation if formatting the unit is required.
 |To connect to NFS drive:
 
-1) You need to configure the shared unit as RW (read/write) without permissions. 
-2) You will need [roms] and [BIOS] folder structure. The easiest way is to copy it from a USB formatted by RGB-Pi OS.
-|3) From RGB-Pi OS go to [Network > NFS] and replace the predefault values server#sare. I.e.: 192.168.1.25#/srv/nfs/rgbpi
-4) Now you only need to activate [Settings > Load Games From > USB/NFS] menu option.
+1) Configure the shared unit as RW (read/write) without permissions. 
+2) You will need `roms` and `BIOS` folder structure. The easiest way is to copy it from a USB-Drive formatted within RGB-Pi OS.
+|3) From RGB-Pi OS go to `[Network > NFS]` and replace the prefilled values `server#path`. I.e.: `192.168.1.25#/srv/nfs/rgbpi`
+4) Toggle the `[Settings > Load Games From > USB/NFS]` menu option.
 
-8. Why some games displays black bars or are a little off the screen?
+8. Why do some games displays black bars or are a little off the screen?
 
-Many games, even when played in the original system, have these problems because of the way they were originally developed. 
-|Also, do note that CRT TVs are very different from LCD TVs. Each TV has a slightly different centering adjustment even when using same TV models, so there is not any universal configuration that fits 100% OK in all TVs.
+Many games, even when played in the original system, have these problems because of the way they were originally developed.
+|Also, do note that CRT TVs are very different from LCD TVs. Each TV has a slightly different centering adjustment even within the same TV series, so there is not an universal configuration that fits all TVs.
 |You have three options for making TV adjustments:
 
-1) Make software image adjustments by using the image assistant tool provided from [Image > Image Adjustment] menu option.
-|2) Make image adjustments by using the (commonly hidden) service menu offered by many TV models. You can find out how to open your TV's service menu by searching in internet.
-|3) Make physical adjustments to your TV (Warning - High Voltage). In many cases, applying some minor adjustments to the TV's yoke can fix many common issues.
+1) Make software image adjustments by using the image assistant tool provided from the`[Image > Image Adjustment]` menu option.
+|2) Make image adjustments by using the (commonly hidden) service menu offered by many TV models. Find out how to open your TV's service menu by searching the internet. :D
+|3) Make physical adjustments to your TV (Warning - High Voltage). In many cases, applying some minor adjustments to the TV's yoke can fix a multitude of common issues.
 
 9. What romsets are used by the different arcade emulators?
 
@@ -132,45 +136,52 @@ Many games, even when played in the original system, have these problems because
 
 10. Which RPi models are supported?
 
-RGB-Pi OS has been tested in RPi2, RPi3 and RPi3 Plus models.
+RGB-Pi OS has been tested on RPi2, RPi3 and RPi3 Plus models.
+
 
 11. Can I use RGB-Pi on a LCD TV or with some upscaler?
 
-You can but there is no point on using the cable for non CRT TVs. For connecting to flat TVs, we recommend using the HDMI output and Lakka distribution.
+You can, but there is no point in doing so. To connect to a modern Screen, we recommend using the native HDMI output and the Lakka distribution for Pi.
+
 
 12. Can I connect a fan to the GPIO?
 
-Many people use fans connected to the 5v and GND GPIO pins. Unfortunatelly the RGB-Pi connector occupies these pins although does not use them so that:
-|1) It is possible to solder a cable from behind if you have welding skills.
+Many people use fans connected to the 5v and GND GPIO pins. Unfortunatelly the RGB-Pi connector occupies these pins but does not actively use them:
+|1) It is possible to solder a cable from behind if you have soldering skills.
 2) Another option is to get the 5v from the USB port using a modified cable.
+
 
 13. Can I connect a power switch or joystick through the GPIO?
 
-It is not possible to connect any device to the GPIO port while the RGB-Pi is connected since almost all pins are used to take out the necessary 18 Bits for audio and video.
+It is not possible to connect any device to the GPIO port while the RGB-Pi is connected since almost all pins are used to use the necessary 18 Bits for audio and video.
 
-14. Why the TV channel is not selected automatically?
+14. Why is the TV channel not selected automatically?
 
-Important! This information is only valid if you are using the first revision of the RGB-Pi cable.
+**Important!: This information is only valid if you are using the first revision of the RGB-Pi cable.**
 
 In order to automatically set the TV to RGB mode, it is necessary to supply 12V to the scart cable but the RPi can only supply 5v.
-|Some people have made modifications in their cable to introduce 12v in pin 8 of the scart. This is feasible using an external power supply or using of a step-up that takes 5v of the cable and make it 12v.
-|Doing any moddification to the cable/RPi will be at your own risk. In case of proceeding, it is not necessary to lift pin 8 of the PCB since it is not connected to ground, and it is designed thus for possible modifications.
+|Some people have made modifications in their cable to introducing 12v in pin 8 of the scart. This is feasible using an external power supply or using of a step-up convereter that takes 5v in of the cable and converts it to 12v.
+|Doing any moddification to the cable/RPi will be at your own risk. It is not necessary to lift the pin 8 of the PCB since it is not connected to ground, and it is designed to be used for modifications.
 |NEW! The new version of the cable that is now available from the website, has this feature built-in among other improvements.
 
-15. Vertical games are not displayed in vertical position, how can I change that?
 
-By default, vertical games are rotated for playing in horizontal mode.
+15. Vertical games are not displayed vertically, how can I fix that?
+
+By default, vertical games are rotated to play in horizontal mode.
 |Not a good option for PixelPerfect lovers, since because of the lack of interlaced resolutions, many vertical lines are lost when downscaling from 320 to 240 lines.
 
-In case you wanted to play with your screen in vertical position, you can do it by selecting [Display > System Mode > Arcade Vertical] menu option.
+In case you want to play with your screen in a vertical position, you can do it by selecting the `[Display > System Mode > Arcade Vertical]` menu option.
+
 
 16. Handheld games look very small.
 
-The original resolution of portable consoles was very low, and since we try to keep PixelPerfect image display from all systems, this is the expected behavior.
+The original resolution of portable consoles is very low. Since we aim to have a pixel perfect image for all systems, this is the expected behavior.
+
 
 17. I don't have sound.
 
-Check that you don't have anything connected by HDMI. This deactivates the output by GPIO.
+Check that you don't have anything connected to the HDMI port. This disables the GPIO output.
+
 
 18. What is Netplay and how does it work?
 
@@ -182,9 +193,11 @@ After that, Server must start the game in first place followed by the rest of Cl
 |For privacy reassons, once Server option is selected, your friends have 30 seconds to connect with you by selecting the Client option. After that timeframe, you need to repeat the process.
 |Note: in order to make the netplay work, please check that you have the port 55439 open in your router.
 
+
 19. Is it good playing with screen bezels enabled?
 
 It is recommended to disable such option since its continued use can burn-in the same on your TV / Arcade screen.
+
 
 20. How can I create a backup of my favorites?
 
@@ -202,6 +215,7 @@ You can access by net to make your backup:
 - Connect via SFTP (check your IP from [Network] menu) with user: pi and password: rgbpi
 - Navigate to /home/pi/RGB-Pi/data folder and make a copy of all games*.csv files
 |Finally, you can now restore and replace all the files of your new system by the ones that you have just copied by following the same connection methods you followed for the backup.
+
 
 21. How can I use my custom scrap images?
 
@@ -221,6 +235,7 @@ ROM name: shinobi.sms
 PNG name: shinobi.png
 
 Finally you must activate [Settings > Brackgrounds > Custom] menu option.
+
 
 22. How can I save my Retroarch FBA remaps?
 
